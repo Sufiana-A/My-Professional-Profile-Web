@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@import "./styles/scrollbar.css";
+
+/* Global base style */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Poppins", ui-sans-serif, system-ui, sans-serif;
+    /* bg-zinc-900 sebagai base warna */
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+}

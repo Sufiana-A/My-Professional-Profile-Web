@@ -1,0 +1,22 @@
+/* === Custom scrollbar untuk Tailwind v4 === */
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+  }
+  .scrollbar-thumb-gray {
+    scrollbar-color: rgb(100 116 139) transparent;
+  }
+
+  /* Chrome, Edge, Safari */
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: rgb(100 116 139);
+    border-radius: 9999px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
