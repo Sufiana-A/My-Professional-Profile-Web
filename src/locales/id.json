@@ -1,0 +1,9 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "about": "Tentang",
+    "skills": "Keahlian",
+    "projects": "Proyek",
+    "contact": "Kontak"
+  }
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import AsteroidBackground from "./AsteroidBackground";
+import { LanguageProvider } from "./context/LanguageContext";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -10,6 +11,7 @@ import Footer from "./components/Footer";
 
 export default function App() {
   return (
+    <LanguageProvider>
     <div className="relative min-h-screen text-white">
       {/* Background tetap menutupi semua */}
       <AsteroidBackground />
@@ -63,5 +65,6 @@ export default function App() {
         <Footer />
       </footer>
     </div>
+    </LanguageProvider>
   );
 }
