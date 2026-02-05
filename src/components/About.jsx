@@ -1,6 +1,101 @@
 import React from "react";
+import { useTranslation } from "../hooks/useTranslation";
 
 const About = () => {
+  const { t } = useTranslation();
+  
+  // Function to render text with highlights
+  const renderTextWithHighlights = (text, highlights = []) => {
+    if (!text) return null;
+    
+    // Sort highlights by position in text (longest first to avoid overlap issues)
+    const sortedHighlights = [...highlights].sort((a, b) => b.text.length - a.text.length);
+    
+    let parts = [{ text, highlighted: false }];
+    
+    sortedHighlights.forEach(highlight => {
+      const newParts = [];
+      
+      parts.forEach(part => {
+        if (part.highlighted) {
+          newParts.push(part);
+          return;
+        }
+        
+        const text = part.text;
+        const highlightText = highlight.text;
+        const index = text.indexOf(highlightText);
+        
+        if (index !== -1) {
+          // Split the text into before, highlight, and after
+          const before = text.substring(0, index);
+          const after = text.substring(index + highlightText.length);
+          
+          if (before) {
+            newParts.push({ text: before, highlighted: false });
+          }
+          
+          newParts.push({ 
+            text: highlightText, 
+            highlighted: true,
+            type: highlight.type 
+          });
+          
+          if (after) {
+            newParts.push({ text: after, highlighted: false });
+          }
+        } else {
+          newParts.push(part);
+        }
+      });
+      
+      parts = newParts;
+    });
+    
+    // Merge adjacent non-highlighted parts
+    const mergedParts = [];
+    let currentPart = { text: '', highlighted: false };
+    
+    parts.forEach(part => {
+      if (part.highlighted) {
+        if (currentPart.text) {
+          mergedParts.push({ ...currentPart });
+          currentPart = { text: '', highlighted: false };
+        }
+        mergedParts.push(part);
+      } else {
+        currentPart.text += part.text;
+      }
+    });
+    
+    if (currentPart.text) {
+      mergedParts.push(currentPart);
+    }
+    
+    // Render the parts
+    return mergedParts.map((part, index) => {
+      if (part.highlighted) {
+        if (part.type === 'green') {
+          return (
+            <span key={index} className="text-green-400 font-semibold">
+              {part.text}
+            </span>
+          );
+        } else {
+          return (
+            <span key={index} className="font-semibold">
+              {part.text}
+            </span>
+          );
+        }
+      }
+      return part.text;
+    });
+  };
+
+  const aboutData = t('about') || {};
+  const paragraphs = aboutData.paragraphs || [];
+
   return (
     <section
       id="about"
@@ -11,54 +106,16 @@ const About = () => {
         
         {/* Title */}
         <h2 className="text-4xl md:text-5xl font-bold mb-8 text-green-400 drop-shadow-[0_0_10px_#22c55e]">
-          About Me
+          {aboutData.title || 'About Me'}
         </h2>
 
         {/* Content */}
         <div className="text-gray-100 text-lg leading-relaxed space-y-5 text-justify">
-          <p>
-            Hello! I'm <span className="text-green-400 font-semibold">Sufiana</span>, 
-            a <span className="font-semibold">fresh graduate in Information Systems </span> 
-            with a strong passion for{" "}
-            <span className="text-green-400 font-semibold">System Analysis</span>,{" "}
-            <span className="text-green-400 font-semibold">Product Management</span>, and{" "}
-            <span className="text-green-400 font-semibold">Project Management</span>. 
-            I believe that great systems and products are built through a deep understanding 
-            of user needs and effective processes.
-          </p>
-
-          <p>
-            I'm a <span className="text-green-400 font-semibold">Certified System Analyst (BNSP) </span> 
-            with hands-on experience in managing digital projects and products. 
-            During my internship as an <span className="font-semibold">Associate Product Manager </span> 
-            at a startup, I collaborated with cross-functional teammates using the{" "}
-            <span className="font-semibold">Agile methodology</span> — from product planning 
-            and requirements analysis to ensuring that every feature was developed 
-            with clear and measurable objectives. 
-            I also served as a <span className="font-semibold">Project Manager </span> in
-            website development project, where I learned how to coordinate teams 
-            and maintain a balance between time, quality, and resources.
-          </p>
-
-          <p>
-            I'm known as someone who is{" "}
-            <span className="font-semibold">efficient, collaborative, and highly adaptable</span>. 
-            I love learning new things, especially discovering how technology can be used 
-            to <span className="text-green-400 font-semibold">optimize workflows</span>. 
-            I enjoy exploring <span className="font-semibold">AI and the latest technologies </span> 
-            to develop tools that help automate tasks, and create 
-            <span className="font-semibold"> simple batch scripts</span> to simplify repetitive tasks 
-            and improve productivity.
-          </p>
-
-          <p>
-            For me, being a system analyst, project manager, or product manager is not just about leading a team, 
-            but about delivering{" "}
-            <span className="text-green-400 font-semibold">solutions that truly make an impact </span> 
-            through the right technology and efficient processes. 
-            I'm always excited to learn, grow, and contribute to building systems 
-            and products that create <span className="font-semibold">positive change</span>.
-          </p>
+          {paragraphs.map((paragraph, index) => (
+            <p key={index}>
+              {renderTextWithHighlights(paragraph.text, paragraph.highlights)}
+            </p>
+          ))}
         </div>
       </div>
     </section>

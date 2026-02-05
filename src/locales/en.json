@@ -4,6 +4,76 @@
     "about": "About",
     "skills": "Skills",
     "projects": "Projects",
-    "contact": "Contact"
+    "contact": "Contact",
+    "logoText": "My Web Profile"
+  },
+  "hero": {
+    "greeting": "Hi, I am",
+    "professions": [
+      "Aspiring System Analyst",
+      "Product & Project Management Enthusiast",
+      "Web Developer",
+      "Writer"
+    ],
+    "statuses": [
+      {
+        "text": "Open to Collaborate",
+        "active": true
+      },
+      {
+        "text": "Looking for Opportunities as Project Management Officer",
+        "active": true
+      }
+    ],
+    "buttons": {
+      "getInTouch": "Get in Touch",
+      "downloadCV": "Download CV"
+    },
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram",
+      "medium": "Medium"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "paragraphs": [
+      {
+        "text": "Hello! I'm Sufiana, a fresh graduate in Information Systems with a strong passion for System Analysis, Product Management, and Project Management. I believe that great systems and products are built through a deep understanding of user needs and effective processes.",
+        "highlights": [
+          {"text": "Sufiana", "type": "green"},
+          {"text": "fresh graduate in Information Systems", "type": "bold"},
+          {"text": "System Analysis", "type": "green"},
+          {"text": "Product Management", "type": "green"},
+          {"text": "Project Management", "type": "green"}
+        ]
+      },
+      {
+        "text": "I'm a Certified System Analyst (BNSP) with hands-on experience in managing digital projects and products. During my internship as an Associate Product Manager at a startup, I collaborated with cross-functional teammates using the Agile methodology — from product planning and requirements analysis to ensuring that every feature was developed with clear and measurable objectives. I also served as a Project Manager in website development project, where I learned how to coordinate teams and maintain a balance between time, quality, and resources.",
+        "highlights": [
+          {"text": "Certified System Analyst (BNSP)", "type": "green"},
+          {"text": "Associate Product Manager", "type": "bold"},
+          {"text": "Agile methodology", "type": "bold"},
+          {"text": "Project Manager", "type": "bold"}
+        ]
+      },
+      {
+        "text": "I'm known as someone who is efficient, collaborative, and highly adaptable. I love learning new things, especially discovering how technology can be used to optimize workflows. I enjoy exploring AI and the latest technologies to develop tools that help automate tasks, and create simple batch scripts to simplify repetitive tasks and improve productivity.",
+        "highlights": [
+          {"text": "efficient, collaborative, and highly adaptable", "type": "bold"},
+          {"text": "optimize workflows", "type": "green"},
+          {"text": "AI and the latest technologies", "type": "bold"},
+          {"text": "simple batch scripts", "type": "bold"}
+        ]
+      },
+      {
+        "text": "For me, being a system analyst, project manager, or product manager is not just about leading a team, but about delivering solutions that truly make an impact through the right technology and efficient processes. I'm always excited to learn, grow, and contribute to building systems and products that create positive change.",
+        "highlights": [
+          {"text": "solutions that truly make an impact", "type": "green"},
+          {"text": "positive change", "type": "bold"}
+        ]
+      }
+    ]
   }
 }

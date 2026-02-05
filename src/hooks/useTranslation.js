@@ -1,6 +1,6 @@
 import { useContext } from 'react';
-import { LanguageContext } from './context/LanguageContext.jsx';
-import { getTranslation } from './locales/translations';
+import { LanguageContext } from '../context/LanguageContext.jsx';
+import { getTranslation } from '../locales/translations';
 
 export const useTranslation = () => {
   const { language, changeLanguage, isLoading } = useContext(LanguageContext);

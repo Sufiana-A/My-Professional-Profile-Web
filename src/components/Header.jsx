@@ -58,7 +58,7 @@ const Header = () => {
             />
           </div>
           <span className="text-xl font-semibold tracking-wide text-white">
-            {translations[language].logoText}
+            {translations[language].nav.logoText}
           </span>
         </a>
 

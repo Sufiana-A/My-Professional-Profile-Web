@@ -7,26 +7,23 @@ import {
   FiInstagram,
 } from "react-icons/fi";
 import { FaMedium } from "react-icons/fa";
-
-const professions = [
-  "Aspiring System Analyst",
-  "Product & Project Management Enthusiast",
-  "Web Developer",
-  "Writer",
-];
-
-const statuses = [
-  { text: "Open to Collaborate", active: true },
-  { text: "Looking for Opportunities as Project Management Officer", active: true },
-];
+import { useTranslation } from "../hooks/useTranslation"; 
 
 const Hero = () => {
+  const { t } = useTranslation();
   const [typedText, setTypedText] = useState("");
   const [professionIndex, setProfessionIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
 
+  // Get professions array from translation
+  const professions = t('hero.professions') || [];
+  
+  // Typing effect
   useEffect(() => {
+    // If no professions or empty array, return early
+    if (!professions || professions.length === 0) return;
+
     const typingSpeed = isDeleting ? 50 : 100;
     const pauseTime = 1200;
 
@@ -51,7 +48,7 @@ const Hero = () => {
     }, typingSpeed);
 
     return () => clearTimeout(timeout);
-  }, [charIndex, isDeleting, professionIndex]);
+  }, [charIndex, isDeleting, professionIndex, professions]);
 
   return (
     <section
@@ -63,7 +60,7 @@ const Hero = () => {
         {/* TEXT */}
         <div className="flex flex-col space-y-3 min-w-[20rem] md:min-w-[28rem]">
           <h2 className="text-3xl md:text-5xl font-semibold text-gray-200 tracking-wide">
-            Hi, I am
+            {t('hero.greeting')}
           </h2>
 
           <div className="leading-none">
@@ -84,7 +81,7 @@ const Hero = () => {
 
         {/* STATUS */}
         <ul className="flex flex-col space-y-2 mt-4">
-          {statuses.map((status, i) => (
+          {(t('hero.statuses') || []).map((status, i) => (
             <li
               key={i}
               className={`flex items-center gap-2 font-medium ${
@@ -109,7 +106,7 @@ const Hero = () => {
             href="#contact"
             className="flex items-center gap-2 px-6 py-3 border border-white rounded-md text-white hover:text-black hover:bg-white transition-all duration-300"
           >
-            <FiMail size={20} /> Get in Touch
+            <FiMail size={20} /> {t('hero.buttons.getInTouch')}
           </a>
 
           <a
@@ -118,7 +115,7 @@ const Hero = () => {
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-6 py-3 rounded-md bg-blue-600 text-white hover:bg-blue-700 hover:shadow-[0_0_16px_#3b82f6] transition-all duration-300"
           >
-            <FiDownload size={20} /> Download CV
+            <FiDownload size={20} /> {t('hero.buttons.downloadCV')}
           </a>
         </div>
 
@@ -129,6 +126,7 @@ const Hero = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"
+            title={t('hero.social.github')}
           >
             <FiGithub size={26} />
           </a>
@@ -137,6 +135,7 @@ const Hero = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"
+            title={t('hero.social.linkedin')}
           >
             <FiLinkedin size={26} />
           </a>
@@ -145,6 +144,7 @@ const Hero = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"
+            title={t('hero.social.instagram')}
           >
             <FiInstagram size={26} />
           </a>
@@ -153,6 +153,7 @@ const Hero = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"
+            title={t('hero.social.medium')}
           >
             <FaMedium size={26} />
           </a>

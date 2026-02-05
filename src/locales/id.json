@@ -4,6 +4,76 @@
     "about": "Tentang",
     "skills": "Keahlian",
     "projects": "Proyek",
-    "contact": "Kontak"
+    "contact": "Kontak",
+    "logoText": "Web Profile Saya"
+  },
+  "hero": {
+    "greeting": "Halo, saya",
+    "professions": [
+      "Aspiring System Analyst",
+      "Product & Project Management Enthusiast",
+      "Web Developer",
+      "Penulis"
+    ],
+    "statuses": [
+      {
+        "text": "Terbuka untuk Kolaborasi",
+        "active": true
+      },
+      {
+        "text": "Mencari Peluang sebagai Project Management Officer",
+        "active": true
+      }
+    ],
+    "buttons": {
+      "getInTouch": "Hubungi Saya",
+      "downloadCV": "Unduh CV"
+    },
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram",
+      "medium": "Medium"
+    }
+  },
+  "about": {
+    "title": "Tentang Saya",
+    "paragraphs": [
+        {
+          "text": "Halo! Saya Sufiana, seorang lulusan baru Sistem Informasi dengan ketertarikan kuat pada Analisis Sistem, Manajemen Produk, dan Manajemen Proyek. Saya percaya bahwa sistem dan produk yang baik dibangun melalui pemahaman mendalam tentang kebutuhan pengguna dan proses yang efektif.",
+          "highlights": [
+            {"text": "Sufiana", "type": "green"},
+            {"text": "lulusan baru Sistem Informasi", "type": "bold"},
+            {"text": "Analisis Sistem", "type": "green"},
+            {"text": "Manajemen Produk", "type": "green"},
+            {"text": "Manajemen Proyek", "type": "green"}
+          ]
+        },
+        {
+          "text": "Saya adalah System Analyst Bersertifikat (BNSP) dengan pengalaman praktis dalam mengelola proyek dan produk digital. Selama magang sebagai Associate Product Manager di sebuah startup, saya berkolaborasi dengan tim lintas fungsi menggunakan metodologi Agile — mulai dari perencanaan produk dan analisis kebutuhan hingga memastikan setiap fitur dikembangkan dengan tujuan yang jelas dan terukur. Saya juga pernah menjabat sebagai Project Manager dalam proyek pengembangan website, di mana saya belajar bagaimana mengkoordinasi tim dan menjaga keseimbangan antara waktu, kualitas, dan sumber daya.",
+          "highlights": [
+            {"text": "System Analyst Bersertifikat (BNSP)", "type": "green"},
+            {"text": "Associate Product Manager", "type": "bold"},
+            {"text": "metodologi Agile", "type": "bold"},
+            {"text": "Project Manager", "type": "bold"}
+          ]
+        },
+        {
+          "text": "Saya dikenal sebagai seseorang yang efisien, kolaboratif, dan sangat adaptif. Saya senang mempelajari hal-hal baru, terutama menemukan bagaimana teknologi dapat digunakan untuk mengoptimalkan alur kerja. Saya menikmati mengeksplorasi AI dan teknologi terbaru untuk mengembangkan alat yang membantu mengotomatisasi tugas, dan membuat batch script sederhana untuk menyederhanakan tugas berulang dan meningkatkan produktivitas.",
+          "highlights": [
+            {"text": "efisien, kolaboratif, dan sangat adaptif", "type": "bold"},
+            {"text": "mengoptimalkan alur kerja", "type": "green"},
+            {"text": "AI dan teknologi terbaru", "type": "bold"},
+            {"text": "batch script sederhana", "type": "bold"}
+          ]
+        },
+        {
+          "text": "Bagi saya, menjadi seorang system analyst, project manager, atau product manager bukan hanya tentang memimpin tim, tetapi tentang memberikan solusi yang benar-benar berdampak melalui teknologi yang tepat dan proses yang efisien. Saya selalu bersemangat untuk belajar, berkembang, dan berkontribusi dalam membangun sistem dan produk yang menciptakan perubahan positif.",
+          "highlights": [
+            {"text": "solusi yang benar-benar berdampak", "type": "green"},
+            {"text": "perubahan positif", "type": "bold"}
+          ]
+        }
+      ]
   }
 }
