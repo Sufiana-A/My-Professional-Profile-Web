@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import { Cpu, ClipboardCheck, Workflow, Code, ClipboardList, BarChart3 } from "lucide-react";
 import { motion } from "framer-motion";
+import { useTranslation } from "../hooks/useTranslation";
 
 export default function Skills() {
+  const { t } = useTranslation();
   const [mainTab, setMainTab] = useState("technical");
   const [subTab, setSubTab] = useState("system");
+
+  const skillsData = t('skills') || {};
 
   const ProgressBar = ({ label, value, tools }) => (
     <motion.div
@@ -27,7 +31,9 @@ export default function Skills() {
       </div>
       {tools && (
         <p className="text-sm text-gray-400 mt-2 italic">
-          <span className="text-gray-300 not-italic font-medium">Tools:</span>{" "}
+          <span className="text-gray-300 not-italic font-medium">
+            {skillsData.common?.tools || "Tools"}:
+          </span>{" "}
           {tools}
         </p>
       )}
@@ -38,10 +44,10 @@ export default function Skills() {
     <>
       <div className="flex flex-wrap justify-center gap-3 mb-8">
         {[
-          { key: "system", icon: Workflow, label: "System Analysis & Design" },
-          { key: "business", icon: BarChart3, label: "Business Analysis" },
-          { key: "pm", icon: ClipboardList, label: "Product & Project Management" },
-          { key: "web", icon: Code, label: "Web Development" },
+          { key: "system", icon: Workflow, label: skillsData.technical?.tabs?.system || "System Analysis & Design" },
+          { key: "business", icon: BarChart3, label: skillsData.technical?.tabs?.business || "Business Analysis" },
+          { key: "pm", icon: ClipboardList, label: skillsData.technical?.tabs?.pm || "Product & Project Management" },
+          { key: "web", icon: Code, label: skillsData.technical?.tabs?.web || "Web Development" },
         ].map(({ key, icon: Icon, label }) => (
           <button
             key={key}
@@ -58,52 +64,50 @@ export default function Skills() {
       </div>
 
       <div className="space-y-6">
-        {subTab === "system" && (
-          <>
-            <ProgressBar label="Business Process Modeling (BPMN)" value={90} tools="Lucidchart, Bizagi, Microsoft Visio" />
-            <ProgressBar label="System Modeling (UML)" value={85} tools="Visual Paradigm, Draw.io, Enterprise Architect" />
-            <ProgressBar label="Requirement Gathering & Documentation" value={90} tools="Jira, Confluence, Notion" />
-            <ProgressBar label="Prototyping & Wireframing" value={80} tools="Figma, Balsamiq" />
-          </>
-        )}
+        {subTab === "system" && skillsData.technical?.categories?.system?.map((skill, index) => (
+          <ProgressBar 
+            key={index}
+            label={skill.label}
+            value={skill.value}
+            tools={skill.tools}
+          />
+        ))}
 
-        {subTab === "business" && (
-          <>
-            <ProgressBar label="Data Analysis & Visualization" value={90} tools="Excel, Power BI, Tableau" />
-            <ProgressBar label="Process & Requirement Analysis" value={85} tools="Lucidchart, Bizagi, Confluence" />
-            <ProgressBar label="SQL for Data Querying" value={80} tools="MySQL, PostgreSQL" />
-            <ProgressBar label="Market & Stakeholder Research" value={85} tools="Google Trends, SurveyMonkey" />
-          </>
-        )}
+        {subTab === "business" && skillsData.technical?.categories?.business?.map((skill, index) => (
+          <ProgressBar 
+            key={index}
+            label={skill.label}
+            value={skill.value}
+            tools={skill.tools}
+          />
+        ))}
 
-        {subTab === "pm" && (
-          <>
-            <ProgressBar label="Agile & Scrum Framework" value={90} tools="Jira, Trello, Asana" />
-            <ProgressBar label="Project Planning & Scheduling" value={85} tools="Microsoft Project, Notion, Smartsheet" />
-            <ProgressBar label="Risk & Timeline Management" value={80} tools="Excel, Gantt Chart Templates" />
-            <ProgressBar label="Product Roadmapping" value={85} tools="Jira, Aha!, Productboard" />
-          </>
-        )}
+        {subTab === "pm" && skillsData.technical?.categories?.pm?.map((skill, index) => (
+          <ProgressBar 
+            key={index}
+            label={skill.label}
+            value={skill.value}
+            tools={skill.tools}
+          />
+        ))}
 
-        {subTab === "web" && (
-          <>
-            <ProgressBar label="Front-End Development" value={85} tools="React, TailwindCSS" />
-            <ProgressBar label="Back-End Development" value={80} tools="Laravel, Express.js" />
-            <ProgressBar label="REST API Integration" value={85} tools="Postman, Axios" />
-            <ProgressBar label="Database Design" value={80} tools="MySQL, PostgreSQL" />
-          </>
-        )}
+        {subTab === "web" && skillsData.technical?.categories?.web?.map((skill, index) => (
+          <ProgressBar 
+            key={index}
+            label={skill.label}
+            value={skill.value}
+            tools={skill.tools}
+          />
+        ))}
       </div>
     </>
   );
 
   const SoftSkills = () => (
     <div className="space-y-6">
-      <ProgressBar label="Analytical Thinking" value={90} />
-      <ProgressBar label="Communication" value={95} />
-      <ProgressBar label="Team Collaboration" value={90} />
-      <ProgressBar label="Leadership" value={85} />
-      <ProgressBar label="Problem Solving" value={90} />
+      {Object.entries(skillsData.soft || {}).map(([key, value]) => (
+        <ProgressBar key={key} label={key} value={value} />
+      ))}
     </div>
   );
 
@@ -113,13 +117,13 @@ export default function Skills() {
       className="relative flex flex-col items-center justify-center text-white py-20 px-6 md:px-24"
     >
       <h2 className="text-4xl md:text-5xl font-bold mb-10 text-green-400 drop-shadow-[0_0_10px_#22c55e]">
-        Skills
+        {skillsData.title || "Skills"}
       </h2>
 
       <div className="flex flex-wrap justify-center gap-4 mb-10">
         {[
-          { key: "technical", icon: Cpu, label: "Technical Skills" },
-          { key: "soft", icon: ClipboardCheck, label: "Soft Skills" },
+          { key: "technical", icon: Cpu, label: skillsData.mainTabs?.technical || "Technical Skills" },
+          { key: "soft", icon: ClipboardCheck, label: skillsData.mainTabs?.soft || "Soft Skills" },
         ].map(({ key, icon: Icon, label }) => (
           <button
             key={key}

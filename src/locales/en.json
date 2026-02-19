@@ -75,5 +75,144 @@
         ]
       }
     ]
+  },
+  "skills": {
+    "title": "Skills",
+    "mainTabs": {
+      "technical": "Technical Skills",
+      "soft": "Soft Skills"
+    },
+    "technical": {
+      "tabs": {
+        "system": "System Analysis & Design",
+        "business": "Business Analysis",
+        "pm": "Product & Project Management",
+        "web": "Web Development"
+      },
+      "categories": {
+        "system": [
+          {
+            "label": "Business Process Modeling (BPMN)",
+            "value": 90,
+            "tools": "Lucidchart, Bizagi, Microsoft Visio"
+          },
+          {
+            "label": "System Modeling (UML)",
+            "value": 85,
+            "tools": "Visual Paradigm, Draw.io, Enterprise Architect"
+          },
+          {
+            "label": "Requirement Gathering & Documentation",
+            "value": 90,
+            "tools": "Jira, Confluence, Notion"
+          },
+          {
+            "label": "Prototyping & Wireframing",
+            "value": 80,
+            "tools": "Figma, Balsamiq"
+          }
+        ],
+        "business": [
+          {
+            "label": "Data Analysis & Visualization",
+            "value": 90,
+            "tools": "Excel, Power BI, Tableau"
+          },
+          {
+            "label": "Process & Requirement Analysis",
+            "value": 85,
+            "tools": "Lucidchart, Bizagi, Confluence"
+          },
+          {
+            "label": "SQL for Data Querying",
+            "value": 80,
+            "tools": "MySQL, PostgreSQL"
+          },
+          {
+            "label": "Market & Stakeholder Research",
+            "value": 85,
+            "tools": "Google Trends, SurveyMonkey"
+          }
+        ],
+        "pm": [
+          {
+            "label": "Agile & Scrum Framework",
+            "value": 90,
+            "tools": "Jira, Trello, Asana"
+          },
+          {
+            "label": "Project Planning & Scheduling",
+            "value": 85,
+            "tools": "Microsoft Project, Notion, Smartsheet"
+          },
+          {
+            "label": "Risk & Timeline Management",
+            "value": 80,
+            "tools": "Excel, Gantt Chart Templates"
+          },
+          {
+            "label": "Product Roadmapping",
+            "value": 85,
+            "tools": "Jira, Aha!, Productboard"
+          }
+        ],
+        "web": [
+          {
+            "label": "Front-End Development",
+            "value": 85,
+            "tools": "React, TailwindCSS"
+          },
+          {
+            "label": "Back-End Development",
+            "value": 80,
+            "tools": "Laravel, Express.js"
+          },
+          {
+            "label": "REST API Integration",
+            "value": 85,
+            "tools": "Postman, Axios"
+          },
+          {
+            "label": "Database Design",
+            "value": 80,
+            "tools": "MySQL, PostgreSQL"
+          }
+        ]
+      }
+    },
+    "soft": {
+      "Analytical Thinking": 90,
+      "Communication": 95,
+      "Team Collaboration": 90,
+      "Leadership": 85,
+      "Problem Solving": 90
+    },
+    "common": {
+      "tools": "Tools"
+    }
+  },
+  "contact": {
+    "title": "Let's Get in Touch!",
+    "subtitle": "Whether you have a question, project idea, or just want to say hi — I'd love to hear from you.",
+    "collaborate": "Let's collaborate and make something impactful together.",
+    "quote": "“Design and code are just tools — what matters is the story they tell.”",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Failed to send message. Please try again."
+    },
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram",
+      "medium": "Medium"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved."
   }
 }

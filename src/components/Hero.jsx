@@ -122,7 +122,7 @@ const Hero = () => {
         {/* SOCIAL ICONS */}
         <div className="flex items-center gap-6 mt-8 text-white">
           <a
-            href="https://github.com"
+            href="https://github.com/Sufiana-A"
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"
@@ -131,7 +131,7 @@ const Hero = () => {
             <FiGithub size={26} />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://linkedin.com/in/sufiana-arumdita-7a3310307/"
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"
@@ -140,7 +140,7 @@ const Hero = () => {
             <FiLinkedin size={26} />
           </a>
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/arumditasufiana"
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"

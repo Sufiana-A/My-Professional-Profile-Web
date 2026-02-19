@@ -75,5 +75,144 @@
           ]
         }
       ]
+  },
+  "skills": {
+    "title": "Keahlian",
+    "mainTabs": {
+      "technical": "Keahlian Teknis",
+      "soft": "Keahlian Soft Skill"
+    },
+    "technical": {
+      "tabs": {
+        "system": "Analisis & Desain Sistem",
+        "business": "Analisis Bisnis",
+        "pm": "Manajemen Produk & Proyek",
+        "web": "Pengembangan Web"
+      },
+      "categories": {
+        "system": [
+          {
+            "label": "Pemodelan Proses Bisnis (BPMN)",
+            "value": 90,
+            "tools": "Lucidchart, Bizagi, Microsoft Visio"
+          },
+          {
+            "label": "Pemodelan Sistem (UML)",
+            "value": 85,
+            "tools": "Visual Paradigm, Draw.io, Enterprise Architect"
+          },
+          {
+            "label": "Pengumpulan & Dokumentasi Kebutuhan",
+            "value": 90,
+            "tools": "Jira, Confluence, Notion"
+          },
+          {
+            "label": "Prototyping & Wireframing",
+            "value": 80,
+            "tools": "Figma, Balsamiq"
+          }
+        ],
+        "business": [
+          {
+            "label": "Analisis & Visualisasi Data",
+            "value": 90,
+            "tools": "Excel, Power BI, Tableau"
+          },
+          {
+            "label": "Analisis Proses & Kebutuhan",
+            "value": 85,
+            "tools": "Lucidchart, Bizagi, Confluence"
+          },
+          {
+            "label": "SQL untuk Query Data",
+            "value": 80,
+            "tools": "MySQL, PostgreSQL"
+          },
+          {
+            "label": "Riset Pasar & Stakeholder",
+            "value": 85,
+            "tools": "Google Trends, SurveyMonkey"
+          }
+        ],
+        "pm": [
+          {
+            "label": "Framework Agile & Scrum",
+            "value": 90,
+            "tools": "Jira, Trello, Asana"
+          },
+          {
+            "label": "Perencanaan & Penjadwalan Proyek",
+            "value": 85,
+            "tools": "Microsoft Project, Notion, Smartsheet"
+          },
+          {
+            "label": "Manajemen Risiko & Timeline",
+            "value": 80,
+            "tools": "Excel, Template Gantt Chart"
+          },
+          {
+            "label": "Perencanaan Produk",
+            "value": 85,
+            "tools": "Jira, Aha!, Productboard"
+          }
+        ],
+        "web": [
+          {
+            "label": "Pengembangan Front-End",
+            "value": 85,
+            "tools": "React, TailwindCSS"
+          },
+          {
+            "label": "Pengembangan Back-End",
+            "value": 80,
+            "tools": "Laravel, Express.js"
+          },
+          {
+            "label": "Integrasi REST API",
+            "value": 85,
+            "tools": "Postman, Axios"
+          },
+          {
+            "label": "Desain Database",
+            "value": 80,
+            "tools": "MySQL, PostgreSQL"
+          }
+        ]
+      }
+    },
+    "soft": {
+      "Analytical Thinking": 90,
+      "Communication": 95,
+      "Team Collaboration": 90,
+      "Leadership": 85,
+      "Problem Solving": 90
+    },
+    "common": {
+      "tools": "Alat"
+    }
+  },
+  "contact": {
+    "title": "Mari Terhubung!",
+    "subtitle": "Apakah Anda memiliki pertanyaan, ide proyek, atau hanya ingin menyapa — Saya akan senang mendengar dari Anda.",
+    "collaborate": "Mari berkolaborasi dan menciptakan sesuatu yang berdampak bersama.",
+    "quote": "“Desain dan kode hanyalah alat — yang terpenting adalah cerita yang mereka sampaikan.”",
+    "form": {
+      "name": "Nama",
+      "email": "Email",
+      "message": "Pesan",
+      "send": "Kirim Pesan",
+      "sending": "Mengirim...",
+      "success": "Pesan berhasil dikirim!",
+      "error": "Gagal mengirim pesan. Silakan coba lagi."
+    },
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram",
+      "medium": "Medium"
+    }
+  },
+  "footer": {
+    "rights": "Hak cipta dilindungi."
   }
 }
