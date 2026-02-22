@@ -27,7 +27,7 @@
     ],
     "buttons": {
       "getInTouch": "Hubungi Saya",
-      "downloadCV": "Unduh CV"
+      "downloadSlidePortfolio": "Portofolio"
     },
     "social": {
       "github": "GitHub",
@@ -189,6 +189,83 @@
     },
     "common": {
       "tools": "Alat"
+    }
+  },
+  "projects": {
+    "title": "Proyek",
+    "categories": {
+      "All": "Semua",
+      "System Analysis & Design": "Analisis & Desain Sistem",
+      "Business Analysis": "Analisis Bisnis",
+      "Web Development": "Pengembangan Web",
+      "Product & Project Management": "Manajemen Produk & Proyek"
+    },
+    "filters": {
+      "all": "Semua"
+    },
+    "resume": {
+      "button": "Resume",
+      "comingSoon": "📄 Resume untuk {category} akan segera tersedia!",
+      "notAvailable": "Resume untuk {category} belum tersedia. Silakan cek kembali nanti.",
+      "error": "Gagal mengunduh resume untuk {category}. Silakan coba lagi nanti.",
+      "comingSoonAlt": "Resume untuk {category} segera hadir!"
+    },
+    "modal": {
+      "description": "Deskripsi",
+      "tools": "Alat & Teknologi",
+      "gallery": "Galeri Proyek",
+      "screenshot": "Tangkapan Layar",
+      "close": "Tutup"
+    },
+    "items": {
+      "helpdeskMonitoring": {
+        "title": "Sistem Monitoring Helpdesk",
+        "description": "Merancang dashboard analitik untuk memantau pertanyaan terjawab dan tidak terjawab pada helpdesk berbasis WhatsApp menggunakan integrasi Tableau.",
+        "fullDescription": "Sistem monitoring komprehensif ini menyediakan analitik real-time untuk kinerja helpdesk. Dashboard terintegrasi dengan Tableau untuk memvisualisasikan metrik utama termasuk waktu respons, kategori pertanyaan, dan kinerja agen. Sistem membantu mengidentifikasi hambatan dan meningkatkan efisiensi layanan pelanggan melalui wawasan berbasis data.",
+        "tools": "Lucidchart, Tableau, PostgreSQL"
+      },
+      "toeflStructure": {
+        "title": "Aplikasi TOEFL ITP Structure & Written Expression",
+        "description": "Mengembangkan analisis sistem dan dokumentasi ERD, BPMN, dan alur pengguna untuk platform praktik TOEFL berbasis web.",
+        "fullDescription": "Platform persiapan TOEFL komprehensif yang berfokus pada bagian Structure and Written Expression. Sistem mencakup ERD terperinci untuk desain database, BPMN untuk visualisasi proses, dan dokumentasi alur pengguna untuk memastikan navigasi intuitif. Fitur termasuk tes praktik, pelacakan kemajuan, dan analitik kinerja.",
+        "tools": "Draw.io, Notion, MySQL"
+      },
+      "helpdeskVisualization": {
+        "title": "Visualisasi Kinerja Helpdesk",
+        "description": "Melakukan analisis data dan visualisasi tren kinerja helpdesk, menyoroti kategori tidak terjawab menggunakan Tableau yang terintegrasi dengan database cloud.",
+        "fullDescription": "Mengembangkan dashboard interaktif yang melacak metrik kinerja helpdesk secara real-time. Sistem visualisasi mengidentifikasi pola dalam pertanyaan tidak terjawab, waktu puncak pertanyaan, dan tren spesifik kategori. Terintegrasi dengan database cloud untuk pembaruan langsung dan kemampuan pelaporan otomatis.",
+        "tools": "Tableau, PostgreSQL, Looker Studio"
+      },
+      "brainysResearch": {
+        "title": "Riset Pasar & Kebutuhan Pengguna untuk Brainys LMS",
+        "description": "Melakukan analisis pasar dan kebutuhan pengguna untuk menentukan fitur utama dan metrik kinerja untuk Brainys Learning Management System.",
+        "fullDescription": "Melakukan riset pasar komprehensif melibatkan 500+ pengguna potensial untuk mengidentifikasi persyaratan utama LMS inovatif. Menganalisis platform pesaing, melakukan wawancara pengguna, dan membuat persona terperinci. Penelitian secara langsung memengaruhi prioritas fitur dan keputusan desain UX.",
+        "tools": "Google Forms, Excel, Power BI"
+      },
+      "toeflPlatform": {
+        "title": "Platform Praktik TOEFL ITP",
+        "description": "Membangun aplikasi web monolitik berbasis Laravel untuk praktik TOEFL dengan modul, gamifikasi, dan dashboard kinerja.",
+        "fullDescription": "Platform persiapan TOEFL lengkap dengan jalur pembelajaran modular, elemen gamifikasi seperti lencana dan papan peringkat, dan dashboard kinerja komprehensif. Fitur termasuk tes praktik waktu, penilaian instan, analitik terperinci, dan rekomendasi studi personal.",
+        "tools": "Laravel, MySQL, Tailwind CSS, JavaScript"
+      },
+      "blogWebsite": {
+        "title": "Situs Blog dengan Template EJS",
+        "description": "Mengembangkan sistem blog menggunakan Express.js dan EJS, menampilkan operasi CRUD dan tata letak responsif.",
+        "fullDescription": "Platform blog modern dibangun dengan Node.js dan Express, menampilkan otentikasi pengguna, manajemen posting, sistem komentar, dan kategori. Desain responsif memastikan tampilan optimal di semua perangkat, dengan template EJS menyediakan rendering konten dinamis.",
+        "tools": "Express.js, EJS, Bootstrap"
+      },
+      "brainysLMS": {
+        "title": "Brainys Learning Management System",
+        "description": "Bertindak sebagai Associate Product Manager; membuat PRD dan mengkoordinasi sprint Agile untuk pengembangan LMS dengan tim lintas fungsi.",
+        "fullDescription": "Memimpin pengembangan produk untuk platform LMS inovatif, mengelola seluruh siklus hidup produk dari konsep hingga peluncuran. Membuat PRD terperinci, user stories, dan kriteria penerimaan. Berkoordinasi dengan tim desain, pengembangan, dan QA di berbagai sprint Agile, memastikan pengiriman fitur tepat waktu.",
+        "tools": "Notion, Jira, Figma"
+      },
+      "schoolSystem": {
+        "title": "Sistem Manajemen Sekolah (Divisi OASYS)",
+        "description": "Mengelola pencapaian proyek, prioritas backlog, dan tinjauan sprint di bawah kerangka Scrum untuk pengiriman sistem.",
+        "fullDescription": "Manajer proyek untuk sistem manajemen sekolah komprehensif yang melayani beberapa institusi. Memfasilitasi upacara Scrum termasuk standup harian, perencanaan sprint, dan retrospektif. Mengelola ekspektasi pemangku kepentingan, melacak metrik proyek, dan memastikan keberhasilan pencapaian tonggak utama.",
+        "tools": "Asana, Notion, Miro"
+      }
     }
   },
   "contact": {

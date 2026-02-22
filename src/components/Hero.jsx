@@ -110,12 +110,12 @@ const Hero = () => {
           </a>
 
           <a
-            href="/CV.pdf"
+            href="/portfolio/extended-portfolio_sufiana arumdita.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-6 py-3 rounded-md bg-blue-600 text-white hover:bg-blue-700 hover:shadow-[0_0_16px_#3b82f6] transition-all duration-300"
           >
-            <FiDownload size={20} /> {t('hero.buttons.downloadCV')}
+            <FiDownload size={20} /> {t('hero.buttons.downloadSlidePortfolio')}
           </a>
         </div>
 
@@ -149,7 +149,7 @@ const Hero = () => {
             <FiInstagram size={26} />
           </a>
           <a
-            href="https://medium.com"
+            href="https://medium.com/@sufi.arum24"
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"

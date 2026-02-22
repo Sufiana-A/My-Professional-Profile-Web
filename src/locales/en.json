@@ -27,7 +27,7 @@
     ],
     "buttons": {
       "getInTouch": "Get in Touch",
-      "downloadCV": "Download CV"
+      "downloadSlidePortfolio": "Extended Portfolio"
     },
     "social": {
       "github": "GitHub",
@@ -189,6 +189,83 @@
     },
     "common": {
       "tools": "Tools"
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "categories": {
+      "All": "All",
+      "System Analysis & Design": "System Analysis & Design",
+      "Business Analysis": "Business Analysis",
+      "Web Development": "Web Development",
+      "Product & Project Management": "Product & Project Management"
+    },
+    "filters": {
+      "all": "All"
+    },
+    "resume": {
+      "button": "Resume",
+      "comingSoon": "📄 Resume for {category} will be available soon!",
+      "notAvailable": "Resume for {category} is not available yet. Please check back later.",
+      "error": "Unable to download resume for {category}. Please try again later.",
+      "comingSoonAlt": "Resume for {category} is coming soon!"
+    },
+    "modal": {
+      "description": "Description",
+      "tools": "Tools & Technologies",
+      "gallery": "Project Gallery",
+      "screenshot": "Screenshot",
+      "close": "Close"
+    },
+    "items": {
+      "helpdeskMonitoring": {
+        "title": "Helpdesk Monitoring System",
+        "description": "Designed an analytical dashboard for monitoring answered and unanswered questions on WhatsApp-based helpdesk using Tableau integration.",
+        "fullDescription": "This comprehensive monitoring system provides real-time analytics for helpdesk performance. The dashboard integrates with Tableau to visualize key metrics including response times, question categories, and agent performance. The system helps identify bottlenecks and improve customer service efficiency through data-driven insights.",
+        "tools": "Lucidchart, Tableau, PostgreSQL"
+      },
+      "toeflStructure": {
+        "title": "TOEFL ITP Structure & Written Expression App",
+        "description": "Developed system analysis and ERD, BPMN, and user flow documentation for a web-based TOEFL practice platform.",
+        "fullDescription": "A comprehensive TOEFL preparation platform focusing on Structure and Written Expression sections. The system includes detailed ERD for database design, BPMN for process visualization, and user flow documentation to ensure intuitive navigation. Features include practice tests, progress tracking, and performance analytics.",
+        "tools": "Draw.io, Notion, MySQL"
+      },
+      "helpdeskVisualization": {
+        "title": "Helpdesk Performance Visualization",
+        "description": "Conducted data analysis and visualization of helpdesk performance trends, highlighting unanswered categories using Tableau integrated with cloud database.",
+        "fullDescription": "Developed interactive dashboards that track helpdesk performance metrics in real-time. The visualization system identifies patterns in unanswered questions, peak inquiry times, and category-specific trends. Integrated with cloud database for live updates and automated reporting capabilities.",
+        "tools": "Tableau, PostgreSQL, Looker Studio"
+      },
+      "brainysResearch": {
+        "title": "Market & User Needs Research for Brainys LMS",
+        "description": "Performed market and user needs analysis to define key features and performance metrics for Brainys Learning Management System.",
+        "fullDescription": "Conducted comprehensive market research involving 500+ potential users to identify key requirements for an innovative LMS. Analyzed competitor platforms, conducted user interviews, and created detailed personas. The research directly influenced feature prioritization and UX design decisions.",
+        "tools": "Google Forms, Excel, Power BI"
+      },
+      "toeflPlatform": {
+        "title": "TOEFL ITP Practice Platform",
+        "description": "Built a Laravel-based monolithic web app for TOEFL practice with modules, gamification, and performance dashboards.",
+        "fullDescription": "A full-featured TOEFL preparation platform with modular learning paths, gamification elements like badges and leaderboards, and comprehensive performance dashboards. Features include timed practice tests, instant scoring, detailed analytics, and personalized study recommendations.",
+        "tools": "Laravel, MySQL, Tailwind CSS, JavaScript"
+      },
+      "blogWebsite": {
+        "title": "Blog Website with EJS Template",
+        "description": "Developed a blog system using Express.js and EJS, featuring CRUD operations and responsive layouts.",
+        "fullDescription": "A modern blog platform built with Node.js and Express, featuring user authentication, post management, comments system, and categories. The responsive design ensures optimal viewing across all devices, with EJS templates providing dynamic content rendering and server-side includes.",
+        "tools": "Express.js, EJS, Bootstrap"
+      },
+      "brainysLMS": {
+        "title": "Brainys Learning Management System",
+        "description": "Acted as Associate Product Manager; created PRDs and coordinated Agile sprints for LMS development with cross-functional teams.",
+        "fullDescription": "Led product development for an innovative LMS platform, managing the entire product lifecycle from concept to launch. Created detailed PRDs, user stories, and acceptance criteria. Coordinated with design, development, and QA teams across multiple Agile sprints, ensuring timely delivery of key features.",
+        "tools": "Notion, Jira, Figma"
+      },
+      "schoolSystem": {
+        "title": "School Management System (OASYS Division)",
+        "description": "Managed project milestones, backlog prioritization, and sprint reviews under Scrum framework for system delivery.",
+        "fullDescription": "Project manager for a comprehensive school management system serving multiple institutions. Facilitated Scrum ceremonies including daily standups, sprint planning, and retrospectives. Managed stakeholder expectations, tracked project metrics, and ensured successful delivery of major milestones.",
+        "tools": "Asana, Notion, Miro"
+      }
     }
   },
   "contact": {

@@ -87,7 +87,7 @@ const Contact = () => {
             <FiInstagram size={26} />
           </a>
           <a 
-            href="https://medium.com" 
+            href="https://medium.com/@sufi.arum24" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="social-icon"
