@@ -4,7 +4,6 @@ import {
   FiDownload,
   FiGithub,
   FiLinkedin,
-  FiInstagram,
 } from "react-icons/fi";
 import { FaMedium } from "react-icons/fa";
 import { useTranslation } from "../hooks/useTranslation"; 
@@ -110,9 +109,8 @@ const Hero = () => {
           </a>
 
           <a
-            href="/portfolio/extended-portfolio_sufiana arumdita.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/portfolio/Sufiana Arumdita_Extended Portfolio.pdf"
+            download
             className="flex items-center gap-2 px-6 py-3 rounded-md bg-blue-600 text-white hover:bg-blue-700 hover:shadow-[0_0_16px_#3b82f6] transition-all duration-300"
           >
             <FiDownload size={20} /> {t('hero.buttons.downloadSlidePortfolio')}
@@ -138,15 +136,6 @@ const Hero = () => {
             title={t('hero.social.linkedin')}
           >
             <FiLinkedin size={26} />
-          </a>
-          <a
-            href="https://www.instagram.com/arumditasufiana"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-icon"
-            title={t('hero.social.instagram')}
-          >
-            <FiInstagram size={26} />
           </a>
           <a
             href="https://medium.com/@sufi.arum24"

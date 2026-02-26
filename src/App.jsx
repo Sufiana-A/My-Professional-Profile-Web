@@ -22,21 +22,19 @@ export default function App() {
       </div>
 
       {/* Konten yang bisa di-scroll */}
-      {/* Hero Section */}
-      <main className="relative z-10 scroll-smooth">
+      <main className="relative z-10 scroll-smooth pt-16 md:pt-20">
         {/* Hero Section */}
         <section
           id="home"
-          className="min-h-[70vh] flex items-center justify-center"
+          className="min-h-[70vh] flex items-center justify-center pt-8 md:pt-0"
         >
           <Hero />
         </section>
 
-        {/* About Section */}
-        {/* About Section - pull it up */}
+        {/* About Section - HAPUS negative margin */}
         <section
           id="about"
-          className="relative -mt-10 md:-mt-32 scroll-mt-24 md:scroll-mt-32"
+          className="scroll-mt-20 md:scroll-mt-24 pt-8 md:pt-16"
         >
           <About />
         </section>
@@ -44,18 +42,24 @@ export default function App() {
         {/* Skills Section */}
         <section
           id="skills"
-          className="flex flex-col justify-start pt-10 pb-10 px-6 md:px-20 scroll-mt-24 md:scroll-mt-32"
+          className="flex flex-col justify-start px-6 md:px-20 scroll-mt-20 md:scroll-mt-24 pt-8 md:pt-16 pb-10"
         >
           <Skills />
         </section>
 
         {/* Projects Section */}
-        <section id="projects" className="pt-16 pb-16 px-6 md:px-20 scroll-mt-24 md:scroll-mt-32">
+        <section 
+          id="projects" 
+          className="px-6 md:px-20 scroll-mt-20 md:scroll-mt-24 pt-8 md:pt-16 pb-16"
+        >
           <Projects />
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="pt-16 pb-16 px-6 md:px-20 scroll-mt-24 md:scroll-mt-32">
+        <section 
+          id="contact" 
+          className="px-6 md:px-20 scroll-mt-20 md:scroll-mt-24 pt-8 md:pt-16 pb-16"
+        >
           <Contact />
         </section>
       </main>

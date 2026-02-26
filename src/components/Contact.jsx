@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
-import { FiGithub, FiLinkedin, FiInstagram } from "react-icons/fi";
+import { FiGithub, FiLinkedin } from "react-icons/fi";
 import { FaMedium } from "react-icons/fa";
 import { FiMessageSquare } from "react-icons/fi";
 import { FaRegEnvelope } from "react-icons/fa";
@@ -77,14 +77,13 @@ const Contact = () => {
           >
             <FiLinkedin size={26} />
           </a>
+          {/* Changed from Instagram to Email with mailto link */}
           <a 
-            href="https://www.instagram.com/arumditasufiana" 
-            target="_blank" 
-            rel="noopener noreferrer" 
+            href="mailto:work.sufiana24@gmail.com?subject=Contact%20from%20WebProfile" 
             className="social-icon"
-            title={t('contact.social.instagram')}
+            title={t('contact.social.email')}
           >
-            <FiInstagram size={26} />
+            <FaRegEnvelope size={26} />
           </a>
           <a 
             href="https://medium.com/@sufi.arum24" 
