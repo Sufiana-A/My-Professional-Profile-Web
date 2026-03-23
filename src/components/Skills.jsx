@@ -44,9 +44,9 @@ export default function Skills() {
     <>
       <div className="flex flex-wrap justify-center gap-3 mb-8">
         {[
-          { key: "system", icon: Workflow, label: skillsData.technical?.tabs?.system || "System Analysis & Design" },
+          { key: "system", icon: Workflow, label: skillsData.technical?.tabs?.system || "System Analysis" },
           { key: "business", icon: BarChart3, label: skillsData.technical?.tabs?.business || "Business Analysis" },
-          { key: "pm", icon: ClipboardList, label: skillsData.technical?.tabs?.pm || "Product & Project Management" },
+          { key: "pm", icon: ClipboardList, label: skillsData.technical?.tabs?.pm || "PMO / Project Coordinator" },
           { key: "web", icon: Code, label: skillsData.technical?.tabs?.web || "Web Development" },
         ].map(({ key, icon: Icon, label }) => (
           <button

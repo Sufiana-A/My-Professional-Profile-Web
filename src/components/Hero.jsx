@@ -6,7 +6,7 @@ import {
   FiLinkedin,
 } from "react-icons/fi";
 import { FaMedium } from "react-icons/fa";
-import { useTranslation } from "../hooks/useTranslation"; 
+import { useTranslation } from "../hooks/useTranslation";
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -14,37 +14,40 @@ const Hero = () => {
   const [professionIndex, setProfessionIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
+  const [loaded, setLoaded] = useState(false);
 
-  // Get professions array from translation
-  const professions = t('hero.professions') || [];
-  
-  // Typing effect
+  const professions = t("hero.professions") || [];
+  const descriptionText = t("hero.description");
+
+  useEffect(() => setLoaded(true), []);
+
+  // ✅ Stable Infinite Typing Loop
   useEffect(() => {
-    // If no professions or empty array, return early
-    if (!professions || professions.length === 0) return;
+    if (!professions.length) return;
 
-    const typingSpeed = isDeleting ? 50 : 100;
-    const pauseTime = 1200;
+    const currentWord = professions[professionIndex];
+    let timeout;
 
-    if (!isDeleting && charIndex === professions[professionIndex].length) {
-      setTimeout(() => setIsDeleting(true), pauseTime);
-      return;
+    if (!isDeleting) {
+      if (charIndex < currentWord.length) {
+        timeout = setTimeout(() => {
+          setTypedText(currentWord.substring(0, charIndex + 1));
+          setCharIndex((prev) => prev + 1);
+        }, 90);
+      } else {
+        timeout = setTimeout(() => setIsDeleting(true), 1400);
+      }
+    } else {
+      if (charIndex > 0) {
+        timeout = setTimeout(() => {
+          setTypedText(currentWord.substring(0, charIndex - 1));
+          setCharIndex((prev) => prev - 1);
+        }, 50);
+      } else {
+        setIsDeleting(false);
+        setProfessionIndex((prev) => (prev + 1) % professions.length);
+      }
     }
-
-    if (isDeleting && charIndex === 0) {
-      setIsDeleting(false);
-      setProfessionIndex((prev) => (prev + 1) % professions.length);
-    }
-
-    const timeout = setTimeout(() => {
-      setTypedText(
-        professions[professionIndex].substring(
-          0,
-          charIndex + (isDeleting ? -1 : 1)
-        )
-      );
-      setCharIndex((prev) => prev + (isDeleting ? -1 : 1));
-    }, typingSpeed);
 
     return () => clearTimeout(timeout);
   }, [charIndex, isDeleting, professionIndex, professions]);
@@ -52,106 +55,94 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-20 gap-24 md:gap-32 relative z-10 bg-transparent"
+      className="min-h-screen flex flex-col md:flex-row items-center justify-between 
+      px-6 md:px-16 lg:px-24 max-w-screen-xl mx-auto gap-12"
     >
-      {/* LEFT SIDE */}
-      <div className="flex-1 flex flex-col items-start justify-center text-white drop-shadow-md mt-8 md:mt-0 space-y-6 pb-8">
-        {/* TEXT */}
-        <div className="flex flex-col space-y-3 min-w-[20rem] md:min-w-[28rem]">
-          <h2 className="text-3xl md:text-5xl font-semibold text-gray-200 tracking-wide">
-            {t('hero.greeting')}
-          </h2>
+      {/* LEFT */}
+      <div
+        className={`flex-1 flex flex-col justify-center text-white space-y-6 
+        transition-all duration-1000 ${
+          loaded ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"
+        }`}
+      >
+        <h2 className="text-3xl md:text-5xl font-semibold text-gray-300">
+          {t("hero.greeting")}
+        </h2>
 
-          <div className="leading-none">
-            <h1 className="text-5xl md:text-7xl font-extrabold">
-              <span className="block text-green-400 drop-shadow-[0_0_15px_#22c55e]">
-                Sufiana
-              </span>
-              <span className="block text-white">Arumdita</span>
-            </h1>
-          </div>
-        </div>
+        <h1 className="text-5xl md:text-7xl font-extrabold leading-tight">
+          <span className="text-white">Sufiana </span>
+          <span className="text-green-400 glow-text">Arumdita</span>
+        </h1>
 
-        {/* PROFESSION (typed) */}
-        <h3 className="text-2xl md:text-3xl font-medium mt-2 md:mt-4 min-h-[2.5rem] md:min-h-[3rem]">
-          <span className="text-white">{typedText}</span>
-          <span className="text-green-400 animate-pulse">|</span>
+        {/* Typing */}
+        <h3 className="text-2xl md:text-3xl font-medium min-h-[1.6em] flex items-center">
+          <span className="whitespace-nowrap">{typedText}</span>
+          <span className="cursor-blink ml-1">|</span>
         </h3>
 
-        {/* STATUS */}
-        <ul className="flex flex-col space-y-2 mt-4">
-          {(t('hero.statuses') || []).map((status, i) => (
-            <li
-              key={i}
-              className={`flex items-center gap-2 font-medium ${
-                status.active ? "text-green-400" : "text-gray-400/60 italic"
-              }`}
-            >
-              <span
-                className={`w-3 h-3 rounded-full ${
-                  status.active
-                    ? "bg-green-400 animate-[pulseGlow_1.5s_ease-in-out_infinite] shadow-[0_0_8px_#22c55e]"
-                    : "bg-gray-600"
-                }`}
-              ></span>
-              {status.text}
-            </li>
-          ))}
+        <p className="text-sm md:text-base text-gray-300 max-w-lg leading-relaxed">
+          {descriptionText}
+        </p>
+
+        {/* Status */}
+        <ul className="space-y-3 mt-4">
+          <li className="flex items-center gap-3 text-green-400 font-medium">
+            <span className="bullet-glow shrink-0"></span>
+            <span>{t("hero.statuses.openToCollaborate")}</span>
+          </li>
+
+          <li className="flex items-center gap-3 text-green-400 font-medium">
+            <span className="bullet-glow shrink-0"></span>
+            <span>{t("hero.statuses.lookingFor")}</span>
+          </li>
         </ul>
 
-        {/* BUTTONS */}
+        {/* Buttons */}
         <div className="flex flex-wrap gap-4 mt-6">
           <a
             href="#contact"
-            className="flex items-center gap-2 px-6 py-3 border border-white rounded-md text-white hover:text-black hover:bg-white transition-all duration-300"
+            className="flex items-center gap-2 px-6 py-3 border border-white rounded-lg
+            transition-all duration-300 hover:bg-white hover:text-black hover:-translate-y-1"
           >
-            <FiMail size={20} /> {t('hero.buttons.getInTouch')}
+            <FiMail size={20} />
+            {t("hero.buttons.getInTouch")}
           </a>
 
           <a
             href="/portfolio/Sufiana Arumdita_Extended Portfolio.pdf"
             download
-            className="flex items-center gap-2 px-6 py-3 rounded-md bg-blue-600 text-white hover:bg-blue-700 hover:shadow-[0_0_16px_#3b82f6] transition-all duration-300"
+            className="flex items-center gap-2 px-6 py-3 bg-blue-600 rounded-lg
+            transition-all duration-300 hover:-translate-y-1 
+            hover:shadow-[0_0_20px_#3b82f6]"
           >
-            <FiDownload size={20} /> {t('hero.buttons.downloadSlidePortfolio')}
+            <FiDownload size={20} />
+            {t("hero.buttons.downloadSlidePortfolio")}
           </a>
         </div>
 
-        {/* SOCIAL ICONS */}
-        <div className="flex items-center gap-6 mt-8 text-white">
-          <a
-            href="https://github.com/Sufiana-A"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-icon"
-            title={t('hero.social.github')}
-          >
+        {/* Social without Wiggle */}
+        <div className="flex items-center gap-6 mt-8">
+          <a href="https://github.com/Sufiana-A" target="_blank" rel="noreferrer" className="social-icon" title={t('hero.social.github')}>
             <FiGithub size={26} />
           </a>
-          <a
-            href="https://linkedin.com/in/sufiana-arumdita-7a3310307/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-icon"
-            title={t('hero.social.linkedin')}
-          >
+
+          <a href="https://linkedin.com/in/sufiana-arumdita-7a3310307/" target="_blank" rel="noreferrer" className="social-icon" title={t('hero.social.linkedin')}>
             <FiLinkedin size={26} />
           </a>
-          <a
-            href="https://medium.com/@sufi.arum24"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-icon"
-            title={t('hero.social.medium')}
-          >
+
+          <a href="https://medium.com/@sufi.arum24" target="_blank" rel="noreferrer" className="social-icon" title={t('hero.social.medium')}>
             <FaMedium size={26} />
           </a>
         </div>
       </div>
 
-      {/* RIGHT SIDE - PROFILE IMAGE */}
-      <div className="flex-1 flex justify-center md:justify-end">
-        <div className="w-64 h-72 md:w-80 md:h-96 rounded-2xl overflow-hidden border-4 border-green-400 shadow-[0_0_25px_#22c55e]">
+      {/* RIGHT */}
+      <div
+        className={`flex-shrink-0 transition-all duration-1000 ${
+          loaded ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"
+        }`}
+      >
+        <div className="profile-wrapper">
           <img
             src="/image/profile.png"
             alt="Sufiana Profile"
@@ -160,34 +151,70 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Custom Animations */}
+      {/* Animations */}
       <style>{`
+        @keyframes glowPulse {
+          0%,100% { text-shadow: 0 0 12px #22c55e; }
+          50% { text-shadow: 0 0 25px #22c55e; }
+        }
+
+        @keyframes float {
+          0%,100% { transform: translateY(0px); }
+          50% { transform: translateY(-12px); }
+        }
+
         @keyframes pulseGlow {
-          0%, 100% {
+          0%,100% { 
             box-shadow: 0 0 6px #22c55e, 0 0 12px #22c55e;
-            opacity: 1;
           }
-          50% {
-            box-shadow: 0 0 12px #22c55e, 0 0 20px #22c55e;
-            opacity: 0.6;
+          50% { 
+            box-shadow: 0 0 12px #22c55e, 0 0 24px #22c55e;
           }
         }
 
-        @keyframes sway {
-          0%, 100% { transform: rotate(-4deg); }
-          50% { transform: rotate(4deg); }
+        @keyframes blink {
+          0%,50%,100% { opacity:1; }
+          25%,75% { opacity:0; }
+        }
+
+        @keyframes wiggle {
+          0%,100% { transform: rotate(0deg) scale(1); }
+          25% { transform: rotate(-8deg) scale(1.1); }
+          75% { transform: rotate(8deg) scale(1.1); }
+        }
+
+        .glow-text { animation: glowPulse 3s ease-in-out infinite; }
+
+        .profile-wrapper {
+          width: 20rem;
+          height: 24rem;
+          border-radius: 1.5rem;
+          overflow: hidden;
+          border: 4px solid #22c55e;
+          box-shadow: 0 0 30px #22c55e;
+          animation: float 4s ease-in-out infinite;
+        }
+
+        .bullet-glow {
+          width: 0.75rem;
+          height: 0.75rem;
+          border-radius: 50%;
+          background: #22c55e;
+          animation: pulseGlow 1.5s ease-in-out infinite;
+        }
+
+        .cursor-blink {
+          color: #22c55e;
+          animation: blink 1s infinite;
         }
 
         .social-icon {
           transition: all 0.3s ease;
-          animation: sway 3s ease-in-out infinite;
-          display: inline-flex;
         }
 
         .social-icon:hover {
           color: #22c55e;
-          transform: scale(1.2) rotate(0deg);
-          text-shadow: 0 0 10px #22c55e;
+          animation: wiggle 0.4s ease;
         }
       `}</style>
     </section>

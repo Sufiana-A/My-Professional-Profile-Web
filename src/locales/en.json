@@ -10,21 +10,15 @@
   "hero": {
     "greeting": "Hi, I am",
     "professions": [
-      "Aspiring System Analyst",
-      "Product & Project Management Enthusiast",
-      "Web Developer",
-      "Writer"
+      "System Analyst",
+      "Agile Project & PMO Exposure",
+      "Data-Driven Problem Solver"
     ],
-    "statuses": [
-      {
-        "text": "Open to Collaborate",
-        "active": true
-      },
-      {
-        "text": "Looking for Opportunities as Project Management Officer",
-        "active": true
-      }
-    ],
+    "description": "I also build web-based solutions and occasionally write about technology, project management, and structured thinking.",
+    "statuses": {
+      "openToCollaborate": "Open to Collaborate",
+      "lookingFor": "Looking for Opportunities: Jr System Analyst | Jr Business Analyst | PMO/Project Coordinator | Technical Writer"
+    },
     "buttons": {
       "getInTouch": "Get in Touch",
       "downloadSlidePortfolio": "Extended Portfolio"
@@ -32,7 +26,6 @@
     "social": {
       "github": "GitHub",
       "linkedin": "LinkedIn",
-      "instagram": "Instagram",
       "medium": "Medium"
     }
   },
@@ -40,38 +33,47 @@
     "title": "About Me",
     "paragraphs": [
       {
-        "text": "Hello! I'm Sufiana, a fresh graduate in Information Systems with a strong passion for System Analysis, Product Management, and Project Management. I believe that great systems and products are built through a deep understanding of user needs and effective processes.",
+        "text": "Hello! I'm Sufiana, an Information Systems graduate with a strong focus on System Analysis and structured project execution. I'm particularly interested in how data, clear requirements, and well-defined processes contribute to building effective digital solutions.",
         "highlights": [
           {"text": "Sufiana", "type": "green"},
-          {"text": "fresh graduate in Information Systems", "type": "bold"},
+          {"text": "Information Systems graduate", "type": "bold"},
           {"text": "System Analysis", "type": "green"},
-          {"text": "Product Management", "type": "green"},
-          {"text": "Project Management", "type": "green"}
+          {"text": "structured project execution", "type": "bold"},
+          {"text": "data, clear requirements, and well-defined processes", "type": "green"},
+          {"text": "effective digital solutions", "type": "bold"}
         ]
       },
       {
-        "text": "I'm a Certified System Analyst (BNSP) with hands-on experience in managing digital projects and products. During my internship as an Associate Product Manager at a startup, I collaborated with cross-functional teammates using the Agile methodology — from product planning and requirements analysis to ensuring that every feature was developed with clear and measurable objectives. I also served as a Project Manager in website development project, where I learned how to coordinate teams and maintain a balance between time, quality, and resources.",
+        "text": "As a Certified System Analyst (BNSP), I have been involved in managing digital initiatives in dynamic and professional IT environments, working closely with cross-functional teams under Agile practices. My experience spans product planning, requirement analysis, documentation, and ensuring that development objectives remain clear and measurable.",
         "highlights": [
           {"text": "Certified System Analyst (BNSP)", "type": "green"},
+          {"text": "digital initiatives in dynamic and professional IT environments", "type": "bold"},
+          {"text": "cross-functional teams", "type": "bold"},
+          {"text": "Agile practices", "type": "green"},
+          {"text": "product planning, requirement analysis, documentation", "type": "green"},
+          {"text": "clear and measurable", "type": "bold"}
+        ]
+      },
+      {
+        "text": "During my internship as an Associate Product Manager and while leading a website development project, I developed a practical understanding of stakeholder coordination, scope control, and balancing time, quality, and resources — while maintaining structured documentation throughout the project lifecycle.",
+        "highlights": [
           {"text": "Associate Product Manager", "type": "bold"},
-          {"text": "Agile methodology", "type": "bold"},
-          {"text": "Project Manager", "type": "bold"}
+          {"text": "website development project", "type": "bold"},
+          {"text": "stakeholder coordination, scope control", "type": "green"},
+          {"text": "balancing time, quality, and resources", "type": "green"},
+          {"text": "structured documentation", "type": "bold"},
+          {"text": "project lifecycle", "type": "bold"}
         ]
       },
       {
-        "text": "I'm known as someone who is efficient, collaborative, and highly adaptable. I love learning new things, especially discovering how technology can be used to optimize workflows. I enjoy exploring AI and the latest technologies to develop tools that help automate tasks, and create simple batch scripts to simplify repetitive tasks and improve productivity.",
+        "text": "I enjoy translating complex needs into organized system flows and actionable plans. I also build web-based tools and explore automation and AI-powered solutions to streamline repetitive processes and improve operational efficiency.",
         "highlights": [
-          {"text": "efficient, collaborative, and highly adaptable", "type": "bold"},
-          {"text": "optimize workflows", "type": "green"},
-          {"text": "AI and the latest technologies", "type": "bold"},
-          {"text": "simple batch scripts", "type": "bold"}
-        ]
-      },
-      {
-        "text": "For me, being a system analyst, project manager, or product manager is not just about leading a team, but about delivering solutions that truly make an impact through the right technology and efficient processes. I'm always excited to learn, grow, and contribute to building systems and products that create positive change.",
-        "highlights": [
-          {"text": "solutions that truly make an impact", "type": "green"},
-          {"text": "positive change", "type": "bold"}
+          {"text": "translating complex needs into organized system flows", "type": "green"},
+          {"text": "actionable plans", "type": "bold"},
+          {"text": "web-based tools", "type": "bold"},
+          {"text": "automation and AI-powered solutions", "type": "green"},
+          {"text": "streamline repetitive processes", "type": "bold"},
+          {"text": "operational efficiency", "type": "green"}
         ]
       }
     ]
@@ -193,22 +195,15 @@
   },
   "projects": {
     "title": "Projects",
-    "categories": {
-      "All": "All",
-      "System Analysis & Design": "System Analysis & Design",
-      "Business Analysis": "Business Analysis",
-      "Web Development": "Web Development",
-      "Product & Project Management": "Product & Project Management"
-    },
+    "noProjects": "No projects match the selected filters",
     "filters": {
-      "all": "All"
-    },
-    "resume": {
-      "button": "Resume",
-      "comingSoon": "📄 Resume for {category} will be available soon!",
-      "notAvailable": "Resume for {category} is not available yet. Please check back later.",
-      "error": "Unable to download resume for {category}. Please try again later.",
-      "comingSoonAlt": "Resume for {category} is coming soon!"
+      "All": "All",
+      "SA": "SA",
+      "BA": "BA", 
+      "PMO": "PMO",
+      "Web-Based": "Web-Based",
+      "Data": "Data",
+      "TechWriting": "Tech Writing"
     },
     "modal": {
       "description": "Description",
@@ -218,54 +213,206 @@
       "close": "Close"
     },
     "items": {
-      "helpdeskMonitoring": {
-        "title": "Helpdesk Monitoring System",
-        "description": "Designed an analytical dashboard for monitoring answered and unanswered questions on WhatsApp-based helpdesk using Tableau integration.",
-        "fullDescription": "This comprehensive monitoring system provides real-time analytics for helpdesk performance. The dashboard integrates with Tableau to visualize key metrics including response times, question categories, and agent performance. The system helps identify bottlenecks and improve customer service efficiency through data-driven insights.",
-        "tools": "Lucidchart, Tableau, PostgreSQL"
-      },
-      "toeflStructure": {
-        "title": "TOEFL ITP Structure & Written Expression App",
-        "description": "Developed system analysis and ERD, BPMN, and user flow documentation for a web-based TOEFL practice platform.",
-        "fullDescription": "A comprehensive TOEFL preparation platform focusing on Structure and Written Expression sections. The system includes detailed ERD for database design, BPMN for process visualization, and user flow documentation to ensure intuitive navigation. Features include practice tests, progress tracking, and performance analytics.",
-        "tools": "Draw.io, Notion, MySQL"
-      },
-      "helpdeskVisualization": {
-        "title": "Helpdesk Performance Visualization",
-        "description": "Conducted data analysis and visualization of helpdesk performance trends, highlighting unanswered categories using Tableau integrated with cloud database.",
-        "fullDescription": "Developed interactive dashboards that track helpdesk performance metrics in real-time. The visualization system identifies patterns in unanswered questions, peak inquiry times, and category-specific trends. Integrated with cloud database for live updates and automated reporting capabilities.",
-        "tools": "Tableau, PostgreSQL, Looker Studio"
-      },
-      "brainysResearch": {
-        "title": "Market & User Needs Research for Brainys LMS",
-        "description": "Performed market and user needs analysis to define key features and performance metrics for Brainys Learning Management System.",
-        "fullDescription": "Conducted comprehensive market research involving 500+ potential users to identify key requirements for an innovative LMS. Analyzed competitor platforms, conducted user interviews, and created detailed personas. The research directly influenced feature prioritization and UX design decisions.",
-        "tools": "Google Forms, Excel, Power BI"
-      },
       "toeflPlatform": {
         "title": "TOEFL ITP Practice Platform",
-        "description": "Built a Laravel-based monolithic web app for TOEFL practice with modules, gamification, and performance dashboards.",
-        "fullDescription": "A full-featured TOEFL preparation platform with modular learning paths, gamification elements like badges and leaderboards, and comprehensive performance dashboards. Features include timed practice tests, instant scoring, detailed analytics, and personalized study recommendations.",
-        "tools": "Laravel, MySQL, Tailwind CSS, JavaScript"
+        "description": "Integrated course management website application for TOEFL ITP enrollment, payment, and self-learning modules.",
+        "fullDescription": "The registration process for the TOEFL ITP course at LaC, from enrollment to payment before the start of learning, is currently not integrated. Registration is done via Google Form, proof of payment upload is done in a separate form, confirmation is done manually via WhatsApp, and data management is handled through Excel. Additionally, there is a need to integrate with a self-learning module within a single application. As a result, the process is prone to human error (incorrect input, duplicate data) and is inefficient—participants must wait for manual confirmation, while the administrative burden increases drastically as the number of registrants continues to rise. This project aims to build an integrated course management module that connects the enrollment-to-payment process with self-learning in one application.\n\nI developed the back-end of this course management module using Laravel, with API testing conducted through Postman. The development followed an iterative-incremental approach, during which I designed various UML diagrams to guide the process, including use case diagrams, activity diagrams, sequence diagrams, and class diagrams, complemented by use case scenarios to detail the flow of each use case. These artifacts helped ensure that the system architecture aligned with the functional requirements and supported a structured, phased delivery.",
+        "tools": "Laravel, MySQL, Postman, Visual Paradigm, Google Docs, Ms.Word",
+        "tags": ["Web-Based", "SA", "Tech Writing"],
+        "images": {
+          "web": [
+            {"src": "./image/toefl-home.jpg", "caption": "Homepage"}
+          ],
+          "sa": [
+            {"src": "./image/toefl-erd.jpg", "caption": "ERD Database"},
+            {"src": "./image/toefl-activity.jpg", "caption": "Activity Diagram"}
+          ],
+          "techWriting": [
+            {"src": "./image/toefl-api-spec.jpg", "caption": "API Specification Table"},
+            {"src": "./image/toefl-postman.jpg", "caption": "Postman Collection"}
+          ]
+        }
+      },
+      "netflixDtDashboard": {
+        "title": "NETFLIX Shows Data Breakdown Dashboard",
+        "description": "Data visualization dashboard exploring Netflix content trends, genres, and release patterns.",
+        "fullDescription": "This project explores Netflix's content library through data visualization, uncovering trends in genres, release years, country distributions, and ratings. The goal was to gain insights into how Netflix's content strategy has evolved over time.\n\nUsing a publicly available dataset from Kaggle, I performed data cleaning and transformation using Excel to prepare the data for analysis. I then built an interactive dashboard using Power BI to visualize key metrics—such as content distribution by country, genre popularity, release trends, and ratings breakdown.\n\nThe dashboard enables users to explore patterns in Netflix's catalog, providing a clear view of how content has diversified across regions and categories. This project demonstrates my ability to work with real-world datasets, perform exploratory data analysis, and translate raw data into meaningful visual insights.",
+        "tools": "Power BI, Excel",
+        "images": {
+          "data": [
+            {"src": "./image/Netflix-Data-Analysis/NETFLIX-Shows-Data-Breakdown-Dashboard.png", "caption": "NETFLIX Shows Dashboard - Content Distribution & Trends"}
+          ]
+        },
+        "tags": ["Data"]
+      },
+      "helpdeskMonitoring": {
+        "title": "Helpdesk Monitoring Dashboard - Tableau",
+        "description": "Analytical dashboard for monitoring WhatsApp-based helpdesk performance using Tableau.",
+        "fullDescription": "The LAA FRI WhatsApp helpdesk is currently managed manually, making it difficult for Admins to monitor the number of inquiries, response status, and trends. Manual data is often inaccurate and fragmented, hindering decision-making for service improvements. Key issues include limited real-time monitoring, lack of trend analysis, and inefficient decision-making due to unintegrated data. As a result, many inquiries go unnoticed, and recurring issues persist.\n\nThis project builds an automated monitoring system using Tableau, with data designed based on SLA requirements and structured within a SQL database. I identified business needs, designed the star schema, and developed an interactive dashboard that provides real-time visibility to Admins.\n\nCurrently, the dashboard uses synthetic data generated with Python based on operational helpdesk scenarios, as direct access to real-time data is not yet available. However, the SQL database structure and star schema are designed to be ready for future integration with helpdesk applications—such as a chatbot or ticketing system—enabling real-time data once the source becomes available. The dashboard design was validated through a demo session with LAA representatives, who confirmed that the visualizations and metrics align with their operational needs. While the current dashboard uses synthetic data, the design has been approved as meeting their requirements.",
+        "tools": "Tableau, SQL, Python, Draw.io, Ms.Word, Google Docs",
+        "images": {
+          "ba": [
+            {"src": "./image/Tableau-Monitoring-Helpdesk/BA-1.png", "caption": "Analisis Kebutuhan SLA dan Masalah Helpdesk"},
+            {"src": "./image/Tableau-Monitoring-Helpdesk/BA-2.png", "caption": "Identifikasi 3 Masalah Kunci & Alternatif Solusi"}
+          ],
+          "data": [
+            {"src": "./image/Tableau-Monitoring-Helpdesk/Star-Schema-Dashboard-LAA.drawio.png", "caption": "Star Schema untuk Data Warehouse"},
+            {"src": "./image/Tableau-Monitoring-Helpdesk/ERD-chat_system-monitoring-helpdesk-star-schema.png", "caption": "ERD Star Schema - Database SQL"},
+            {"src": "./image/Tableau-Monitoring-Helpdesk/dashboard1-Data.png", "caption": "Dashboard Overview - SLA Performance"},
+            {"src": "./image/Tableau-Monitoring-Helpdesk/dashboard2-Data.png", "caption": "Tren Pertanyaan per Kategori"},
+            {"src": "./image/Tableau-Monitoring-Helpdesk/dashboard3-Data.png", "caption": "Status Pertanyaan & Waktu Respons"},
+            {"src": "./image/Tableau-Monitoring-Helpdesk/dashboard4-Data.png", "caption": "Detail Performa per Admin"},
+            {"src": "./image/Tableau-Monitoring-Helpdesk/dashboard5-Data.png", "caption": "Analisis Tren Time Series"}
+          ]
+        }
+      },
+      "financialTracker": {
+        "title": "Personal Financial Tracker",
+        "description": "Excel-based personal finance tracker for income, expense tracking, budgeting, and forecasting.",
+        "fullDescription": "This personal finance tracker was developed to help manage daily income and expenses, with a structured approach to budgeting and financial planning. The tracker is designed to provide clear visibility into cash flow, enabling users to monitor spending patterns, track savings, and make informed financial decisions.\n\nI designed the tracker structure based on personal financial needs, with configurable categories for income and expense streams—distinguishing sources such as bank accounts or other income channels. The budgeting framework allows users to set custom percentage allocations, managed within a dedicated category management section. This analytical approach reflects a business analysis perspective in understanding user needs and defining functional requirements.\n\nThe dashboard suite consists of two main views. The Financial Overview Dashboard provides a high-level snapshot of daily and monthly financial activity, highlighting income vs expense trends and budget allocation. The Financial Analysis & Forecasting Dashboard offers deeper insights, including target vs actual budget tracking, expense category breakdowns, and predictive forecasting based on historical patterns. Structured within Excel using tables, formulas, and pivot tables, this tracker delivers a practical solution for personal financial management—combining structured data design with intuitive visualizations to support better decision-making.",
+        "tools": "Ms.Excel",
+        "images": {
+          "ba": [
+            {"src": "./image/Financial-Tracker/Income&Expense-Cash-Flow.png", "caption": "Struktur Kategori & Alokasi Budgeting yang Dapat Dikustomisasi"}
+          ],
+          "data": [
+            {"src": "./image/Financial-Tracker/Financial-Overview-Dashboard.png", "caption": "Financial Overview Dashboard - Snapshot Keuangan Harian & Bulanan"},
+            {"src": "./image/Financial-Tracker/Financial-Analysis&Forecasting-Dashboard.png", "caption": "Financial Analysis & Forecasting Dashboard - Analisis Detail & Prediksi"}
+          ]
+        },
+        "tags": ["BA", "Data"]
+      },
+      "travelWebPM": {
+        "title": "Travel Website Project",
+        "description": "Conducted data analysis and visualization of helpdesk performance trends, highlighting unanswered categories using Tableau integrated with cloud database.",
+        "fullDescription": "Developed interactive dashboards that track helpdesk performance metrics in real-time. The visualization system identifies patterns in unanswered questions, peak inquiry times, and category-specific trends. Integrated with cloud database for live updates and automated reporting capabilities.",
+        "tools": "Laravel, MySQL, Google Docs, Gantt Pro, Spreadsheet",
+        "images": {
+          "web": [
+            {"src": "./image/helpdesk-analysis.png", "caption": "Analytics Dashboard"},
+            {"src": "./image/helpdesk-analysis-2.png", "caption": "Trend Analysis"},
+            {"src": "./image/helpdesk-analysis-3.png", "caption": "Performance Metrics"},
+            {"src": "./image/helpdesk-dashboard-4.png", "caption": "Real-time Monitoring"}
+          ],
+          "wb-based": [
+            {"src": "./image/helpdesk-analysis-2.png", "caption": "Business Requirements Document"}
+          ],
+          "pmo": [
+            {"src": "./image/helpdesk-analysis-3.png", "caption": "Data Visualization Dashboard"}
+          ]
+        }
+      },
+      "professionalSyrvey": {
+        "title": "Data Professional Survey Dashboard",
+        "description": "Interactive dashboard analyzing survey data from data professionals on career trends, tools, and satisfaction.",
+        "fullDescription": "This project analyzes survey data collected from data professionals to understand career trends, preferred tools, salary ranges, and job satisfaction levels. The dataset was sourced from a publicly available survey and processed to extract meaningful insights.\n\nUsing Excel, I cleaned and transformed the data to prepare it for analysis. I then built an interactive dashboard using Power BI to visualize key findings—including average salary by job title, preferred programming languages, work-life balance satisfaction, and career transition patterns.\n\nThe dashboard provides a comprehensive overview of the data professional landscape, helping viewers understand industry trends and what factors contribute to career satisfaction. This project showcases my ability to work with survey data, perform data wrangling, and create impactful visualizations.",
+        "tools": "Power BI, Ms.Excel",
+        "images": {
+          "data": [
+            {"src": "./image/Professional-Survey-Data-Analysis/Data-Professional-Survey-Dashboard.png", "caption": "Data Professional Survey Dashboard - Career Trends & Insights"}
+          ]
+        },
+        "tags": ["Data"]
+      },
+      "brainysProject": {
+        "title": "Brainys Project",
+        "description": "Product Requirement Document and project management for AI-powered syllabus generation platform.",
+        "fullDescription": "Brainys Oasys is an AI-powered syllabus generation system designed to help Indonesian teachers create syllabus components quickly and accurately. The platform addresses the need for efficient, adaptable syllabus creation that aligns with recent educational standards in Indonesia.\n\nDuring my internship as an Associate Product Manager, I collaborated with cross-functional teams—including design, data, developers, and the Product Manager—to define and document the product requirements. I created the Product Requirement Document (PRD) that outlined the system's key features, including AI-powered syllabus generation, adaptability to Indonesian syllabus formats, user-friendly interface, and quick output. I also developed user personas to ensure the product was designed with the end user in mind.\n\nI led daily standup meetings to track project progress, identify blockers, and ensure alignment across teams. During these sessions, I documented Minutes of Meeting (MoM) to capture key information, including what each team member had completed, what they planned to work on next, and any blockers they were facing. These records helped maintain transparency and provided clear follow-up for subsequent meetings.\n\nProgress was tracked using a kanban board, where tasks were visualized from backlog to completion. I also contributed to system analysis activities, collaborating with the team to design use case diagrams, activity diagrams, and document functional requirements—ensuring that business needs were translated into clear technical specifications.\n\nThrough structured documentation and consistent project tracking, I helped ensure that Brainys Oasys development remained on schedule, delivering a solution that meets the needs of Indonesian teachers while maintaining accountability throughout the project lifecycle.",
+        "tools": "kanban Board, Miro, Visual Paradigm, Google Docs, Spreadsheet, Canva",
+        "images": {
+          "sa": [
+            {"src": "./image/Brainys-Project/Func-Req-Brainys-Features-SA-1.png", "caption": "Functional Requirements - Spesifikasi Fitur"},
+            {"src": "./image/Brainys-Project/Business-Model-Brainys-Oasys-revise-SA-2.png", "caption": "Business Model Canvas"},
+            {"src": "./image/Brainys-Project/Use-Case-Brainys-SA-3.png", "caption": "Use Case Diagram"},
+            {"src": "./image/Brainys-Project/Activity-Diagram-Templat-Bahan-Ajar-SA-4.png", "caption": "Activity Diagram - Templat Bahan Ajar"},
+            {"src": "./image/Brainys-Project/Activity-Diagram-Templat-Bahan-Materi-Gamifikasi-SA-5.png", "caption": "Activity Diagram - Materi Gamifikasi"},
+            {"src": "./image/Brainys-Project/Activity-Diagram-Templat-Alur-Tujuan-Pembelajaran-SA-6.png", "caption": "Activity Diagram - Alur Tujuan Pembelajaran"}
+          ],
+          "ba": [
+            {"src": "./image/Brainys-Project/CustNeeds-ExpectResult-Personas-BA-1.png", "caption": "User Personas & Customer Needs Analysis"}
+          ],
+          "pmo": [
+            {"src": "./image/Brainys-Project/Board-kanban-PMO-1.jpg", "caption": "Kanban Board - Sprint Progress Tracking"},
+            {"src": "./image/Brainys-Project/Board-kanban-PMO-2.jpeg", "caption": "Kanban Board - Task Status"}
+          ],
+          "techWriting": [
+            {"src": "./image/Brainys-Project/Blur_MoM-DailyStandup-Brainys-PMO-TW-1.png", "caption": "Minutes of Meeting - Daily Standup (Progress, Plans, Blockers)"}
+          ]
+        },
+        "tags": ["SA", "BA", "PMO", "Tech Writing"]
       },
       "blogWebsite": {
-        "title": "Blog Website with EJS Template",
+        "title": "Golf Leaderboard & Schedule Website",
         "description": "Developed a blog system using Express.js and EJS, featuring CRUD operations and responsive layouts.",
         "fullDescription": "A modern blog platform built with Node.js and Express, featuring user authentication, post management, comments system, and categories. The responsive design ensures optimal viewing across all devices, with EJS templates providing dynamic content rendering and server-side includes.",
-        "tools": "Express.js, EJS, Bootstrap"
+        "tools": "Python, Flask, Jinja, RapidAPI, Jupyter Notebook",
+        "images": {
+          "web": [
+            {"src": "./image/blog-app.png", "caption": "Blog Homepage"},
+            {"src": "./image/blog-app-2.png", "caption": "Article Page"},
+            {"src": "./image/blog-admin.png", "caption": "Admin Dashboard"}
+          ]
+        }
       },
-      "brainysLMS": {
-        "title": "Brainys Learning Management System",
+      "dedikasiLMS": {
+        "title": "DEDIKASI Learning Management System",
         "description": "Acted as Associate Product Manager; created PRDs and coordinated Agile sprints for LMS development with cross-functional teams.",
         "fullDescription": "Led product development for an innovative LMS platform, managing the entire product lifecycle from concept to launch. Created detailed PRDs, user stories, and acceptance criteria. Coordinated with design, development, and QA teams across multiple Agile sprints, ensuring timely delivery of key features.",
-        "tools": "Notion, Jira, Figma"
+        "tools": "Notion, Jira, Figma",
+        "images": {
+          "web": [
+            {"src": "./image/brainys-lms.png", "caption": "LMS Platform Interface"},
+            {"src": "./image/brainys-lms-2.png", "caption": "Course Management"}
+          ],
+          "pmo": [
+            {"src": "./image/brainys-roadmap.png", "caption": "Product Roadmap"},
+            {"src": "./image/brainys-sprints.png", "caption": "Sprint Planning Board"}
+          ]
+        }
       },
       "schoolSystem": {
-        "title": "School Management System (OASYS Division)",
-        "description": "Managed project milestones, backlog prioritization, and sprint reviews under Scrum framework for system delivery.",
-        "fullDescription": "Project manager for a comprehensive school management system serving multiple institutions. Facilitated Scrum ceremonies including daily standups, sprint planning, and retrospectives. Managed stakeholder expectations, tracked project metrics, and ensured successful delivery of major milestones.",
-        "tools": "Asana, Notion, Miro"
+        "title": "OASYS School Project",
+        "description": "Comprehensive school management system for teachers, principals, admin staff, and parents.",
+        "fullDescription": "Oasys School is an integrated school management system designed to streamline academic and administrative tasks for educators, principals, staff, and parents. The platform addresses the need for efficiency in managing teaching materials, student data, attendance, digital report cards, and administrative approvals.\n\nDuring my internship as an Associate Product Manager, I led product definition and documentation for Oasys School. I created the Product Requirement Document (PRD) outlining key features—QR code-based attendance, digital report cards, teaching material management, and multi-platform accessibility—and developed user personas for four user roles: subject teachers, homeroom teachers, principals, and administrative staff. I also mapped the business model to align user needs with product features. The PRD and functional requirements spanned nearly 100 pages, reflecting the complexity of the system  and the comprehensive planning required.\n\nI led daily standup meetings to track progress and document Minutes of Meeting (MoM), capturing completed tasks, next steps, and blockers. For system analysis,  I designed multiple activity diagrams covering various workflows—including creating teaching materials, managing attendance, and digital report card grades, among others—to translate business needs into clear technical specifications. I also developed a comprehensive manual book and guideline for end users across all roles. Through structured documentation and consistent project tracking, I ensured Oasys School development remained on schedule, delivering a solution that enhances operational efficiency for schools.",
+        "tools": "Kanban Board, Miro, Visual Paradigm, Google Docs, Canva",
+        "images": {
+          "sa": [
+            {"src": "./image/OASYS-School-Project/Oasys-School-(Desktop)-Business-Flow-SA-1.png", "caption": "Business Flow - Desktop Version"},
+            {"src": "./image/OASYS-School-Project/Oasys-School-(Mobile)-Business-Flow-SA-2.png", "caption": "Business Flow - Mobile Version"},
+            {"src": "./image/OASYS-School-Project/Funct-Req-OASYS-School-Features-SA-3.png", "caption": "Functional Requirements - Spesifikasi Fitur"},
+            {"src": "./image/OASYS-School-Project/Activity-Diagram-Membuat-Materi-Pembelajaran-SA-7.png", "caption": "Activity Diagram - Membuat Materi Pembelajaran"},
+            {"src": "./image/OASYS-School-Project/Activity-Diagram-Mengatur-Absensi-Murid-SA-6.png", "caption": "Activity Diagram - Mengatur Absensi Murid"},
+            {"src": "./image/OASYS-School-Project/Activity-Diagram-Mengelola-nilai-di-Raport-Digital-SA-5.png", "caption": "Activity Diagram - Mengelola Nilai di Raport Digital"}
+          ],
+          "ba": [
+            {"src": "./image/OASYS-School-Project/PRD-OASYS-School-Cover.png", "caption": "PRD Cover - Product Requirement Document (nearly 100 pages of documentation)"},
+            {"src": "./image/OASYS-School-Project/BA-1.png", "caption": "User Personas & Customer Needs Analysis"}
+          ],
+          "pmo": [
+            {"src": "./image/OASYS-School-Project/Blur_MoM-DailyStandup-Oasys-School-PMO-TW-1.png", "caption": "Minutes of Meeting - Daily Standup"}
+          ],
+          "techWriting": [
+            {"src": "./image/OASYS-School-Project/Manual-Book-Guideline-OASYS-School-Tech-Writing-1.png", "caption": "Manual Book & Guideline"}
+          ]
+        },
+        "tags": ["SA", "BA", "PMO", "Tech Writing"]
+      },
+      "totalPayPrediction": {
+        "title": "Transjakarta Total Pay Prediction with ARIMA",
+        "description": "Built an end-to-end data analytics and forecasting pipeline using Transjakarta transaction data from Kaggle, applying data cleaning, synthetic time-series expansion, and ARIMA modeling.",
+        "fullDescription": "This project was developed to demonstrate an end-to-end data analytics and forecasting pipeline using Transjakarta transaction data sourced from Kaggle. The original dataset contained only a very limited number of observations, making it insufficient for time series modeling such as ARIMA. In real-world scenarios, analysts often face incomplete or limited data, so this project addresses that challenge by applying data cleaning, aggregation, and synthetic time-series expansion to enable meaningful forecasting. The objective was not only to generate predictions but also to showcase a structured analytical approach that reflects real data analysis workflows.\n\nI started by cleaning the raw transaction-level dataset, including handling missing values, removing duplicate records based on transaction ID, and ensuring consistent data types. The data was then aggregated into daily revenue to form a proper time series. Due to the limited number of original observations, I implemented a synthetic data generation approach using controlled noise to extend the dataset while preserving realistic patterns. After preparing the data, I conducted exploratory analysis, performed stationarity testing, and built an ARIMA model to capture temporal dependencies. The entire workflow was structured in a reproducible notebook, reflecting professional practices such as iterative analysis, clear documentation, and organized data pipelines.\n\nThe outputs of this project include a cleaned transaction dataset, an expanded time-series dataset with a synthetic data indicator, and forecasting results saved into CSV files, including both test predictions and a 14-day future forecast. Supporting visualizations such as time series plots and forecast comparisons were also generated to aid interpretation. The ARIMA model produced relatively stable forecasts around the recent equilibrium level, indicating that no strong temporal patterns were detected in the data.",
+        "tools": "Python, Pandas, Matplotlib, ARIMA, Kaggle",
+        "images": {
+          "data": [
+            {"src": "./image/school-dashboard.png", "caption": "Total Pay Forecast Visualization"}
+          ]
+        }
       }
+    },
+    "scroll": {
+      "swipe": "Swipe to see more",
+      "click": "Click to explore",
+      "end": "You've reached the end"
     }
   },
   "contact": {
@@ -285,7 +432,7 @@
     "social": {
       "github": "GitHub",
       "linkedin": "LinkedIn",
-      "instagram": "Instagram",
+      "email": "Email",
       "medium": "Medium"
     }
   },

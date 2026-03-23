@@ -180,9 +180,10 @@ const Contact = () => {
       </motion.form>
 
       <style>{`
-        @keyframes sway {
-          0%, 100% { transform: rotate(-4deg); }
-          50% { transform: rotate(4deg); }
+        @keyframes wiggle {
+          0%,100% { transform: rotate(0deg) scale(1); }
+          25% { transform: rotate(-8deg) scale(1.1); }
+          75% { transform: rotate(8deg) scale(1.1); }
         }
         @keyframes float {
           0%, 100% { transform: translateY(0); }
@@ -190,13 +191,11 @@ const Contact = () => {
         }
         .social-icon {
           transition: all 0.3s ease;
-          animation: sway 3s ease-in-out infinite;
           display: inline-flex;
         }
         .social-icon:hover {
           color: #22c55e;
-          transform: scale(1.2) rotate(0deg);
-          text-shadow: 0 0 10px #22c55e;
+          animation: wiggle 0.4s ease;
         }
         .animate-float {
           animation: float 3s ease-in-out infinite;

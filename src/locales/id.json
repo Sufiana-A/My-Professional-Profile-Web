@@ -10,21 +10,15 @@
   "hero": {
     "greeting": "Halo, saya",
     "professions": [
-      "Aspiring System Analyst",
-      "Product & Project Management Enthusiast",
-      "Web Developer",
-      "Penulis"
+      "System Analyst",
+      "Agile Project & PMO Exposure",
+      "Data-Driven Problem Solver"
     ],
-    "statuses": [
-      {
-        "text": "Terbuka untuk Kolaborasi",
-        "active": true
-      },
-      {
-        "text": "Mencari Peluang sebagai Project Management Officer",
-        "active": true
-      }
-    ],
+    "description": "Saya juga membangun solusi berbasis web dan sesekali menulis tentang teknologi, manajemen proyek, dan pemikiran terstruktur.",
+    "statuses": {
+      "openToCollaborate": "Terbuka untuk Kolaborasi",
+      "lookingFor": "Mencari Peluang: Jr System Analyst | Jr Business Analyst | PMO/Project Coordinator | Technical Writer"
+    },
     "buttons": {
       "getInTouch": "Hubungi Saya",
       "downloadSlidePortfolio": "Portofolio"
@@ -32,49 +26,57 @@
     "social": {
       "github": "GitHub",
       "linkedin": "LinkedIn",
-      "instagram": "Instagram",
       "medium": "Medium"
     }
   },
   "about": {
     "title": "Tentang Saya",
     "paragraphs": [
-        {
-          "text": "Halo! Saya Sufiana, seorang lulusan baru Sistem Informasi dengan ketertarikan kuat pada Analisis Sistem, Manajemen Produk, dan Manajemen Proyek. Saya percaya bahwa sistem dan produk yang baik dibangun melalui pemahaman mendalam tentang kebutuhan pengguna dan proses yang efektif.",
-          "highlights": [
-            {"text": "Sufiana", "type": "green"},
-            {"text": "lulusan baru Sistem Informasi", "type": "bold"},
-            {"text": "Analisis Sistem", "type": "green"},
-            {"text": "Manajemen Produk", "type": "green"},
-            {"text": "Manajemen Proyek", "type": "green"}
-          ]
-        },
-        {
-          "text": "Saya adalah System Analyst Bersertifikat (BNSP) dengan pengalaman praktis dalam mengelola proyek dan produk digital. Selama magang sebagai Associate Product Manager di sebuah startup, saya berkolaborasi dengan tim lintas fungsi menggunakan metodologi Agile — mulai dari perencanaan produk dan analisis kebutuhan hingga memastikan setiap fitur dikembangkan dengan tujuan yang jelas dan terukur. Saya juga pernah menjabat sebagai Project Manager dalam proyek pengembangan website, di mana saya belajar bagaimana mengkoordinasi tim dan menjaga keseimbangan antara waktu, kualitas, dan sumber daya.",
-          "highlights": [
-            {"text": "System Analyst Bersertifikat (BNSP)", "type": "green"},
-            {"text": "Associate Product Manager", "type": "bold"},
-            {"text": "metodologi Agile", "type": "bold"},
-            {"text": "Project Manager", "type": "bold"}
-          ]
-        },
-        {
-          "text": "Saya dikenal sebagai seseorang yang efisien, kolaboratif, dan sangat adaptif. Saya senang mempelajari hal-hal baru, terutama menemukan bagaimana teknologi dapat digunakan untuk mengoptimalkan alur kerja. Saya menikmati mengeksplorasi AI dan teknologi terbaru untuk mengembangkan alat yang membantu mengotomatisasi tugas, dan membuat batch script sederhana untuk menyederhanakan tugas berulang dan meningkatkan produktivitas.",
-          "highlights": [
-            {"text": "efisien, kolaboratif, dan sangat adaptif", "type": "bold"},
-            {"text": "mengoptimalkan alur kerja", "type": "green"},
-            {"text": "AI dan teknologi terbaru", "type": "bold"},
-            {"text": "batch script sederhana", "type": "bold"}
-          ]
-        },
-        {
-          "text": "Bagi saya, menjadi seorang system analyst, project manager, atau product manager bukan hanya tentang memimpin tim, tetapi tentang memberikan solusi yang benar-benar berdampak melalui teknologi yang tepat dan proses yang efisien. Saya selalu bersemangat untuk belajar, berkembang, dan berkontribusi dalam membangun sistem dan produk yang menciptakan perubahan positif.",
-          "highlights": [
-            {"text": "solusi yang benar-benar berdampak", "type": "green"},
-            {"text": "perubahan positif", "type": "bold"}
-          ]
-        }
-      ]
+      {
+        "text": "Halo! Saya Sufiana, lulusan Sistem Informasi dengan fokus kuat pada Analisis Sistem dan eksekusi proyek terstruktur. Saya sangat tertarik pada bagaimana data, kebutuhan yang jelas, dan proses yang terdefinisi dengan baik berkontribusi dalam membangun solusi digital yang efektif.",
+        "highlights": [
+          {"text": "Sufiana", "type": "green"},
+          {"text": "lulusan Sistem Informasi", "type": "bold"},
+          {"text": "Analisis Sistem", "type": "green"},
+          {"text": "eksekusi proyek terstruktur", "type": "bold"},
+          {"text": "data, kebutuhan yang jelas, dan proses yang terdefinisi dengan baik", "type": "green"},
+          {"text": "solusi digital yang efektif", "type": "bold"}
+        ]
+      },
+      {
+        "text": "Sebagai System Analyst Bersertifikat (BNSP), saya terlibat dalam mengelola inisiatif digital di lingkungan IT yang profesional dan dinamis, bekerja erat dengan tim lintas fungsi menggunakan praktik Agile. Pengalaman saya mencakup perencanaan produk, analisis kebutuhan, dokumentasi, dan memastikan tujuan pengembangan tetap jelas dan terukur.",
+        "highlights": [
+          {"text": "System Analyst Bersertifikat (BNSP)", "type": "green"},
+          {"text": "inisiatif digital di lingkungan IT yang profesional dan dinamis", "type": "bold"},
+          {"text": "tim lintas fungsi", "type": "bold"},
+          {"text": "praktik Agile", "type": "green"},
+          {"text": "perencanaan produk, analisis kebutuhan, dokumentasi", "type": "green"},
+          {"text": "jelas dan terukur", "type": "bold"}
+        ]
+      },
+      {
+        "text": "Selama magang sebagai Associate Product Manager dan saat memimpin proyek pengembangan website, saya mengembangkan pemahaman praktis tentang koordinasi stakeholder, pengendalian ruang lingkup, dan menyeimbangkan waktu, kualitas, dan sumber daya — sambil mempertahankan dokumentasi terstruktur sepanjang siklus proyek.",
+        "highlights": [
+          {"text": "Associate Product Manager", "type": "bold"},
+          {"text": "proyek pengembangan website", "type": "bold"},
+          {"text": "koordinasi stakeholder, pengendalian ruang lingkup", "type": "green"},
+          {"text": "menyeimbangkan waktu, kualitas, dan sumber daya", "type": "green"},
+          {"text": "dokumentasi terstruktur", "type": "bold"},
+          {"text": "siklus proyek", "type": "bold"}
+        ]
+      },
+      {
+        "text": "Saya menikmati menerjemahkan kebutuhan kompleks menjadi alur sistem yang terorganisir dan rencana yang dapat ditindaklanjuti. Saya juga membangun alat berbasis web dan mengeksplorasi solusi otomatisasi dan didukung AI untuk menyederhanakan proses berulang dan meningkatkan efisiensi operasional.",
+        "highlights": [
+          {"text": "menerjemahkan kebutuhan kompleks menjadi alur sistem yang terorganisir", "type": "green"},
+          {"text": "rencana yang dapat ditindaklanjuti", "type": "bold"},
+          {"text": "alat berbasis web", "type": "bold"},
+          {"text": "solusi otomatisasi dan didukung AI", "type": "green"},
+          {"text": "menyederhanakan proses berulang", "type": "bold"},
+          {"text": "efisiensi operasional", "type": "green"}
+        ]
+      }
+    ]
   },
   "skills": {
     "title": "Keahlian",
@@ -193,22 +195,15 @@
   },
   "projects": {
     "title": "Proyek",
-    "categories": {
-      "All": "Semua",
-      "System Analysis & Design": "Analisis & Desain Sistem",
-      "Business Analysis": "Analisis Bisnis",
-      "Web Development": "Pengembangan Web",
-      "Product & Project Management": "Manajemen Produk & Proyek"
-    },
+    "noProjects": "Tidak ada proyek yang sesuai dengan filter yang dipilih",
     "filters": {
-      "all": "Semua"
-    },
-    "resume": {
-      "button": "Resume",
-      "comingSoon": "📄 Resume untuk {category} akan segera tersedia!",
-      "notAvailable": "Resume untuk {category} belum tersedia. Silakan cek kembali nanti.",
-      "error": "Gagal mengunduh resume untuk {category}. Silakan coba lagi nanti.",
-      "comingSoonAlt": "Resume untuk {category} segera hadir!"
+      "All": "Semua",
+      "SA": "SA",
+      "BA": "BA", 
+      "PMO": "PMO",
+      "Web-Based": "Web-Based",
+      "Data": "Data",
+      "TechWriting": "Tech Writing"
     },
     "modal": {
       "description": "Deskripsi",
@@ -220,52 +215,156 @@
     "items": {
       "helpdeskMonitoring": {
         "title": "Sistem Monitoring Helpdesk",
-        "description": "Merancang dashboard analitik untuk memantau pertanyaan terjawab dan tidak terjawab pada helpdesk berbasis WhatsApp menggunakan integrasi Tableau.",
+        "description": "Merancang dashboard analitik untuk memantau pertanyaan terjawab dan tidak terjawab di helpdesk berbasis WhatsApp menggunakan integrasi Tableau.",
         "fullDescription": "Sistem monitoring komprehensif ini menyediakan analitik real-time untuk kinerja helpdesk. Dashboard terintegrasi dengan Tableau untuk memvisualisasikan metrik utama termasuk waktu respons, kategori pertanyaan, dan kinerja agen. Sistem membantu mengidentifikasi hambatan dan meningkatkan efisiensi layanan pelanggan melalui wawasan berbasis data.",
-        "tools": "Lucidchart, Tableau, PostgreSQL"
+        "tools": "Lucidchart, Tableau, PostgreSQL",
+        "images": {
+          "web": [
+            {"src": "./image/helpdesk-dashboard.png", "caption": "Dashboard Helpdesk Overview"},
+            {"src": "./image/helpdesk-dashboard-2.png", "caption": "Tampilan Monitoring Tiket"},
+            {"src": "./image/helpdesk-dashboard-3.png", "caption": "Kinerja Agen"}
+          ],
+          "sa": [
+            {"src": "./image/helpdesk-analytics.png", "caption": "Desain Database ERD"}
+          ],
+          "data": [
+            {"src": "./image/helpdesk-analytics.png", "caption": "Dashboard Analitik SLA"}
+          ]
+        }
       },
       "toeflStructure": {
         "title": "Aplikasi TOEFL ITP Structure & Written Expression",
         "description": "Mengembangkan analisis sistem dan dokumentasi ERD, BPMN, dan alur pengguna untuk platform praktik TOEFL berbasis web.",
-        "fullDescription": "Platform persiapan TOEFL komprehensif yang berfokus pada bagian Structure and Written Expression. Sistem mencakup ERD terperinci untuk desain database, BPMN untuk visualisasi proses, dan dokumentasi alur pengguna untuk memastikan navigasi intuitif. Fitur termasuk tes praktik, pelacakan kemajuan, dan analitik kinerja.",
-        "tools": "Draw.io, Notion, MySQL"
+        "fullDescription": "Platform persiapan TOEFL komprehensif yang berfokus pada bagian Structure dan Written Expression. Sistem mencakup ERD detail untuk desain database, BPMN untuk visualisasi proses, dan dokumentasi alur pengguna untuk memastikan navigasi intuitif. Fitur termasuk tes praktik, pelacakan kemajuan, dan analitik kinerja.",
+        "tools": "Draw.io, Notion, MySQL",
+        "images": {
+          "web": [
+            {"src": "./image/toefl-structure.png", "caption": "Antarmuka TOEFL Structure"},
+            {"src": "./image/toefl-structure-2.png", "caption": "Modul Soal"},
+            {"src": "./image/toefl-structure-3.png", "caption": "Sistem Penilaian"}
+          ],
+          "sa": [
+            {"src": "./image/toefl-structure-2.png", "caption": "ERD Desain Database"},
+            {"src": "./image/toefl-structure-3.png", "caption": "Activity Diagram - Alur Pengguna"}
+          ]
+        }
       },
       "helpdeskVisualization": {
         "title": "Visualisasi Kinerja Helpdesk",
         "description": "Melakukan analisis data dan visualisasi tren kinerja helpdesk, menyoroti kategori tidak terjawab menggunakan Tableau yang terintegrasi dengan database cloud.",
         "fullDescription": "Mengembangkan dashboard interaktif yang melacak metrik kinerja helpdesk secara real-time. Sistem visualisasi mengidentifikasi pola dalam pertanyaan tidak terjawab, waktu puncak pertanyaan, dan tren spesifik kategori. Terintegrasi dengan database cloud untuk pembaruan langsung dan kemampuan pelaporan otomatis.",
-        "tools": "Tableau, PostgreSQL, Looker Studio"
+        "tools": "Tableau, PostgreSQL, Looker Studio",
+        "images": {
+          "web": [
+            {"src": "./image/helpdesk-analysis.png", "caption": "Dashboard Analitik"},
+            {"src": "./image/helpdesk-analysis-2.png", "caption": "Analisis Tren"},
+            {"src": "./image/helpdesk-analysis-3.png", "caption": "Metrik Kinerja"},
+            {"src": "./image/helpdesk-dashboard-4.png", "caption": "Monitoring Real-time"}
+          ],
+          "ba": [
+            {"src": "./image/helpdesk-analysis-2.png", "caption": "Dokumen Kebutuhan Bisnis"}
+          ],
+          "data": [
+            {"src": "./image/helpdesk-analysis-3.png", "caption": "Dashboard Visualisasi Data"}
+          ]
+        }
       },
       "brainysResearch": {
         "title": "Riset Pasar & Kebutuhan Pengguna untuk Brainys LMS",
-        "description": "Melakukan analisis pasar dan kebutuhan pengguna untuk menentukan fitur utama dan metrik kinerja untuk Brainys Learning Management System.",
-        "fullDescription": "Melakukan riset pasar komprehensif melibatkan 500+ pengguna potensial untuk mengidentifikasi persyaratan utama LMS inovatif. Menganalisis platform pesaing, melakukan wawancara pengguna, dan membuat persona terperinci. Penelitian secara langsung memengaruhi prioritas fitur dan keputusan desain UX.",
-        "tools": "Google Forms, Excel, Power BI"
+        "description": "Melakukan analisis pasar dan kebutuhan pengguna untuk mendefinisikan fitur kunci dan metrik kinerja untuk Brainys Learning Management System.",
+        "fullDescription": "Melakukan riset pasar komprehensif yang melibatkan 500+ pengguna potensial untuk mengidentifikasi kebutuhan kunci LMS inovatif. Menganalisis platform pesaing, melakukan wawancara pengguna, dan membuat persona detail. Riset secara langsung memengaruhi prioritas fitur dan keputusan desain UX.",
+        "tools": "Google Forms, Excel, Power BI",
+        "images": {
+          "ba": [
+            {"src": "./image/brainys-research.png", "caption": "Laporan Riset Pasar"},
+            {"src": "./image/brainys-research-2.png", "caption": "Analisis Kebutuhan Pengguna"},
+            {"src": "./image/brainys-survey.png", "caption": "Hasil Survey"}
+          ],
+          "techWriting": [
+            {"src": "./image/brainys-research-2.png", "caption": "Dokumentasi Riset"},
+            {"src": "./image/brainys-survey.png", "caption": "Laporan Temuan"}
+          ]
+        }
       },
       "toeflPlatform": {
         "title": "Platform Praktik TOEFL ITP",
         "description": "Membangun aplikasi web monolitik berbasis Laravel untuk praktik TOEFL dengan modul, gamifikasi, dan dashboard kinerja.",
-        "fullDescription": "Platform persiapan TOEFL lengkap dengan jalur pembelajaran modular, elemen gamifikasi seperti lencana dan papan peringkat, dan dashboard kinerja komprehensif. Fitur termasuk tes praktik waktu, penilaian instan, analitik terperinci, dan rekomendasi studi personal.",
-        "tools": "Laravel, MySQL, Tailwind CSS, JavaScript"
+        "fullDescription": "Platform persiapan TOEFL dengan fitur lengkap yang memiliki jalur pembelajaran modular, elemen gamifikasi seperti lencana dan papan peringkat, dan dashboard kinerja komprehensif. Fitur termasuk tes praktik dengan waktu, penilaian instan, analitik detail, dan rekomendasi studi personal.",
+        "tools": "Laravel, MySQL, Postman, JavaScript",
+        "tags": ["Web-Based", "SA", "Tech Writing"],
+        "images": {
+          "web": [
+            {"src": "./image/toefl-home.jpg", "caption": "Halaman Utama"}
+          ],
+          "sa": [
+            {"src": "./image/toefl-erd.jpg", "caption": "ERD Database"},
+            {"src": "./image/toefl-activity.jpg", "caption": "Activity Diagram"}
+          ],
+          "techWriting": [
+            {"src": "./image/toefl-api-spec.jpg", "caption": "Tabel Spesifikasi API"},
+            {"src": "./image/toefl-postman.jpg", "caption": "Koleksi Postman"}
+          ]
+        }
       },
       "blogWebsite": {
         "title": "Situs Blog dengan Template EJS",
-        "description": "Mengembangkan sistem blog menggunakan Express.js dan EJS, menampilkan operasi CRUD dan tata letak responsif.",
-        "fullDescription": "Platform blog modern dibangun dengan Node.js dan Express, menampilkan otentikasi pengguna, manajemen posting, sistem komentar, dan kategori. Desain responsif memastikan tampilan optimal di semua perangkat, dengan template EJS menyediakan rendering konten dinamis.",
-        "tools": "Express.js, EJS, Bootstrap"
+        "description": "Mengembangkan sistem blog menggunakan Express.js dan EJS, dengan fitur CRUD dan tata letak responsif.",
+        "fullDescription": "Platform blog modern dibangun dengan Node.js dan Express, memiliki fitur autentikasi pengguna, manajemen posting, sistem komentar, dan kategori. Desain responsif memastikan tampilan optimal di semua perangkat, dengan template EJS menyediakan rendering konten dinamis.",
+        "tools": "Express.js, EJS, Bootstrap",
+        "images": {
+          "web": [
+            {"src": "./image/blog-app.png", "caption": "Halaman Utama Blog"},
+            {"src": "./image/blog-app-2.png", "caption": "Halaman Artikel"},
+            {"src": "./image/blog-admin.png", "caption": "Dashboard Admin"}
+          ],
+          "techWriting": [
+            {"src": "./image/blog-admin.png", "caption": "Dokumentasi Teknis"}
+          ]
+        }
       },
       "brainysLMS": {
         "title": "Brainys Learning Management System",
         "description": "Bertindak sebagai Associate Product Manager; membuat PRD dan mengkoordinasi sprint Agile untuk pengembangan LMS dengan tim lintas fungsi.",
-        "fullDescription": "Memimpin pengembangan produk untuk platform LMS inovatif, mengelola seluruh siklus hidup produk dari konsep hingga peluncuran. Membuat PRD terperinci, user stories, dan kriteria penerimaan. Berkoordinasi dengan tim desain, pengembangan, dan QA di berbagai sprint Agile, memastikan pengiriman fitur tepat waktu.",
-        "tools": "Notion, Jira, Figma"
+        "fullDescription": "Memimpin pengembangan produk untuk platform LMS inovatif, mengelola seluruh siklus produk dari konsep hingga peluncuran. Membuat PRD detail, user stories, dan kriteria penerimaan. Berkoordinasi dengan tim desain, pengembangan, dan QA di berbagai sprint Agile, memastikan pengiriman fitur kunci tepat waktu.",
+        "tools": "Notion, Jira, Figma",
+        "images": {
+          "web": [
+            {"src": "./image/brainys-lms.png", "caption": "Antarmuka Platform LMS"},
+            {"src": "./image/brainys-lms-2.png", "caption": "Manajemen Kursus"}
+          ],
+          "pmo": [
+            {"src": "./image/brainys-roadmap.png", "caption": "Roadmap Produk"},
+            {"src": "./image/brainys-sprints.png", "caption": "Papan Sprint Planning"}
+          ]
+        }
       },
       "schoolSystem": {
         "title": "Sistem Manajemen Sekolah (Divisi OASYS)",
-        "description": "Mengelola pencapaian proyek, prioritas backlog, dan tinjauan sprint di bawah kerangka Scrum untuk pengiriman sistem.",
-        "fullDescription": "Manajer proyek untuk sistem manajemen sekolah komprehensif yang melayani beberapa institusi. Memfasilitasi upacara Scrum termasuk standup harian, perencanaan sprint, dan retrospektif. Mengelola ekspektasi pemangku kepentingan, melacak metrik proyek, dan memastikan keberhasilan pencapaian tonggak utama.",
-        "tools": "Asana, Notion, Miro"
+        "description": "Mengelola milestone proyek, prioritas backlog, dan review sprint di bawah kerangka Scrum untuk pengiriman sistem.",
+        "fullDescription": "Manajer proyek untuk sistem manajemen sekolah komprehensif yang melayani beberapa institusi. Memfasilitasi upacara Scrum termasuk daily standup, sprint planning, dan retrospektif. Mengelola ekspektasi stakeholder, melacak metrik proyek, dan memastikan pengiriman milestone utama yang sukses.",
+        "tools": "Asana, Notion, Miro",
+        "images": {
+          "web": [
+            {"src": "./image/school-system.png", "caption": "Dashboard Sistem Sekolah"},
+            {"src": "./image/school-system-2.png", "caption": "Manajemen Siswa"},
+            {"src": "./image/school-dashboard.png", "caption": "Dashboard Analitik"}
+          ],
+          "sa": [
+            {"src": "./image/school-system-2.png", "caption": "Diagram Arsitektur Sistem"}
+          ],
+          "pmo": [
+            {"src": "./image/school-dashboard.png", "caption": "Timeline & Milestone Proyek"}
+          ],
+          "data": [
+            {"src": "./image/school-dashboard.png", "caption": "Dashboard Analitik Data"}
+          ]
+        }
       }
+    },
+    "scroll": {
+      "swipe": "Geser untuk melihat lainnya",
+      "click": "Klik untuk menjelajah",
+      "end": "Anda telah mencapai akhir"
     }
   },
   "contact": {
@@ -285,7 +384,7 @@
     "social": {
       "github": "GitHub",
       "linkedin": "LinkedIn",
-      "instagram": "Instagram",
+      "email": "Email",
       "medium": "Medium"
     }
   },
