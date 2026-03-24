@@ -214,7 +214,7 @@
     },
     "items": {
       "toeflPlatform": {
-        "title": "TOEFL ITP Practice Platform",
+        "title": "TOEFL ITP Practice Website",
         "description": "Integrated course management website application for TOEFL ITP enrollment, payment, and self-learning modules.",
         "fullDescription": "The registration process for the TOEFL ITP course at LaC, from enrollment to payment before the start of learning, is currently not integrated. Registration is done via Google Form, proof of payment upload is done in a separate form, confirmation is done manually via WhatsApp, and data management is handled through Excel. Additionally, there is a need to integrate with a self-learning module within a single application. As a result, the process is prone to human error (incorrect input, duplicate data) and is inefficient—participants must wait for manual confirmation, while the administrative burden increases drastically as the number of registrants continues to rise. This project aims to build an integrated course management module that connects the enrollment-to-payment process with self-learning in one application.\n\nI developed the back-end of this course management module using Laravel, with API testing conducted through Postman. The development followed an iterative-incremental approach, during which I designed various UML diagrams to guide the process, including use case diagrams, activity diagrams, sequence diagrams, and class diagrams, complemented by use case scenarios to detail the flow of each use case. These artifacts helped ensure that the system architecture aligned with the functional requirements and supported a structured, phased delivery.",
         "tools": "Laravel, MySQL, Postman, Visual Paradigm, Google Docs, Ms.Word",
@@ -236,11 +236,11 @@
       "netflixDtDashboard": {
         "title": "NETFLIX Shows Data Breakdown Dashboard",
         "description": "Data visualization dashboard exploring Netflix content trends, genres, and release patterns.",
-        "fullDescription": "This project explores Netflix's content library through data visualization, uncovering trends in genres, release years, country distributions, and ratings. The goal was to gain insights into how Netflix's content strategy has evolved over time.\n\nUsing a publicly available dataset from Kaggle, I performed data cleaning and transformation using Excel to prepare the data for analysis. I then built an interactive dashboard using Power BI to visualize key metrics—such as content distribution by country, genre popularity, release trends, and ratings breakdown.\n\nThe dashboard enables users to explore patterns in Netflix's catalog, providing a clear view of how content has diversified across regions and categories. This project demonstrates my ability to work with real-world datasets, perform exploratory data analysis, and translate raw data into meaningful visual insights.",
-        "tools": "Power BI, Excel",
+        "fullDescription": "This project explores Netflix's content library through data visualization, uncovering trends in content types, release years, genres, and country distributions. The goal was to gain insights into how Netflix's content strategy has evolved over time.\n\nUsing a publicly available dataset from Kaggle, I performed data cleaning and transformation using Power Query within Power BI to prepare the data for analysis. I then built an interactive dashboard using Power BI to visualize key metrics—such as content distribution by type, release trends over time, top categories, average duration, and country-level insights.\n\nThe dashboard enables users to explore patterns in Netflix's catalog, providing a clear view of how content has diversified across regions, formats, and categories over time. This project demonstrates my ability to work with open datasets, perform exploratory data analysis, and translate raw data into meaningful visual insights.",
+        "tools": "Power BI, Power Query",
         "images": {
           "data": [
-            {"src": "./image/Netflix-Data-Analysis/NETFLIX-Shows-Data-Breakdown-Dashboard.png", "caption": "NETFLIX Shows Dashboard - Content Distribution & Trends"}
+            {"src": "./image/Netflix-Data-Analysis/NETFLIX-Shows-Data-Breakdown-Dashboard.png", "caption": "NETFLIX Shows Dashboard - Content Distribution, Trends & Category Insights"}
           ]
         },
         "tags": ["Data"]
@@ -284,32 +284,35 @@
       },
       "travelWebPM": {
         "title": "Travel Website Project",
-        "description": "Conducted data analysis and visualization of helpdesk performance trends, highlighting unanswered categories using Tableau integrated with cloud database.",
-        "fullDescription": "Developed interactive dashboards that track helpdesk performance metrics in real-time. The visualization system identifies patterns in unanswered questions, peak inquiry times, and category-specific trends. Integrated with cloud database for live updates and automated reporting capabilities.",
-        "tools": "Laravel, MySQL, Google Docs, Gantt Pro, Spreadsheet",
+        "description": "Full-stack travel booking website with integrated project management for operational efficiency.",
+        "fullDescription": "PT Windira Cipta Mandiri is a company specializing in government and official travel services. With increasing growth in tour reservations, the company needed to improve operational efficiency—particularly in booking, scheduling, and payment processing. Currently, customers still make reservations manually by contacting the company directly, which is inefficient, time-consuming, and prone to human error.\n\nThis project builds a web-based booking platform to address these challenges, enabling customers to make reservations flexibly without waiting for phone queues or visiting the office. I developed the full-stack application using Laravel and MySQL, implementing features such as tour packages, reservation management, and payment processing to automate scheduling and reduce manual errors.\n\nIn addition to development, I led project management activities—coordinating with stakeholders, creating a Gantt chart to track tasks and milestones, and developing a risk management plan to identify and mitigate potential project risks. This dual role as developer and project manager ensured that the platform was delivered on schedule while maintaining alignment with business goals.\n\nThe resulting website streamlines the reservation process, reduces administrative workload, and provides a seamless experience for both customers and the company's operational team.",
+        "tools": "Laravel, MySQL, Google Docs, Gantt Chart, Spreadsheet, Miro",
         "images": {
           "web": [
-            {"src": "./image/helpdesk-analysis.png", "caption": "Analytics Dashboard"},
-            {"src": "./image/helpdesk-analysis-2.png", "caption": "Trend Analysis"},
-            {"src": "./image/helpdesk-analysis-3.png", "caption": "Performance Metrics"},
-            {"src": "./image/helpdesk-dashboard-4.png", "caption": "Real-time Monitoring"}
-          ],
-          "wb-based": [
-            {"src": "./image/helpdesk-analysis-2.png", "caption": "Business Requirements Document"}
+            {"src": "./image/Travel-Website-Project/Web-based-1-Landing-page-travel-web-1.png", "caption": "Landing Page - Travel Website Overview"},
+            {"src": "./image/Travel-Website-Project/Web-based-1-Landing-page-travel-web-2.png", "caption": "Tour Packages - Available Services"},
+            {"src": "./image/Travel-Website-Project/Web-based-1-Landing-page-travel-web-3.png", "caption": "Reservation Form - Booking Process"},
+            {"src": "./image/Travel-Website-Project/Web-based-2-Admin-homepage.png", "caption": "Admin Dashboard - Reservation Management"},
+            {"src": "./image/Travel-Website-Project/Web-based-2-homepage-services.png", "caption": "Services Section - Tour Details"},
+            {"src": "./image/Travel-Website-Project/Web-based-3-hotel-reservation-form.png", "caption": "Hotel Reservation Form"},
+            {"src": "./image/Travel-Website-Project/Web-based-4-Admin-page-confirm-user-payment.png", "caption": "Admin - Payment Confirmation"},
+            {"src": "./image/Travel-Website-Project/Web-based-4-Admin-page-confirm-user-reservation.png", "caption": "Admin - Reservation Confirmation"},
+            {"src": "./image/Travel-Website-Project/Web-based- 5-Onprocess-reservation.png", "caption": "On-Process Reservation Status"}
           ],
           "pmo": [
-            {"src": "./image/helpdesk-analysis-3.png", "caption": "Data Visualization Dashboard"}
+            {"src": "./image/Travel-Website-Project/PMO-1-Risk-Management-Plan.png", "caption": "Risk Management Plan"}
           ]
-        }
+        },
+        "tags": ["Web-Based", "PMO"]
       },
       "professionalSyrvey": {
         "title": "Data Professional Survey Dashboard",
-        "description": "Interactive dashboard analyzing survey data from data professionals on career trends, tools, and satisfaction.",
-        "fullDescription": "This project analyzes survey data collected from data professionals to understand career trends, preferred tools, salary ranges, and job satisfaction levels. The dataset was sourced from a publicly available survey and processed to extract meaningful insights.\n\nUsing Excel, I cleaned and transformed the data to prepare it for analysis. I then built an interactive dashboard using Power BI to visualize key findings—including average salary by job title, preferred programming languages, work-life balance satisfaction, and career transition patterns.\n\nThe dashboard provides a comprehensive overview of the data professional landscape, helping viewers understand industry trends and what factors contribute to career satisfaction. This project showcases my ability to work with survey data, perform data wrangling, and create impactful visualizations.",
-        "tools": "Power BI, Ms.Excel",
+        "description": "Interactive dashboard analyzing survey data from data professionals on job satisfaction, salaries, and tool preferences.",
+        "fullDescription": "This project analyzes survey data collected from data professionals to understand job satisfaction levels, salary distributions, programming language preferences, and perceptions of the industry. The goal was to gain insights into what factors influence career satisfaction and how professionals navigate the data field.\n\nUsing a publicly available dataset, I performed data cleaning and transformation using Power Query within Power BI to prepare the data for analysis. I then built an interactive dashboard using Power BI to visualize key metrics—such as participant demographics, salary distributions by job title and gender, programming language preferences, work-life balance satisfaction, and perceived difficulty of breaking into the field.\n\nThe dashboard provides a comprehensive overview of survey responses, helping viewers understand patterns in job satisfaction, compensation, and tool preferences among data professionals. This project demonstrates my ability to work with survey data, perform data wrangling, and translate raw data into meaningful visual insights.",
+        "tools": "Power BI, Power Query",
         "images": {
           "data": [
-            {"src": "./image/Professional-Survey-Data-Analysis/Data-Professional-Survey-Dashboard.png", "caption": "Data Professional Survey Dashboard - Career Trends & Insights"}
+            {"src": "./image/Professional-Survey-Data-Analysis/Data-Professional-Survey-Dashboard.png", "caption": "Data Professional Survey Dashboard - Job Satisfaction, Salary & Tool Preferences"}
           ]
         },
         "tags": ["Data"]
@@ -343,32 +346,41 @@
       },
       "blogWebsite": {
         "title": "Golf Leaderboard & Schedule Website",
-        "description": "Developed a blog system using Express.js and EJS, featuring CRUD operations and responsive layouts.",
-        "fullDescription": "A modern blog platform built with Node.js and Express, featuring user authentication, post management, comments system, and categories. The responsive design ensures optimal viewing across all devices, with EJS templates providing dynamic content rendering and server-side includes.",
-        "tools": "Python, Flask, Jinja, RapidAPI, Jupyter Notebook",
+        "description": "Flask-based web application displaying golf tournament schedules and leaderboards using external API integration.",
+        "fullDescription": "This project is a Flask web application that provides golf tournament schedules and leaderboard data fetched from an external API. The platform addresses the need for easily accessible and well-organized golf event information, presenting fixtures, player rankings, and scores in a clean, user-friendly interface.\n\nI developed the back-end using Python Flask, integrating with the Golf Leaderboard Data API via the Requests library to fetch tournament schedules, player standings, and match results. The application features tournament schedules with details such as event name, country, course, type, and dates, as well as leaderboards displaying player rankings with scores and rounds. I implemented search functionality to filter fixtures by keyword and sorting options for leaderboard data to enhance usability.\n\nThe front-end was built using Jinja2 templating with Bootstrap and custom CSS to ensure a responsive and visually appealing layout. This project demonstrates my ability to work with external APIs, handle dynamic data rendering, and build a functional web application with a clean user interface.",
+        "tools": "Python, Flask, Jinja2, Jupyter Notebook, Requests API",
         "images": {
           "web": [
-            {"src": "./image/blog-app.png", "caption": "Blog Homepage"},
-            {"src": "./image/blog-app-2.png", "caption": "Article Page"},
-            {"src": "./image/blog-admin.png", "caption": "Admin Dashboard"}
+            {"src": "./image/Golf-Leaderboard-External-API-Website/Web-based-1-Homepage.png", "caption": "Homepage - Tournament Schedule & Fixtures"},
+            {"src": "./image/Golf-Leaderboard-External-API-Website/Web-based-2-Schedule-page.png", "caption": "Schedule Page - Filtered by Keyword"},
+            {"src": "./image/Golf-Leaderboard-External-API-Website/Web-based-2-Search-Schedule.png", "caption": "Search Feature - Keyword Filtering"},
+            {"src": "./image/Golf-Leaderboard-External-API-Website/Web-based-3-Leaderboard-page.png", "caption": "Leaderboard Page - Player Rankings & Scores"}
           ]
-        }
+        },
+        "tags": ["Web-Based"]
       },
       "dedikasiLMS": {
         "title": "DEDIKASI Learning Management System",
-        "description": "Acted as Associate Product Manager; created PRDs and coordinated Agile sprints for LMS development with cross-functional teams.",
-        "fullDescription": "Led product development for an innovative LMS platform, managing the entire product lifecycle from concept to launch. Created detailed PRDs, user stories, and acceptance criteria. Coordinated with design, development, and QA teams across multiple Agile sprints, ensuring timely delivery of key features.",
-        "tools": "Notion, Jira, Figma",
+        "description": "Learning management system empowering fresh graduates with information systems skills through online courses.",
+        "fullDescription": "Indonesia faces a challenge where the working-age population (69.3% of total population) requires quality human resources to compete in a dynamic job market. However, unemployment among diploma and university graduates remains at 5.10%, indicating a gap between academic knowledge and workplace readiness. Additionally, Indonesia ranks 45th out of 64 countries in digital competitiveness, highlighting the need for digital upskilling.\n\nDEDIKASI was developed as a free learning platform to address these challenges, empowering fresh graduates—particularly in the information systems field—with relevant digital skills. The platform allows users to explore specialized categories within information systems, helping them enhance their capabilities and improve their employability.\n\nAs the Project Manager, I led the development team using Agile methodologies. I managed the Jira board, tracking tasks and ensuring sprint progress remained on schedule. I helped coordinate daily scrums, sprint planning, sprint reviews, and retrospectives to maintain team alignment and continuous improvement. Communication was coordinated through Slack, with documentation managed in Google Docs. I also contributed to development by coding several features, collaborating with the team to ensure consistent implementation across the platform.\n\nThe resulting platform provides fresh graduates with accessible, structured learning opportunities in information systems, helping bridge the gap between academic knowledge and industry demands.",
+        "tools": "Laravel, MySQL, Jira, Slack, Google Docs",
         "images": {
           "web": [
-            {"src": "./image/brainys-lms.png", "caption": "LMS Platform Interface"},
-            {"src": "./image/brainys-lms-2.png", "caption": "Course Management"}
+            {"src": "./image/Dedikasi-Website-Project/Profil-Student-Web-based-1.png", "caption": "Student Profile - Personalized Learning Dashboard"},
+            {"src": "./image/Dedikasi-Website-Project/Profil-Mentor-Web-based-2.png", "caption": "Mentor Profile - Course Management Interface"},
+            {"src": "./image/Dedikasi-Website-Project/Dashboard-Admin-Web-based-3.png", "caption": "Admin Dashboard - User & Course Oversight"},
+            {"src": "./image/Dedikasi-Website-Project/Feedback-Web-based-4.png", "caption": "Feedback System - User Reviews"},
+            {"src": "./image/Dedikasi-Website-Project/Feedback-Mentor-Web-based-5.png", "caption": "Mentor Feedback - Course Evaluation"}
           ],
           "pmo": [
-            {"src": "./image/brainys-roadmap.png", "caption": "Product Roadmap"},
-            {"src": "./image/brainys-sprints.png", "caption": "Sprint Planning Board"}
+            {"src": "./image/Dedikasi-Website-Project/Jira-Commit-1-PMO-1.png", "caption": "Jira Commit - Task Progress"},
+            {"src": "./image/Dedikasi-Website-Project/Blur_Jira-Task-1-PMO-2.jpg", "caption": "Jira Task Board - Sprint Tracking"},
+            {"src": "./image/Dedikasi-Website-Project/Blur_Jira-Task-Stories-PMO-3.jpg", "caption": "Jira Task Board - Backlog Management"},
+            {"src": "./image/Dedikasi-Website-Project/Renacana-Sprint-PMO-4.png", "caption": "Sprint Plan - Sprint Goals & Timeline"},
+            {"src": "./image/Dedikasi-Website-Project/Sprint-retro-PMO-5.png", "caption": "Sprint Retrospective - Team Reflection"}
           ]
-        }
+        },
+        "tags": ["Web-Based", "PMO"]
       },
       "schoolSystem": {
         "title": "OASYS School Project",

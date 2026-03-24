@@ -61,8 +61,6 @@ const Projects = () => {
       image: "./image/Netflix-Data-Analysis/NETFLIX-Shows-Data-Breakdown-Dashboard.png",
       images: {
          data: [
-          { src: "./image/Netflix-Data-Analysis/NETFLIX-Shows-Data-Breakdown-Dashboard.png", caption: "SLA Analytics Dashboard" },
-          { src: "./image/Netflix-Data-Analysis/NETFLIX-Shows-Data-Breakdown-Dashboard.png", caption: "SLA Analytics Dashboard" },
           { src: "./image/Netflix-Data-Analysis/NETFLIX-Shows-Data-Breakdown-Dashboard.png", caption: "SLA Analytics Dashboard" }
         ]
       },
