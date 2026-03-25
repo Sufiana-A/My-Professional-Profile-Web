@@ -221,13 +221,13 @@
         "tags": ["Web-Based", "SA", "Tech Writing"],
         "images": {
           "web": [
-            {"src": "/image/LaC-TOEFL-Practice-Website/Web-based-Back-End-1-Dashboard-Peserta.png", "caption": "Halaman Utama"},
-            {"src": "/image/LaC-TOEFL-Practice-Website/Web-based-Back-End-2-Tinjau-Rencana-Belajar-Instruktur.png", "caption": "Modul Praktik"},
-            {"src": "/image/LaC-TOEFL-Practice-Website/Web-based-Back-End-3-Pengajuan-Rencana-Belajar-1.png", "caption": "Antarmuka Soal"},
-            {"src": "/image/LaC-TOEFL-Practice-Website/Web-based-Back-End-4-Kelola-Paket-Kursus.png", "caption": "Dashboard Pengguna"},
-            {"src": "/image/LaC-TOEFL-Practice-Website/Web-based-Back-End-5-Pengajuan-Skor-Awal.png", "caption": "Pengajuan Skor Awal"},
-            {"src": "/image/LaC-TOEFL-Practice-Website/Web-based-Back-End-6-Seleksi-Skor-Awal.png", "caption": "Seleksi Skor Awal"},
-            {"src": "/image/LaC-TOEFL-Practice-Website/Web-based-Back-End-7-Riwayat-Pembayaran.png", "caption": "Riwayat Pembayaran"}
+            {"src": "/image/LaC-TOEFL-Practice-Website/Web-based-Back-End-1-Dashboard-Peserta.png", "caption": "Dashboard Peserta"},
+            {"src": "/image/LaC-TOEFL-Practice-Website/Web-based-Back-End-2-Tinjau-Rencana-Belajar-Instruktur.png", "caption": "Halaman Tinjau Rencana Belajar di Instruktur"},
+            {"src": "/image/LaC-TOEFL-Practice-Website/Web-based-Back-End-3-Pengajuan-Rencana-Belajar-1.png", "caption": "Halaman Pengajuan Rencana Belajar di Peserta"},
+            {"src": "/image/LaC-TOEFL-Practice-Website/Web-based-Back-End-4-Kelola-Paket-Kursus.png", "caption": "Halaman Kelola Paket Kursus di Admin"},
+            {"src": "/image/LaC-TOEFL-Practice-Website/Web-based-Back-End-5-Pengajuan-Skor-Awal.png", "caption": "Halaman Pengajuan Skor Awal di Peserta"},
+            {"src": "/image/LaC-TOEFL-Practice-Website/Web-based-Back-End-6-Seleksi-Skor-Awal.png", "caption": "Halaman Seleksi Skor Awal di Admin"},
+            {"src": "/image/LaC-TOEFL-Practice-Website/Web-based-Back-End-7-Riwayat-Pembayaran.png", "caption": "Halaman Riwayat Pembayaran di Peserta"}
           ],
           "sa": [
             {"src": "/image/LaC-TOEFL-Practice-Website/Use-case-scenario-Seleksi-skor-awal-SA-1.png", "caption": "Use Case Scenario - Seleksi Skor Awal"},
@@ -240,9 +240,9 @@
           ],
           "techWriting": [
             {"src": "/image/LaC-TOEFL-Practice-Website/Tech-Wrting-1.png", "caption": "Spesifikasi API"},
-            {"src": "/image/LaC-TOEFL-Practice-Website/Tech-Writing-2.png", "caption": "Koleksi Postman"},
-            {"src": "/image/LaC-TOEFL-Practice-Website/Tech-Writing-3.png", "caption": "Dokumentasi API"},
-            {"src": "/image/LaC-TOEFL-Practice-Website/Riwayat-pengajuan-skor-awal-peserta -Tech-Writing.png", "caption": "Riwayat Pengajuan Skor Awal"}
+            {"src": "/image/LaC-TOEFL-Practice-Website/Tech-Writing-2.png", "caption": "Spesifikasi API"},
+            {"src": "/image/LaC-TOEFL-Practice-Website/Tech-Writing-3.png", "caption": "Dokumentasi Daftar Istilah"},
+            {"src": "/image/LaC-TOEFL-Practice-Website/Riwayat-pengajuan-skor-awal-peserta -Tech-Writing.png", "caption": "Koleksi API - Respon API Riwayat Pengajuan Skor Awal"}
           ]
         }
       },
@@ -265,8 +265,8 @@
         "tools": "Tableau, SQL, Python, Draw.io, Ms.Word, Google Docs",
         "images": {
           "ba": [
-            {"src": "./image/Tableau-Monitoring-Helpdesk/BA-1.png", "caption": "Analisis Kebutuhan SLA dan Masalah Helpdesk"},
-            {"src": "./image/Tableau-Monitoring-Helpdesk/BA-2.png", "caption": "Identifikasi 3 Masalah Kunci & Alternatif Solusi"}
+            {"src": "./image/Tableau-Monitoring-Helpdesk/BA-1.png", "caption": "Analisis Kebutuhan dan Masalah Helpdesk"},
+            {"src": "./image/Tableau-Monitoring-Helpdesk/BA-2.png", "caption": "Identifikasi Alternatif Solusi"}
           ],
           "data": [
             {"src": "./image/Tableau-Monitoring-Helpdesk/Star-Schema-Dashboard-LAA.drawio.png", "caption": "Star Schema untuk Data Warehouse"},
@@ -320,7 +320,7 @@
         "tags": ["Web-Based", "PMO"]
       },
       "professionalSyrvey": {
-        "title": "Dashboard Survei Profesional Data",
+        "title": "Dashboard Data Survei Profesional",
         "description": "Dashboard interaktif menganalisis data survei profesional data tentang kepuasan kerja, gaji, dan preferensi alat.",
         "fullDescription": "Proyek ini menganalisis data survei yang dikumpulkan dari profesional data untuk memahami tingkat kepuasan kerja, distribusi gaji, preferensi bahasa pemrograman, dan persepsi industri. Tujuannya adalah untuk mendapatkan wawasan tentang faktor-faktor yang mempengaruhi kepuasan karir dan bagaimana profesional menavigasi bidang data.\n\nMenggunakan dataset publik yang tersedia, saya melakukan pembersihan dan transformasi data menggunakan Power Query di dalam Power BI untuk mempersiapkan data analisis. Saya kemudian membangun dashboard interaktif menggunakan Power BI untuk memvisualisasikan metrik kunci—seperti demografi peserta, distribusi gaji berdasarkan jabatan dan gender, preferensi bahasa pemrograman, kepuasan keseimbangan kerja-kehidupan, dan persepsi kesulitan memasuki bidang ini.\n\nDashboard memberikan gambaran komprehensif tentang respons survei, membantu pengguna memahami pola dalam kepuasan kerja, kompensasi, dan preferensi alat di kalangan profesional data. Proyek ini menunjukkan kemampuan saya dalam bekerja dengan data survei, melakukan data wrangling, dan menerjemahkan data mentah menjadi wawasan visual yang bermakna.",
         "tools": "Power BI, Power Query",
@@ -374,7 +374,7 @@
         "tags": ["Web-Based"]
       },
       "dedikasiLMS": {
-        "title": "DEDIKASI - Platform Pengembangan Karir",
+        "title": "LMS DEDIKASI",
         "description": "Sistem manajemen pembelajaran memberdayakan lulusan baru dengan keterampilan sistem informasi melalui kursus online.",
         "fullDescription": "Indonesia menghadapi tantangan di mana penduduk usia kerja (69,3% dari total populasi) membutuhkan sumber daya manusia berkualitas untuk bersaing di pasar kerja yang dinamis. Namun, pengangguran di kalangan lulusan diploma dan universitas masih mencapai 5,10%, menunjukkan kesenjangan antara pengetahuan akademis dan kesiapan kerja. Selain itu, Indonesia berada di peringkat ke-45 dari 64 negara dalam daya saing digital, menyoroti perlunya peningkatan keterampilan digital.\n\nDEDIKASI dikembangkan sebagai platform pembelajaran gratis untuk mengatasi tantangan ini, memberdayakan lulusan baru—khususnya di bidang sistem informasi—dengan keterampilan digital yang relevan. Platform ini memungkinkan pengguna untuk menjelajahi kategori khusus dalam sistem informasi, membantu mereka meningkatkan kemampuan dan meningkatkan daya saing kerja.\n\nSebagai Manajer Proyek, saya memimpin tim pengembangan menggunakan metodologi Agile. Saya mengelola papan Jira, melacak tugas dan memastikan kemajuan sprint tetap sesuai jadwal. Saya membantu mengoordinasikan daily scrum, sprint planning, sprint reviews, dan retrospectives untuk menjaga keselarasan tim dan perbaikan berkelanjutan. Komunikasi dikoordinasikan melalui Slack, dengan dokumentasi dikelola di Google Docs. Saya juga berkontribusi dalam pengembangan dengan mengkode beberapa fitur, berkolaborasi dengan tim untuk memastikan implementasi yang konsisten di seluruh platform.\n\nPlatform yang dihasilkan memberikan lulusan baru kesempatan belajar yang mudah diakses dan terstruktur dalam sistem informasi, membantu menjembatani kesenjangan antara pengetahuan akademis dan tuntutan industri.",
         "tools": "Laravel, MySQL, Jira, Slack, Google Docs",
@@ -397,7 +397,7 @@
         "tags": ["PMO", "Web-Based"]
       },
       "schoolSystem": {
-        "title": "OASYS School Project",
+        "title": "Proyek OASYS School",
         "description": "Sistem manajemen sekolah komprehensif untuk guru, kepala sekolah, staf administrasi, dan orang tua.",
         "fullDescription": "Oasys School adalah sistem manajemen sekolah terintegrasi yang dirancang untuk menyederhanakan tugas akademik dan administratif bagi pendidik, kepala sekolah, staf, dan orang tua. Platform ini menjawab kebutuhan efisiensi dalam mengelola materi ajar, data siswa, kehadiran, rapor digital, dan persetujuan administratif.\n\nSelama magang sebagai Associate Product Manager, saya memimpin definisi dan dokumentasi produk untuk Oasys School. Saya membuat Product Requirement Document (PRD) yang menguraikan fitur utama—absensi berbasis QR code, rapor digital, manajemen materi ajar, dan aksesibilitas multi-platform—dan mengembangkan user personas untuk empat peran pengguna: guru mata pelajaran, guru wali kelas, kepala sekolah, dan staf administrasi. Saya juga memetakan model bisnis untuk menyelaraskan kebutuhan pengguna dengan fitur produk. PRD dan kebutuhan fungsional mencakup hampir 100 halaman, mencerminkan kompleksitas sistem dan perencanaan komprehensif yang diperlukan.\n\nSaya memimpin rapat harian (daily standup) untuk melacak kemajuan dan mendokumentasikan Minutes of Meeting (MoM), menangkap tugas yang diselesaikan, langkah selanjutnya, dan hambatan. Untuk analisis sistem, saya merancang berbagai activity diagram yang mencakup berbagai alur kerja—termasuk membuat materi pembelajaran, mengelola kehadiran, dan nilai rapor digital, di antaranya—untuk menerjemahkan kebutuhan bisnis menjadi spesifikasi teknis yang jelas. Saya juga mengembangkan manual book dan panduan komprehensif untuk pengguna akhir di semua peran. Melalui dokumentasi terstruktur dan pelacakan proyek yang konsisten, saya memastikan pengembangan Oasys School tetap sesuai jadwal, memberikan solusi yang meningkatkan efisiensi operasional sekolah.",
         "tools": "Kanban Board, Miro, Visual Paradigm, Google Docs, Canva",

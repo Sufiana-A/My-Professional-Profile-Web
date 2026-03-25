@@ -221,15 +221,28 @@
         "tags": ["Web-Based", "SA", "Tech Writing"],
         "images": {
           "web": [
-            {"src": "./image/toefl-home.jpg", "caption": "Homepage"}
+            {"src": "/image/LaC-TOEFL-Practice-Website/Web-based-Back-End-1-Dashboard-Peserta.png", "caption": "Homepage"},
+            {"src": "/image/LaC-TOEFL-Practice-Website/Web-based-Back-End-2-Tinjau-Rencana-Belajar-Instruktur.png", "caption": "Practice Module"},
+            {"src": "/image/LaC-TOEFL-Practice-Website/Web-based-Back-End-3-Pengajuan-Rencana-Belajar-1.png", "caption": "Question Interface"},
+            {"src": "/image/LaC-TOEFL-Practice-Website/Web-based-Back-End-4-Kelola-Paket-Kursus.png", "caption": "User Dashboard"},
+            {"src": "/image/LaC-TOEFL-Practice-Website/Web-based-Back-End-5-Pengajuan-Skor-Awal.png", "caption": "Initial Score Submission"},
+            {"src": "/image/LaC-TOEFL-Practice-Website/Web-based-Back-End-6-Seleksi-Skor-Awal.png", "caption": "Initial Score Selection"},
+            {"src": "/image/LaC-TOEFL-Practice-Website/Web-based-Back-End-7-Riwayat-Pembayaran.png", "caption": "Payment History"}
           ],
           "sa": [
-            {"src": "./image/toefl-erd.jpg", "caption": "ERD Database"},
-            {"src": "./image/toefl-activity.jpg", "caption": "Activity Diagram"}
+            {"src": "/image/LaC-TOEFL-Practice-Website/Use-case-scenario-Seleksi-skor-awal-SA-1.png", "caption": "Use Case Scenario - Initial Score Selection"},
+            {"src": "/image/LaC-TOEFL-Practice-Website/Use-Case-Modul-Manajemen-Kursus-(7)-SA-2.png", "caption": "Use Case Diagram - Course Management Module"},
+            {"src": "/image/LaC-TOEFL-Practice-Website/Activity-Diagram-Pengajuan-Skor-Awal-(3)-SA-3.png", "caption": "Activity Diagram - Initial Score Submission"},
+            {"src": "/image/LaC-TOEFL-Practice-Website/Activity-Diagram-Tinjau-Rencana-Belajar-(3)-SA-4.png", "caption": "Activity Diagram - Review Study Plan"},
+            {"src": "/image/LaC-TOEFL-Practice-Website/Sequence-Pengajuan-Skor-Awal-(3)-SA-5.png", "caption": "Sequence Diagram - Initial Score Submission"},
+            {"src": "/image/LaC-TOEFL-Practice-Website/Sequence-Seleksi-Skor-Awal-(3)-SA-6.png", "caption": "Sequence Diagram - Initial Score Selection"},
+            {"src": "/image/LaC-TOEFL-Practice-Website/Sequence-Tinjau-Rencana-Belajar-(6)-SA-7.png", "caption": "Sequence Diagram - Review Study Plan"}
           ],
           "techWriting": [
-            {"src": "./image/toefl-api-spec.jpg", "caption": "API Specification Table"},
-            {"src": "./image/toefl-postman.jpg", "caption": "Postman Collection"}
+            {"src": "/image/LaC-TOEFL-Practice-Website/Tech-Wrting-1.png", "caption": "API Specification"},
+            {"src": "/image/LaC-TOEFL-Practice-Website/Tech-Writing-2.png", "caption": "Postman Collection"},
+            {"src": "/image/LaC-TOEFL-Practice-Website/Tech-Writing-3.png", "caption": "API Documentation"},
+            {"src": "/image/LaC-TOEFL-Practice-Website/Riwayat-pengajuan-skor-awal-peserta -Tech-Writing.png", "caption": "Initial Score Submission History"}
           ]
         }
       },
@@ -240,31 +253,32 @@
         "tools": "Power BI, Power Query",
         "images": {
           "data": [
-            {"src": "./image/Netflix-Data-Analysis/NETFLIX-Shows-Data-Breakdown-Dashboard.png", "caption": "NETFLIX Shows Dashboard - Content Distribution, Trends & Category Insights"}
+            {"src": "./image/Netflix-Data-Analysis/NETFLIX-Shows-Data-Breakdown-Dashboard.png", "caption": "Netflix Dashboard - Content Distribution, Trends & Category Insights"}
           ]
         },
         "tags": ["Data"]
       },
       "helpdeskMonitoring": {
-        "title": "Helpdesk Monitoring Dashboard - Tableau",
+        "title": "Helpdesk Monitoring Dashboard",
         "description": "Analytical dashboard for monitoring WhatsApp-based helpdesk performance using Tableau.",
         "fullDescription": "The LAA FRI WhatsApp helpdesk is currently managed manually, making it difficult for Admins to monitor the number of inquiries, response status, and trends. Manual data is often inaccurate and fragmented, hindering decision-making for service improvements. Key issues include limited real-time monitoring, lack of trend analysis, and inefficient decision-making due to unintegrated data. As a result, many inquiries go unnoticed, and recurring issues persist.\n\nThis project builds an automated monitoring system using Tableau, with data designed based on SLA requirements and structured within a SQL database. I identified business needs, designed the star schema, and developed an interactive dashboard that provides real-time visibility to Admins.\n\nCurrently, the dashboard uses synthetic data generated with Python based on operational helpdesk scenarios, as direct access to real-time data is not yet available. However, the SQL database structure and star schema are designed to be ready for future integration with helpdesk applications—such as a chatbot or ticketing system—enabling real-time data once the source becomes available. The dashboard design was validated through a demo session with LAA representatives, who confirmed that the visualizations and metrics align with their operational needs. While the current dashboard uses synthetic data, the design has been approved as meeting their requirements.",
         "tools": "Tableau, SQL, Python, Draw.io, Ms.Word, Google Docs",
         "images": {
           "ba": [
-            {"src": "./image/Tableau-Monitoring-Helpdesk/BA-1.png", "caption": "Analisis Kebutuhan SLA dan Masalah Helpdesk"},
-            {"src": "./image/Tableau-Monitoring-Helpdesk/BA-2.png", "caption": "Identifikasi 3 Masalah Kunci & Alternatif Solusi"}
+            {"src": "./image/Tableau-Monitoring-Helpdesk/BA-1.png", "caption": "SLA Requirements & Helpdesk Problem Analysis"},
+            {"src": "./image/Tableau-Monitoring-Helpdesk/BA-2.png", "caption": "Identification of 3 Key Issues & Alternative Solutions"}
           ],
           "data": [
-            {"src": "./image/Tableau-Monitoring-Helpdesk/Star-Schema-Dashboard-LAA.drawio.png", "caption": "Star Schema untuk Data Warehouse"},
-            {"src": "./image/Tableau-Monitoring-Helpdesk/ERD-chat_system-monitoring-helpdesk-star-schema.png", "caption": "ERD Star Schema - Database SQL"},
+            {"src": "./image/Tableau-Monitoring-Helpdesk/Star-Schema-Dashboard-LAA.drawio.png", "caption": "Star Schema for Data Warehouse"},
+            {"src": "./image/Tableau-Monitoring-Helpdesk/ERD-chat_system-monitoring-helpdesk-star-schema.png", "caption": "ERD Star Schema - SQL Database"},
             {"src": "./image/Tableau-Monitoring-Helpdesk/dashboard1-Data.png", "caption": "Dashboard Overview - SLA Performance"},
-            {"src": "./image/Tableau-Monitoring-Helpdesk/dashboard2-Data.png", "caption": "Tren Pertanyaan per Kategori"},
-            {"src": "./image/Tableau-Monitoring-Helpdesk/dashboard3-Data.png", "caption": "Status Pertanyaan & Waktu Respons"},
-            {"src": "./image/Tableau-Monitoring-Helpdesk/dashboard4-Data.png", "caption": "Detail Performa per Admin"},
-            {"src": "./image/Tableau-Monitoring-Helpdesk/dashboard5-Data.png", "caption": "Analisis Tren Time Series"}
+            {"src": "./image/Tableau-Monitoring-Helpdesk/dashboard2-Data.png", "caption": "Question Trends by Category"},
+            {"src": "./image/Tableau-Monitoring-Helpdesk/dashboard3-Data.png", "caption": "Question Status & Response Time"},
+            {"src": "./image/Tableau-Monitoring-Helpdesk/dashboard4-Data.png", "caption": "Performance Details by Admin"},
+            {"src": "./image/Tableau-Monitoring-Helpdesk/dashboard5-Data.png", "caption": "Time Series Trend Analysis"}
           ]
-        }
+        },
+        "tags": ["BA", "Data"]
       },
       "financialTracker": {
         "title": "Personal Financial Tracker",
@@ -273,11 +287,11 @@
         "tools": "Ms.Excel",
         "images": {
           "ba": [
-            {"src": "./image/Financial-Tracker/Income&Expense-Cash-Flow.png", "caption": "Struktur Kategori & Alokasi Budgeting yang Dapat Dikustomisasi"}
+            {"src": "./image/Financial-Tracker/Income&Expense-Cash-Flow.png", "caption": "Category Structure & Customizable Budget Allocation"}
           ],
           "data": [
-            {"src": "./image/Financial-Tracker/Financial-Overview-Dashboard.png", "caption": "Financial Overview Dashboard - Snapshot Keuangan Harian & Bulanan"},
-            {"src": "./image/Financial-Tracker/Financial-Analysis&Forecasting-Dashboard.png", "caption": "Financial Analysis & Forecasting Dashboard - Analisis Detail & Prediksi"}
+            {"src": "./image/Financial-Tracker/Financial-Overview-Dashboard.png", "caption": "Financial Overview Dashboard - Daily & Monthly Financial Snapshot"},
+            {"src": "./image/Financial-Tracker/Financial-Analysis&Forecasting-Dashboard.png", "caption": "Financial Analysis & Forecasting Dashboard - Detailed Analysis & Prediction"}
           ]
         },
         "tags": ["BA", "Data"]
@@ -321,15 +335,15 @@
         "title": "Brainys Project",
         "description": "Product Requirement Document and project management for AI-powered syllabus generation platform.",
         "fullDescription": "Brainys Oasys is an AI-powered syllabus generation system designed to help Indonesian teachers create syllabus components quickly and accurately. The platform addresses the need for efficient, adaptable syllabus creation that aligns with recent educational standards in Indonesia.\n\nDuring my internship as an Associate Product Manager, I collaborated with cross-functional teams—including design, data, developers, and the Product Manager—to define and document the product requirements. I created the Product Requirement Document (PRD) that outlined the system's key features, including AI-powered syllabus generation, adaptability to Indonesian syllabus formats, user-friendly interface, and quick output. I also developed user personas to ensure the product was designed with the end user in mind.\n\nI led daily standup meetings to track project progress, identify blockers, and ensure alignment across teams. During these sessions, I documented Minutes of Meeting (MoM) to capture key information, including what each team member had completed, what they planned to work on next, and any blockers they were facing. These records helped maintain transparency and provided clear follow-up for subsequent meetings.\n\nProgress was tracked using a kanban board, where tasks were visualized from backlog to completion. I also contributed to system analysis activities, collaborating with the team to design use case diagrams, activity diagrams, and document functional requirements—ensuring that business needs were translated into clear technical specifications.\n\nThrough structured documentation and consistent project tracking, I helped ensure that Brainys Oasys development remained on schedule, delivering a solution that meets the needs of Indonesian teachers while maintaining accountability throughout the project lifecycle.",
-        "tools": "kanban Board, Miro, Visual Paradigm, Google Docs, Spreadsheet, Canva",
+        "tools": "Kanban Board, Miro, Visual Paradigm, Google Docs, Spreadsheet, Canva",
         "images": {
           "sa": [
-            {"src": "./image/Brainys-Project/Func-Req-Brainys-Features-SA-1.png", "caption": "Functional Requirements - Spesifikasi Fitur"},
+            {"src": "./image/Brainys-Project/Func-Req-Brainys-Features-SA-1.png", "caption": "Functional Requirements - Feature Specifications"},
             {"src": "./image/Brainys-Project/Business-Model-Brainys-Oasys-revise-SA-2.png", "caption": "Business Model Canvas"},
             {"src": "./image/Brainys-Project/Use-Case-Brainys-SA-3.png", "caption": "Use Case Diagram"},
-            {"src": "./image/Brainys-Project/Activity-Diagram-Templat-Bahan-Ajar-SA-4.png", "caption": "Activity Diagram - Templat Bahan Ajar"},
-            {"src": "./image/Brainys-Project/Activity-Diagram-Templat-Bahan-Materi-Gamifikasi-SA-5.png", "caption": "Activity Diagram - Materi Gamifikasi"},
-            {"src": "./image/Brainys-Project/Activity-Diagram-Templat-Alur-Tujuan-Pembelajaran-SA-6.png", "caption": "Activity Diagram - Alur Tujuan Pembelajaran"}
+            {"src": "./image/Brainys-Project/Activity-Diagram-Templat-Bahan-Ajar-SA-4.png", "caption": "Activity Diagram - Teaching Material Template"},
+            {"src": "./image/Brainys-Project/Activity-Diagram-Templat-Bahan-Materi-Gamifikasi-SA-5.png", "caption": "Activity Diagram - Gamification Material Template"},
+            {"src": "./image/Brainys-Project/Activity-Diagram-Templat-Alur-Tujuan-Pembelajaran-SA-6.png", "caption": "Activity Diagram - Learning Objectives Flow"}
           ],
           "ba": [
             {"src": "./image/Brainys-Project/CustNeeds-ExpectResult-Personas-BA-1.png", "caption": "User Personas & Customer Needs Analysis"}
@@ -360,7 +374,7 @@
         "tags": ["Web-Based"]
       },
       "dedikasiLMS": {
-        "title": "DEDIKASI Learning Management System",
+        "title": "DEDIKASI - Career Development Platform",
         "description": "Learning management system empowering fresh graduates with information systems skills through online courses.",
         "fullDescription": "Indonesia faces a challenge where the working-age population (69.3% of total population) requires quality human resources to compete in a dynamic job market. However, unemployment among diploma and university graduates remains at 5.10%, indicating a gap between academic knowledge and workplace readiness. Additionally, Indonesia ranks 45th out of 64 countries in digital competitiveness, highlighting the need for digital upskilling.\n\nDEDIKASI was developed as a free learning platform to address these challenges, empowering fresh graduates—particularly in the information systems field—with relevant digital skills. The platform allows users to explore specialized categories within information systems, helping them enhance their capabilities and improve their employability.\n\nAs the Project Manager, I led the development team using Agile methodologies. I managed the Jira board, tracking tasks and ensuring sprint progress remained on schedule. I helped coordinate daily scrums, sprint planning, sprint reviews, and retrospectives to maintain team alignment and continuous improvement. Communication was coordinated through Slack, with documentation managed in Google Docs. I also contributed to development by coding several features, collaborating with the team to ensure consistent implementation across the platform.\n\nThe resulting platform provides fresh graduates with accessible, structured learning opportunities in information systems, helping bridge the gap between academic knowledge and industry demands.",
         "tools": "Laravel, MySQL, Jira, Slack, Google Docs",
@@ -380,21 +394,21 @@
             {"src": "./image/Dedikasi-Website-Project/Sprint-retro-PMO-5.png", "caption": "Sprint Retrospective - Team Reflection"}
           ]
         },
-        "tags": ["Web-Based", "PMO"]
+        "tags": ["PMO", "Web-Based"]
       },
       "schoolSystem": {
         "title": "OASYS School Project",
         "description": "Comprehensive school management system for teachers, principals, admin staff, and parents.",
-        "fullDescription": "Oasys School is an integrated school management system designed to streamline academic and administrative tasks for educators, principals, staff, and parents. The platform addresses the need for efficiency in managing teaching materials, student data, attendance, digital report cards, and administrative approvals.\n\nDuring my internship as an Associate Product Manager, I led product definition and documentation for Oasys School. I created the Product Requirement Document (PRD) outlining key features—QR code-based attendance, digital report cards, teaching material management, and multi-platform accessibility—and developed user personas for four user roles: subject teachers, homeroom teachers, principals, and administrative staff. I also mapped the business model to align user needs with product features. The PRD and functional requirements spanned nearly 100 pages, reflecting the complexity of the system  and the comprehensive planning required.\n\nI led daily standup meetings to track progress and document Minutes of Meeting (MoM), capturing completed tasks, next steps, and blockers. For system analysis,  I designed multiple activity diagrams covering various workflows—including creating teaching materials, managing attendance, and digital report card grades, among others—to translate business needs into clear technical specifications. I also developed a comprehensive manual book and guideline for end users across all roles. Through structured documentation and consistent project tracking, I ensured Oasys School development remained on schedule, delivering a solution that enhances operational efficiency for schools.",
+        "fullDescription": "Oasys School is an integrated school management system designed to streamline academic and administrative tasks for educators, principals, staff, and parents. The platform addresses the need for efficiency in managing teaching materials, student data, attendance, digital report cards, and administrative approvals.\n\nDuring my internship as an Associate Product Manager, I led product definition and documentation for Oasys School. I created the Product Requirement Document (PRD) outlining key features—QR code-based attendance, digital report cards, teaching material management, and multi-platform accessibility—and developed user personas for four user roles: subject teachers, homeroom teachers, principals, and administrative staff. I also mapped the business model to align user needs with product features. The PRD and functional requirements spanned nearly 100 pages, reflecting the complexity of the system and the comprehensive planning required.\n\nI led daily standup meetings to track progress and document Minutes of Meeting (MoM), capturing completed tasks, next steps, and blockers. For system analysis, I designed multiple activity diagrams covering various workflows—including creating teaching materials, managing attendance, and digital report card grades, among others—to translate business needs into clear technical specifications. I also developed a comprehensive manual book and guideline for end users across all roles. Through structured documentation and consistent project tracking, I ensured Oasys School development remained on schedule, delivering a solution that enhances operational efficiency for schools.",
         "tools": "Kanban Board, Miro, Visual Paradigm, Google Docs, Canva",
         "images": {
           "sa": [
             {"src": "./image/OASYS-School-Project/Oasys-School-(Desktop)-Business-Flow-SA-1.png", "caption": "Business Flow - Desktop Version"},
             {"src": "./image/OASYS-School-Project/Oasys-School-(Mobile)-Business-Flow-SA-2.png", "caption": "Business Flow - Mobile Version"},
-            {"src": "./image/OASYS-School-Project/Funct-Req-OASYS-School-Features-SA-3.png", "caption": "Functional Requirements - Spesifikasi Fitur"},
-            {"src": "./image/OASYS-School-Project/Activity-Diagram-Membuat-Materi-Pembelajaran-SA-7.png", "caption": "Activity Diagram - Membuat Materi Pembelajaran"},
-            {"src": "./image/OASYS-School-Project/Activity-Diagram-Mengatur-Absensi-Murid-SA-6.png", "caption": "Activity Diagram - Mengatur Absensi Murid"},
-            {"src": "./image/OASYS-School-Project/Activity-Diagram-Mengelola-nilai-di-Raport-Digital-SA-5.png", "caption": "Activity Diagram - Mengelola Nilai di Raport Digital"}
+            {"src": "./image/OASYS-School-Project/Funct-Req-OASYS-School-Features-SA-3.png", "caption": "Functional Requirements - Feature Specifications"},
+            {"src": "./image/OASYS-School-Project/Activity-Diagram-Membuat-Materi-Pembelajaran-SA-7.png", "caption": "Activity Diagram - Creating Teaching Materials"},
+            {"src": "./image/OASYS-School-Project/Activity-Diagram-Mengatur-Absensi-Murid-SA-6.png", "caption": "Activity Diagram - Managing Student Attendance"},
+            {"src": "./image/OASYS-School-Project/Activity-Diagram-Mengelola-nilai-di-Raport-Digital-SA-5.png", "caption": "Activity Diagram - Managing Digital Report Card Grades"}
           ],
           "ba": [
             {"src": "./image/OASYS-School-Project/PRD-OASYS-School-Cover.png", "caption": "PRD Cover - Product Requirement Document (nearly 100 pages of documentation)"},
@@ -416,9 +430,13 @@
         "tools": "Python, Pandas, Matplotlib, ARIMA, Kaggle",
         "images": {
           "data": [
-            {"src": "./image/school-dashboard.png", "caption": "Total Pay Forecast Visualization"}
+            {"src": "./image/TotalPayAmount-Prediction-Transjakarta-ARIMA/Total_Pay-Group-by-date.png", "caption": "Total Payment by Date"},
+            {"src": "./image/TotalPayAmount-Prediction-Transjakarta-ARIMA/Forecasting-Model-and-Save-to-CSV.png", "caption": "Forecasting Model and Save to CSV"},
+            {"src": "./image/TotalPayAmount-Prediction-Transjakarta-ARIMA/Train-Actual-Forcast.png", "caption": "Training, Actual, and Forecast Comparison"},
+            {"src": "./image/TotalPayAmount-Prediction-Transjakarta-ARIMA/Fourteen-Day-Revenue-Forecast.png", "caption": "14-Day Revenue Forecast"}
           ]
-        }
+        },
+        "tags": ["Data"]
       }
     },
     "scroll": {

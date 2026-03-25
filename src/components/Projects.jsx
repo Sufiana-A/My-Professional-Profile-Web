@@ -26,30 +26,9 @@ const Projects = () => {
       title: t('projects.items.toeflPlatform.title'),
       image: "/image/LaC-TOEFL-Practice-Website/Web-based-Back-End-1-Dashboard-Peserta.png",
       images: {
-        web: [
-          { src: "/image/LaC-TOEFL-Practice-Website/Web-based-Back-End-1-Dashboard-Peserta.png", caption: "TOEFL Platform Homepage" },
-          { src: "/image/LaC-TOEFL-Practice-Website/Web-based-Back-End-2-Tinjau-Rencana-Belajar-Instruktur.png", caption: "Practice Module" },
-          { src: "/image/LaC-TOEFL-Practice-Website/Web-based-Back-End-3-Pengajuan-Rencana-Belajar-1.png", caption: "Question Interface" },
-          { src: "/image/LaC-TOEFL-Practice-Website/Web-based-Back-End-4-Kelola-Paket-Kursus.png", caption: "User Dashboard" },
-          { src: "/image/LaC-TOEFL-Practice-Website/Web-based-Back-End-5-Pengajuan-Skor-Awal.png", caption: "TOEFL Platform Homepage" },
-          { src: "/image/LaC-TOEFL-Practice-Website/Web-based-Back-End-6-Seleksi-Skor-Awal.png", caption: "Practice Module" },
-          { src: "/image/LaC-TOEFL-Practice-Website/Web-based-Back-End-7-Riwayat-Pembayaran.png", caption: "Question Interface" },
-        ],
-        sa: [
-          { src: "/image/LaC-TOEFL-Practice-Website/Use-case-scenario-Seleksi-skor-awal-SA-1.png", caption: "ERD Database Design" },
-          { src: "/image/LaC-TOEFL-Practice-Website/Use-Case-Modul-Manajemen-Kursus-(7)-SA-2.png", caption: "ERD Database Design" },
-          { src: "/image/LaC-TOEFL-Practice-Website/Activity-Diagram-Pengajuan-Skor-Awal-(3)-SA-3.png", caption: "ERD Database Design" },
-          { src: "/image/LaC-TOEFL-Practice-Website/Activity-Diagram-Tinjau-Rencana-Belajar-(3)-SA-4.png", caption: "ERD Database Design" },
-          { src: "/image/LaC-TOEFL-Practice-Website/Sequence-Pengajuan-Skor-Awal-(3)-SA-5.png", caption: "ERD Database Design" },
-          { src: "/image/LaC-TOEFL-Practice-Website/Sequence-Seleksi-Skor-Awal-(3)-SA-6.png", caption: "ERD Database Design" },
-          { src: "/image/LaC-TOEFL-Practice-Website/Sequence-Tinjau-Rencana-Belajar-(6)-SA-7.png", caption: "ERD Database Design" }
-        ],
-        techWriting: [
-          { src: "/image/LaC-TOEFL-Practice-Website/Tech-Wrting-1.png", caption: "API Specification Table" },
-          { src: "/image/LaC-TOEFL-Practice-Website/Tech-Writing-2.png", caption: "Postman Collection" },
-          { src: "/image/LaC-TOEFL-Practice-Website/Tech-Writing-3.png", caption: "API Specification Table" },
-          { src: "/image/LaC-TOEFL-Practice-Website/Riwayat-pengajuan-skor-awal-peserta -Tech-Writing.png", caption: "Postman Collection" }
-        ]
+        web: t('projects.items.toeflPlatform.images.web') || [],
+        sa: t('projects.items.toeflPlatform.images.sa') || [],
+        techWriting: t('projects.items.toeflPlatform.images.techWriting') || []
       },
       description: t('projects.items.toeflPlatform.fullDescription'),
       tools: t('projects.items.toeflPlatform.tools'),
@@ -60,51 +39,32 @@ const Projects = () => {
       title: t('projects.items.netflixDtDashboard.title'),
       image: "./image/Netflix-Data-Analysis/NETFLIX-Shows-Data-Breakdown-Dashboard.png",
       images: {
-         data: [
-          { src: "./image/Netflix-Data-Analysis/NETFLIX-Shows-Data-Breakdown-Dashboard.png", caption: "SLA Analytics Dashboard" }
-        ]
+        data: t('projects.items.netflixDtDashboard.images.data') || []
       },
       description: t('projects.items.netflixDtDashboard.fullDescription'),
       tools: t('projects.items.netflixDtDashboard.tools'),
       fullDescription: t('projects.items.netflixDtDashboard.fullDescription'),
       tags: ["Data"]
     },
-    // System Analysis & Design Projects
     {
       title: t('projects.items.helpdeskMonitoring.title'),
       image: "./image/Tableau-Monitoring-Helpdesk/dashboard1-Data.png",
       images: {
-        ba: [
-          { src: "./image/Tableau-Monitoring-Helpdesk/BA-1.png", caption: "ERD Database Design" },
-          { src: "./image/Tableau-Monitoring-Helpdesk/BA-2.png", caption: "ERD Database Design" }
-        ],
-        data: [
-          { src: "./image/Tableau-Monitoring-Helpdesk/dashboard1-Data.png", caption: "SLA Analytics Dashboard" },
-          { src: "./image/Tableau-Monitoring-Helpdesk/dashboard2-Data.png", caption: "SLA Analytics Dashboard" },
-          { src: "./image/Tableau-Monitoring-Helpdesk/dashboard3-Data.png", caption: "SLA Analytics Dashboard" },
-          { src: "./image/Tableau-Monitoring-Helpdesk/dashboard4-Data.png", caption: "SLA Analytics Dashboard" },
-          { src: "./image/Tableau-Monitoring-Helpdesk/dashboard5-Data.png", caption: "SLA Analytics Dashboard" },
-          { src: "./image/Tableau-Monitoring-Helpdesk/Star-Schema-Dashboard-LAA.drawio.png", caption: "SLA Analytics Dashboard" },
-          { src: "./image/Tableau-Monitoring-Helpdesk/ERD-chat_system-monitoring-helpdesk-star-schema.png", caption: "SLA Analytics Dashboard" }
-        ]
+        ba: t('projects.items.helpdeskMonitoring.images.ba') || [],
+        data: t('projects.items.helpdeskMonitoring.images.data') || []
       },
       description: t('projects.items.helpdeskMonitoring.fullDescription'),
       tools: t('projects.items.helpdeskMonitoring.tools'),
       fullDescription: t('projects.items.helpdeskMonitoring.fullDescription'),
       tags: ["BA", "Data"]
     },
-    // 
     {
       title: t('projects.items.financialTracker.title'),
       image: "./image/Financial-Tracker/Financial-Overview-Dashboard.png",
       images: {
-         ba: [
-          { src: "./image/Financial-Tracker/Income&Expense-Cash-Flow.png", caption: "SLA Analytics Dashboard" }
-         ],
-         data: [
-          { src: "./image/Financial-Tracker/Financial-Overview-Dashboard.png", caption: "SLA Analytics Dashboard" },
-          { src: "./image/Financial-Tracker/Financial-Analysis&Forecasting-Dashboard.png", caption: "SLA Analytics Dashboard" }
-      ]},
+        ba: t('projects.items.financialTracker.images.ba') || [],
+        data: t('projects.items.financialTracker.images.data') || []
+      },
       description: t('projects.items.financialTracker.fullDescription'),
       tools: t('projects.items.financialTracker.tools'),
       fullDescription: t('projects.items.financialTracker.fullDescription'),
@@ -114,20 +74,8 @@ const Projects = () => {
       title: t('projects.items.travelWebPM.title'),
       image: "./image/Travel-Website-Project/Web-based-1-Landing-page-travel-web-1.png",
       images: {
-        web: [
-          { src: "./image/Travel-Website-Project/Web-based-1-Landing-page-travel-web-1.png", caption: "Analytics Dashboard" },
-          { src: "./image/Travel-Website-Project/Web-based-1-Landing-page-travel-web-2.png", caption: "Trend Analysis" },
-          { src: "./image/Travel-Website-Project/Web-based-1-Landing-page-travel-web-3.png", caption: "Performance Metrics" },
-          { src: "./image/Travel-Website-Project/Web-based-2-Admin-homepage.png", caption: "Analytics Dashboard" },
-          { src: "./image/Travel-Website-Project/Web-based-2-homepage-services.png", caption: "Trend Analysis" },
-          { src: "./image/Travel-Website-Project/Web-based-3-hotel-reservation-form.png", caption: "Performance Metrics" },
-          { src: "./image/Travel-Website-Project/Web-based-4-Admin-page-confirm-user-payment.png", caption: "Real-time Monitoring" },
-          { src: "./image/Travel-Website-Project/Web-based-4-Admin-page-confirm-user-reservation.png", caption: "Performance Metrics" },
-          { src: "./image/Travel-Website-Project/Web-based- 5-Onprocess-reservation.png", caption: "Real-time Monitoring" }
-        ],
-        pmo: [
-          { src: "./image/Travel-Website-Project/PMO-1-Risk-Management-Plan.png", caption: "Product Roadmap" }
-        ]
+        web: t('projects.items.travelWebPM.images.web') || [],
+        pmo: t('projects.items.travelWebPM.images.pmo') || []
       },
       description: t('projects.items.travelWebPM.fullDescription'),
       tools: t('projects.items.travelWebPM.tools'),
@@ -138,9 +86,7 @@ const Projects = () => {
       title: t('projects.items.professionalSyrvey.title'),
       image: "./image/Professional-Survey-Data-Analysis/Data-Professional-Survey-Dashboard.png",
       images: {
-        data: [
-          { src: "./image/Professional-Survey-Data-Analysis/Data-Professional-Survey-Dashboard.png", caption: "SLA Analytics Dashboard" }
-        ]
+        data: t('projects.items.professionalSyrvey.images.data') || []
       },
       description: t('projects.items.professionalSyrvey.fullDescription'),
       tools: t('projects.items.professionalSyrvey.tools'),
@@ -151,24 +97,10 @@ const Projects = () => {
       title: t('projects.items.brainysProject.title'),
       image: "./image/Brainys-Project/PRD-Brainys-Cover.png",
       images: {
-        sa: [
-          { src: "./image/Brainys-Project/Func-Req-Brainys-Features-SA-1.png", caption: "System Architecture Diagram" },
-          { src: "./image/Brainys-Project/Business-Model-Brainys-Oasys-revise-SA-2.png", caption: "User Needs Analysis" },
-          { src: "./image/Brainys-Project/Use-Case-Brainys-SA-3.png", caption: "Survey Results" },
-          { src: "./image/Brainys-Project/Activity-Diagram-Templat-Bahan-Ajar-SA-4.png", caption: "User Needs Analysis" },
-          { src: "./image/Brainys-Project/Activity-Diagram-Templat-Bahan-Materi-Gamifikasi-SA-5.png", caption: "Survey Results" },
-          { src: "./image/Brainys-Project/Activity-Diagram-Templat-Alur-Tujuan-Pembelajaran-SA-6.png", caption: "User Needs Analysis" }
-        ],
-        ba: [
-          { src: "./image/Brainys-Project/CustNeeds-ExpectResult-Personas-BA-1.png", caption: "Market Research Report" }
-        ],
-        pmo: [
-          { src: "./image/Brainys-Project/Board-kanban-PMO-1.jpg", caption: "Project Timeline & Milestones" },
-          { src: "./image/Brainys-Project/Board-kanban-PMO-2.jpeg", caption: "Project Timeline & Milestones" }
-        ],
-        techWriting: [
-          { src: "./image/Brainys-Project/Blur_MoM-DailyStandup-Brainys-PMO-TW-1.png", caption: "Research Documentation" }
-        ]
+        sa: t('projects.items.brainysProject.images.sa') || [],
+        ba: t('projects.items.brainysProject.images.ba') || [],
+        pmo: t('projects.items.brainysProject.images.pmo') || [],
+        techWriting: t('projects.items.brainysProject.images.techWriting') || []
       },
       description: t('projects.items.brainysProject.fullDescription'),
       tools: t('projects.items.brainysProject.tools'),
@@ -179,37 +111,19 @@ const Projects = () => {
       title: t('projects.items.blogWebsite.title'),
       image: "./image/Golf-Leaderboard-External-API-Website/Web-based-1-Homepage.png",
       images: {
-        web: [
-          { src: "./image/Golf-Leaderboard-External-API-Website/Web-based-1-Homepage.png", caption: "Blog Homepage" },
-          { src: "./image/Golf-Leaderboard-External-API-Website/Web-based-2-Schedule-page.png", caption: "Article Page" },
-          { src: "./image/Golf-Leaderboard-External-API-Website/Web-based-2-Search-Schedule.png", caption: "Admin Dashboard" },
-          { src: "./image/Golf-Leaderboard-External-API-Website/Web-based-3-Leaderboard-page.png", caption: "Admin Dashboard" }
-        ]
+        web: t('projects.items.blogWebsite.images.web') || []
       },
       description: t('projects.items.blogWebsite.fullDescription'),
       tools: t('projects.items.blogWebsite.tools'),
       fullDescription: t('projects.items.blogWebsite.fullDescription'),
       tags: ["Web-Based"]
     },
-    // Product & Project Management Projects
     {
       title: t('projects.items.dedikasiLMS.title'),
       image: "./image/Dedikasi-Website-Project/Register-web-based.png",
       images: {
-        web: [
-          { src: "./image/Dedikasi-Website-Project/Profil-Student-Web-based-1.png", caption: "LMS Platform Interface" },
-          { src: "./image/Dedikasi-Website-Project/Profil-Mentor-Web-based-2.png", caption: "Course Management" },
-          { src: "./image/Dedikasi-Website-Project/Dashboard-Admin-Web-based-3.png", caption: "LMS Platform Interface" },
-          { src: "./image/Dedikasi-Website-Project/Feedback-Web-based-4.png", caption: "Course Management" },
-          { src: "./image/Dedikasi-Website-Project/Feedback-Mentor-Web-based-5.png", caption: "LMS Platform Interface" }
-        ],
-        pmo: [
-          { src: "./image/Dedikasi-Website-Project/Jira-Commit-1-PMO-1.png", caption: "Product Roadmap" },
-          { src: "./image/Dedikasi-Website-Project/Blur_Jira-Task-1-PMO-2.jpg", caption: "Sprint Planning Board" },
-          { src: "./image/Dedikasi-Website-Project/Blur_Jira-Task-Stories-PMO-3.jpg", caption: "Product Roadmap" },
-          { src: "./image/Dedikasi-Website-Project/Renacana-Sprint-PMO-4.png", caption: "Sprint Planning Board" },
-          { src: "./image/Dedikasi-Website-Project/Sprint-retro-PMO-5.png", caption: "Product Roadmap" }
-        ]
+        web: t('projects.items.dedikasiLMS.images.web') || [],
+        pmo: t('projects.items.dedikasiLMS.images.pmo') || []
       },
       description: t('projects.items.dedikasiLMS.fullDescription'),
       tools: t('projects.items.dedikasiLMS.tools'),
@@ -220,23 +134,10 @@ const Projects = () => {
       title: t('projects.items.schoolSystem.title'),
       image: "./image/OASYS-School-Project/PRD-OASYS-School-Cover.png",
       images: {
-        sa: [
-          { src: "./image/OASYS-School-Project/Oasys-School-(Desktop)-Business-Flow-SA-1.png", caption: "System Architecture Diagram" },
-          { src: "./image/OASYS-School-Project/Oasys-School-(Mobile)-Business-Flow-SA-2.png", caption: "System Architecture Diagram" },
-          { src: "./image/OASYS-School-Project/Funct-Req-OASYS-School-Features-SA-3.png", caption: "System Architecture Diagram" },
-          { src: "./image/OASYS-School-Project/Activity-Diagram-Mengelola-nilai-di-Raport-Digital-SA-5.png", caption: "System Architecture Diagram" },
-          { src: "./image/OASYS-School-Project/Activity-Diagram-Mengatur-Absensi-Murid-SA-6.png", caption: "System Architecture Diagram" },
-          { src: "./image/OASYS-School-Project/Activity-Diagram-Membuat-Materi-Pembelajaran-SA-7.png", caption: "System Architecture Diagram" }
-        ],
-        ba: [
-          { src: "./image/OASYS-School-Project/BA-1.png", caption: "Market Research Report" }
-        ],
-        pmo: [
-          { src: "./image/OASYS-School-Project/Blur_MoM-DailyStandup-Oasys-School-PMO-TW-1.png", caption: "Project Timeline & Milestones" }
-        ],
-        techWriting: [
-          { src: "./image/OASYS-School-Project/Manual-Book-Guideline-OASYS-School-Tech-Writing-1.png", caption: "Research Documentation" }
-        ]
+        sa: t('projects.items.schoolSystem.images.sa') || [],
+        ba: t('projects.items.schoolSystem.images.ba') || [],
+        pmo: t('projects.items.schoolSystem.images.pmo') || [],
+        techWriting: t('projects.items.schoolSystem.images.techWriting') || []
       },
       description: t('projects.items.schoolSystem.fullDescription'),
       tools: t('projects.items.schoolSystem.tools'),
@@ -247,12 +148,7 @@ const Projects = () => {
       title: t('projects.items.totalPayPrediction.title'),
       image: "./image/TotalPayAmount-Prediction-Transjakarta-ARIMA/Fourteen-Day-Revenue-Forecast.png",
       images: {
-         data: [
-          { src: "./image/TotalPayAmount-Prediction-Transjakarta-ARIMA/Total_Pay-Group-by-date.png", caption: "SLA Analytics Dashboard" },
-          { src: "./image/TotalPayAmount-Prediction-Transjakarta-ARIMA/Forecasting-Model-and-Save-to-CSV.png", caption: "SLA Analytics Dashboard" },
-          { src: "./image/TotalPayAmount-Prediction-Transjakarta-ARIMA/Train-Actual-Forcast.png", caption: "SLA Analytics Dashboard" },
-          { src: "./image/TotalPayAmount-Prediction-Transjakarta-ARIMA/Fourteen-Day-Revenue-Forecast.png", caption: "SLA Analytics Dashboard" },
-        ]
+        data: t('projects.items.totalPayPrediction.images.data') || []
       },
       description: t('projects.items.totalPayPrediction.fullDescription'),
       tools: t('projects.items.totalPayPrediction.tools'),
@@ -339,7 +235,7 @@ const Projects = () => {
     document.body.style.overflow = "unset";
   };
 
-  // Helper function to render gallery sections
+  // Helper function to render gallery sections (caption di atas gambar)
   const renderGallerySection = (title, icon, images, description) => {
     if (!images || images.length === 0) return null;
     
@@ -349,22 +245,28 @@ const Projects = () => {
           <span>{icon}</span> {title}
         </h4>
         <p className="text-sm text-slate-400 mb-3">{description}</p>
-        <div className="space-y-4">
+        <div className="space-y-6">
           {images.map((img, idx) => (
             <motion.div
               key={idx}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 * idx }}
-              className="relative group"
+              className="flex flex-col items-center gap-2"
             >
-              <img
-                src={img.src}
-                alt={img.caption}
-                className="w-full h-auto rounded-lg border border-green-400/20 group-hover:border-green-400/50 transition-all duration-300"
-              />
-              <div className="absolute top-2 left-2 bg-black/60 backdrop-blur-sm px-2 py-1 rounded text-xs text-green-400 border border-green-400/30">
-                {img.caption}
+              {/* Caption di atas gambar */}
+              <div className="text-center">
+                <p className="text-sm font-medium text-green-400 bg-slate-800/50 px-3 py-1 rounded-full inline-block">
+                  {img.caption}
+                </p>
+              </div>
+              {/* Gambar */}
+              <div className="relative group w-full">
+                <img
+                  src={img.src}
+                  alt={img.caption}
+                  className="w-full h-auto rounded-lg border border-green-400/20 group-hover:border-green-400/50 transition-all duration-300"
+                />
               </div>
             </motion.div>
           ))}
@@ -377,7 +279,6 @@ const Projects = () => {
   const renderDescription = (text) => {
     if (!text) return null;
     
-    // Split berdasarkan \n\n menjadi paragraf
     const paragraphs = text.split('\n\n');
     
     return paragraphs.map((para, idx) => (
@@ -603,7 +504,7 @@ const Projects = () => {
                   <div className="mb-6">
                     <h4 className="text-green-400 font-semibold mb-2 text-lg">{t('projects.modal.description')}</h4>
                     <div className="text-slate-300 leading-relaxed">
-                      {renderDescription(selectedProject.fullDescription || selectedProject.description)}
+                      {renderDescription(selectedProject.fullDescription || selectedProject.fullDescription)}
                     </div>
                   </div>
 
