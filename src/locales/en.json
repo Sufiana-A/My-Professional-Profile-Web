@@ -221,28 +221,28 @@
         "tags": ["Web-Based", "SA", "Tech Writing"],
         "images": {
           "web": [
-            {"src": "/image/LaC-TOEFL-Practice-Website/Web-based-Back-End-1-Dashboard-Peserta.png", "caption": "Homepage"},
-            {"src": "/image/LaC-TOEFL-Practice-Website/Web-based-Back-End-2-Tinjau-Rencana-Belajar-Instruktur.png", "caption": "Practice Module"},
-            {"src": "/image/LaC-TOEFL-Practice-Website/Web-based-Back-End-3-Pengajuan-Rencana-Belajar-1.png", "caption": "Question Interface"},
-            {"src": "/image/LaC-TOEFL-Practice-Website/Web-based-Back-End-4-Kelola-Paket-Kursus.png", "caption": "User Dashboard"},
-            {"src": "/image/LaC-TOEFL-Practice-Website/Web-based-Back-End-5-Pengajuan-Skor-Awal.png", "caption": "Initial Score Submission"},
-            {"src": "/image/LaC-TOEFL-Practice-Website/Web-based-Back-End-6-Seleksi-Skor-Awal.png", "caption": "Initial Score Selection"},
-            {"src": "/image/LaC-TOEFL-Practice-Website/Web-based-Back-End-7-Riwayat-Pembayaran.png", "caption": "Payment History"}
+            {"src": "./image/LaC-TOEFL-Practice-Website/Web-based-Back-End-1-Dashboard-Peserta.png", "caption": "Homepage"},
+            {"src": "./image/LaC-TOEFL-Practice-Website/Web-based-Back-End-2-Tinjau-Rencana-Belajar-Instruktur.png", "caption": "Practice Module"},
+            {"src": "./image/LaC-TOEFL-Practice-Website/Web-based-Back-End-3-Pengajuan-Rencana-Belajar-1.png", "caption": "Question Interface"},
+            {"src": "./image/LaC-TOEFL-Practice-Website/Web-based-Back-End-4-Kelola-Paket-Kursus.png", "caption": "User Dashboard"},
+            {"src": "./image/LaC-TOEFL-Practice-Website/Web-based-Back-End-5-Pengajuan-Skor-Awal.png", "caption": "Initial Score Submission"},
+            {"src": "./image/LaC-TOEFL-Practice-Website/Web-based-Back-End-6-Seleksi-Skor-Awal.png", "caption": "Initial Score Selection"},
+            {"src": "./image/LaC-TOEFL-Practice-Website/Web-based-Back-End-7-Riwayat-Pembayaran.png", "caption": "Payment History"}
           ],
           "sa": [
-            {"src": "/image/LaC-TOEFL-Practice-Website/Use-case-scenario-Seleksi-skor-awal-SA-1.png", "caption": "Use Case Scenario - Initial Score Selection"},
-            {"src": "/image/LaC-TOEFL-Practice-Website/Use-Case-Modul-Manajemen-Kursus-(7)-SA-2.png", "caption": "Use Case Diagram - Course Management Module"},
-            {"src": "/image/LaC-TOEFL-Practice-Website/Activity-Diagram-Pengajuan-Skor-Awal-(3)-SA-3.png", "caption": "Activity Diagram - Initial Score Submission"},
-            {"src": "/image/LaC-TOEFL-Practice-Website/Activity-Diagram-Tinjau-Rencana-Belajar-(3)-SA-4.png", "caption": "Activity Diagram - Review Study Plan"},
-            {"src": "/image/LaC-TOEFL-Practice-Website/Sequence-Pengajuan-Skor-Awal-(3)-SA-5.png", "caption": "Sequence Diagram - Initial Score Submission"},
-            {"src": "/image/LaC-TOEFL-Practice-Website/Sequence-Seleksi-Skor-Awal-(3)-SA-6.png", "caption": "Sequence Diagram - Initial Score Selection"},
-            {"src": "/image/LaC-TOEFL-Practice-Website/Sequence-Tinjau-Rencana-Belajar-(6)-SA-7.png", "caption": "Sequence Diagram - Review Study Plan"}
+            {"src": "./image/LaC-TOEFL-Practice-Website/Use-case-scenario-Seleksi-skor-awal-SA-1.png", "caption": "Use Case Scenario - Initial Score Selection"},
+            {"src": "./image/LaC-TOEFL-Practice-Website/Use-Case-Modul-Manajemen-Kursus-(7)-SA-2.png", "caption": "Use Case Diagram - Course Management Module"},
+            {"src": "./image/LaC-TOEFL-Practice-Website/Activity-Diagram-Pengajuan-Skor-Awal-(3)-SA-3.png", "caption": "Activity Diagram - Initial Score Submission"},
+            {"src": "./image/LaC-TOEFL-Practice-Website/Activity-Diagram-Tinjau-Rencana-Belajar-(3)-SA-4.png", "caption": "Activity Diagram - Review Study Plan"},
+            {"src": "./image/LaC-TOEFL-Practice-Website/Sequence-Pengajuan-Skor-Awal-(3)-SA-5.png", "caption": "Sequence Diagram - Initial Score Submission"},
+            {"src": "./image/LaC-TOEFL-Practice-Website/Sequence-Seleksi-Skor-Awal-(3)-SA-6.png", "caption": "Sequence Diagram - Initial Score Selection"},
+            {"src": "./image/LaC-TOEFL-Practice-Website/Sequence-Tinjau-Rencana-Belajar-(6)-SA-7.png", "caption": "Sequence Diagram - Review Study Plan"}
           ],
           "techWriting": [
-            {"src": "/image/LaC-TOEFL-Practice-Website/Tech-Wrting-1.png", "caption": "API Specification"},
-            {"src": "/image/LaC-TOEFL-Practice-Website/Tech-Writing-2.png", "caption": "Postman Collection"},
-            {"src": "/image/LaC-TOEFL-Practice-Website/Tech-Writing-3.png", "caption": "API Documentation"},
-            {"src": "/image/LaC-TOEFL-Practice-Website/Riwayat-pengajuan-skor-awal-peserta -Tech-Writing.png", "caption": "Initial Score Submission History"}
+            {"src": "./image/LaC-TOEFL-Practice-Website/Tech-Wrting-1.png", "caption": "API Specification"},
+            {"src": "./image/LaC-TOEFL-Practice-Website/Tech-Writing-2.png", "caption": "Postman Collection"},
+            {"src": "./image/LaC-TOEFL-Practice-Website/Tech-Writing-3.png", "caption": "API Documentation"},
+            {"src": "./image/LaC-TOEFL-Practice-Website/Riwayat-pengajuan-skor-awal-peserta -Tech-Writing.png", "caption": "Initial Score Submission History"}
           ]
         }
       },

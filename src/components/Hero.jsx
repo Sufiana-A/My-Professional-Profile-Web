@@ -144,7 +144,7 @@ const Hero = () => {
       >
         <div className="profile-wrapper">
           <img
-            src="/image/profile.png"
+            src="./image/profile.png"
             alt="Sufiana Profile"
             className="w-full h-full object-cover"
           />

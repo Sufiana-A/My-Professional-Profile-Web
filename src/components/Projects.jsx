@@ -24,7 +24,7 @@ const Projects = () => {
   const allProjects = [
     {
       title: t('projects.items.toeflPlatform.title'),
-      image: "/image/LaC-TOEFL-Practice-Website/Web-based-Back-End-1-Dashboard-Peserta.png",
+      image: "./image/LaC-TOEFL-Practice-Website/Web-based-Back-End-1-Dashboard-Peserta.png",
       images: {
         web: t('projects.items.toeflPlatform.images.web') || [],
         sa: t('projects.items.toeflPlatform.images.sa') || [],
