@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://sufiana-a.github.io/my-professional-profile-web",
+  "homepage": "https://sufiana-a.github.io/My-Professional-Profile-Web",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
