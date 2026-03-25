@@ -7,6 +7,7 @@ import {
 } from "react-icons/fi";
 import { FaMedium } from "react-icons/fa";
 import { useTranslation } from "../hooks/useTranslation";
+import profileImg from '/image/profile.png';
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -144,7 +145,7 @@ const Hero = () => {
       >
         <div className="profile-wrapper">
           <img
-            src="./image/profile.png"
+            src={profileImg}
             alt="Sufiana Profile"
             className="w-full h-full object-cover"
           />

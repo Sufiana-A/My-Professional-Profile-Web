@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "../hooks/useTranslation";
+import toeflThumbnail from '/image/LaC-TOEFL-Practice-Website/Web-based-Back-End-1-Dashboard-Peserta.png';
 
 const Projects = () => {
   const { t, language } = useTranslation();
@@ -24,7 +25,7 @@ const Projects = () => {
   const allProjects = [
     {
       title: t('projects.items.toeflPlatform.title'),
-      image: "./image/LaC-TOEFL-Practice-Website/Web-based-Back-End-1-Dashboard-Peserta.png",
+      image: toeflThumbnail,
       images: {
         web: t('projects.items.toeflPlatform.images.web') || [],
         sa: t('projects.items.toeflPlatform.images.sa') || [],
