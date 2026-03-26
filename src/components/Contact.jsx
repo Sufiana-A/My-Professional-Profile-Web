@@ -1,5 +1,4 @@
 import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
 import { FaMedium } from "react-icons/fa";
@@ -12,26 +11,34 @@ const Contact = () => {
   const form = useRef();
   const [status, setStatus] = useState("");
 
-  const sendEmail = (e) => {
+  // Ganti sendEmail dengan Web3Forms
+  const sendEmail = async (e) => {
     e.preventDefault();
     setStatus(t('contact.form.sending'));
 
-    emailjs
-      .sendForm(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        form.current,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setStatus(t('contact.form.success'));
-          form.current.reset();
-        },
-        () => {
-          setStatus(t('contact.form.error'));
-        }
-      );
+    // Buat FormData dari form
+    const formData = new FormData(form.current);
+    // Tambahkan access_key Web3Forms
+    formData.append("access_key", import.meta.env.VITE_WEB3FORMS_ACCESS_KEY);
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setStatus(t('contact.form.success'));
+        form.current.reset();
+      } else {
+        setStatus(t('contact.form.error'));
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      setStatus(t('contact.form.error'));
+    }
   };
 
   return (
@@ -77,7 +84,6 @@ const Contact = () => {
           >
             <FiLinkedin size={26} />
           </a>
-          {/* Changed from Instagram to Email with mailto link */}
           <a 
             href="mailto:work.sufiana24@gmail.com?subject=Contact%20from%20WebProfile" 
             className="social-icon"
@@ -130,7 +136,7 @@ const Contact = () => {
           </label>
           <input
             type="text"
-            name="from_name"
+            name="name"
             required
             className="w-full p-3 rounded-md bg-slate-900/70 text-white border border-slate-700 focus:outline-none focus:ring-2 focus:ring-green-400"
           />
