@@ -27,6 +27,10 @@
       "github": "GitHub",
       "linkedin": "LinkedIn",
       "medium": "Medium"
+    },
+    "messages": {
+      "fileNotFound": "Oops, sorry. File not found.",
+      "downloadError": "An error occurred. Please try again later."
     }
   },
   "about": {

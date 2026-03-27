@@ -53,6 +53,35 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, [charIndex, isDeleting, professionIndex, professions]);
 
+   // Fungsi untuk handle download dengan error handling dan translation
+  const handleDownload = (e) => {
+    e.preventDefault();
+    
+    // Path file PDF
+    const filePath = "./portfolio/Extended-Portfolio_Sufiana-Arumdita.pdf";
+    
+    // Cek apakah file bisa diakses
+    fetch(filePath, { method: 'HEAD' })
+      .then(response => {
+        if (response.ok) {
+          // File exists, trigger download
+          const link = document.createElement('a');
+          link.href = filePath;
+          link.download = "Sufiana_Arumdita_Portfolio.pdf"; // Nama file saat didownload
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        } else {
+          console.error('File not found');
+          alert(t("hero.messages.fileNotFound"));
+        }
+      })
+      .catch(error => {
+        console.error('Error checking file:', error);
+        alert(t("hero.messages.downloadError"));
+      });
+  };
+
   return (
     <section
       id="home"
@@ -109,16 +138,15 @@ const Hero = () => {
             {t("hero.buttons.getInTouch")}
           </a>
 
-          <a
-            href="/portfolio/Sufiana Arumdita_Extended Portfolio.pdf"
-            download
+          <button
+            onClick={handleDownload}
             className="flex items-center gap-2 px-6 py-3 bg-blue-600 rounded-lg
             transition-all duration-300 hover:-translate-y-1 
-            hover:shadow-[0_0_20px_#3b82f6]"
+            hover:shadow-[0_0_20px_#3b82f6] cursor-pointer"
           >
             <FiDownload size={20} />
             {t("hero.buttons.downloadSlidePortfolio")}
-          </a>
+          </button>
         </div>
 
         {/* Social without Wiggle */}

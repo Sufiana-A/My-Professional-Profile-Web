@@ -27,6 +27,10 @@
       "github": "GitHub",
       "linkedin": "LinkedIn",
       "medium": "Medium"
+    },
+    "messages": {
+      "fileNotFound": "Oops, maaf. File tidak ditemukan.",
+      "downloadError": "Terjadi kesalahan. Silakan coba lagi nanti."
     }
   },
   "about": {
