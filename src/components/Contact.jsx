@@ -10,15 +10,66 @@ const Contact = () => {
   const { t } = useTranslation();
   const form = useRef();
   const [status, setStatus] = useState("");
+  const [errors, setErrors] = useState({});
 
+  // Real-time validation
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    
+    let error = '';
+    
+    if (name === 'name' && !value.trim()) {
+      error = t('contact.validation.nameRequired');
+    }
+    
+    if (name === 'email') {
+      if (!value.trim()) {
+        error = t('contact.validation.emailRequired');
+      } else if (!/\S+@\S+\.\S+/.test(value)) {
+        error = t('contact.validation.emailInvalid');
+      }
+    }
+    
+    if (name === 'message' && !value.trim()) {
+      error = t('contact.validation.messageRequired');
+    }
+    
+    setErrors(prev => ({ ...prev, [name]: error }));
+  };
+
+  const validateForm = () => {
+    const newErrors = {};
+    const formData = new FormData(form.current);
+    const name = formData.get("name");
+    const email = formData.get("email");
+    const message = formData.get("message");
+
+    if (!name || name.trim() === "") {
+      newErrors.name = t('contact.validation.nameRequired');
+    }
+    if (!email || email.trim() === "") {
+      newErrors.email = t('contact.validation.emailRequired');
+    } else if (!/\S+@\S+\.\S+/.test(email)) {
+      newErrors.email = t('contact.validation.emailInvalid');
+    }
+    if (!message || message.trim() === "") {
+      newErrors.message = t('contact.validation.messageRequired');
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
   // Ganti sendEmail dengan Web3Forms
   const sendEmail = async (e) => {
     e.preventDefault();
+    if (!validateForm()) { 
+      return;
+    }
     setStatus(t('contact.form.sending'));
 
     // Buat FormData dari form
     const formData = new FormData(form.current);
-    // Tambahkan access_key Web3Forms
+    
     formData.append("access_key", import.meta.env.VITE_WEB3FORMS_ACCESS_KEY);
 
     try {
@@ -114,6 +165,7 @@ const Contact = () => {
       <motion.form
         ref={form}
         onSubmit={sendEmail}
+        noValidate
         initial={{ opacity: 0, x: 40 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.7 }}
@@ -137,9 +189,14 @@ const Contact = () => {
           <input
             type="text"
             name="name"
-            required
-            className="w-full p-3 rounded-md bg-slate-900/70 text-white border border-slate-700 focus:outline-none focus:ring-2 focus:ring-green-400"
+            className={`w-full p-3 rounded-md bg-slate-900/70 text-white border ${
+              errors.name ? 'border-red-500' : 'border-slate-700'
+            } focus:outline-none focus:ring-2 focus:ring-green-400`}
+            onChange={handleInputChange}
           />
+          {errors.name && (
+            <p className="text-red-400 text-sm mt-1">{errors.name}</p>
+          )}
         </div>
         <div className="mb-5">
           <label className="block text-sm text-slate-300 mb-2">
@@ -148,9 +205,14 @@ const Contact = () => {
           <input
             type="email"
             name="email"
-            required
-            className="w-full p-3 rounded-md bg-slate-900/70 text-white border border-slate-700 focus:outline-none focus:ring-2 focus:ring-green-400"
+            className={`w-full p-3 rounded-md bg-slate-900/70 text-white border ${
+              errors.email ? 'border-red-500' : 'border-slate-700'
+            } focus:outline-none focus:ring-2 focus:ring-green-400`}
+            onChange={handleInputChange}
           />
+          {errors.email && (
+            <p className="text-red-400 text-sm mt-1">{errors.email}</p>
+          )}
         </div>
         <div className="mb-5">
           <label className="block text-sm text-slate-300 mb-2">
@@ -159,9 +221,14 @@ const Contact = () => {
           <textarea
             name="message"
             rows="5"
-            required
-            className="w-full p-3 rounded-md bg-slate-900/70 text-white border border-slate-700 focus:outline-none focus:ring-2 focus:ring-green-400"
+            className={`w-full p-3 rounded-md bg-slate-900/70 text-white border ${
+              errors.message ? 'border-red-500' : 'border-slate-700'
+            } focus:outline-none focus:ring-2 focus:ring-green-400`}
+            onChange={handleInputChange}
           ></textarea>
+          {errors.message && (
+            <p className="text-red-400 text-sm mt-1">{errors.message}</p>
+          )}
         </div>
         <button
           type="submit"

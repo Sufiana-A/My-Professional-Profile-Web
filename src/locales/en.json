@@ -463,6 +463,12 @@
       "success": "Message sent successfully!",
       "error": "Failed to send message. Please try again."
     },
+    "validation": {
+      "nameRequired": "Name is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Invalid email format",
+      "messageRequired": "Message is required"
+    },
     "social": {
       "github": "GitHub",
       "linkedin": "LinkedIn",

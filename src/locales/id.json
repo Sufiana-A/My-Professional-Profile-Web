@@ -463,6 +463,12 @@
       "success": "Pesan berhasil dikirim!",
       "error": "Gagal mengirim pesan. Silakan coba lagi."
     },
+    "validation": {
+      "nameRequired": "Nama harus diisi",
+      "emailRequired": "Email harus diisi",
+      "emailInvalid": "Format email tidak valid",
+      "messageRequired": "Pesan harus diisi"
+    },
     "social": {
       "github": "GitHub",
       "linkedin": "LinkedIn",
