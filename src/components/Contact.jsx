@@ -136,7 +136,7 @@ const Contact = () => {
             <FiLinkedin size={26} />
           </a>
           <a 
-            href="mailto:work.sufiana24@gmail.com?subject=Contact%20from%20WebProfile" 
+            href="mailto:work.sufiana42@gmail.com?subject=Contact%20from%20WebProfile" 
             className="social-icon"
             title={t('contact.social.email')}
           >
