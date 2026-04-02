@@ -63,7 +63,6 @@ const Projects = () => {
       title: t('projects.items.financialTracker.title'),
       image: "./image/Financial-Tracker/Financial-Overview-Dashboard.png",
       images: {
-        ba: t('projects.items.financialTracker.images.ba') || [],
         data: t('projects.items.financialTracker.images.data') || []
       },
       description: t('projects.items.financialTracker.fullDescription'),
@@ -549,7 +548,7 @@ const Projects = () => {
                         "Business Analysis",
                         "📈",
                         selectedProject.images.ba,
-                        "Analisis kebutuhan bisnis, PRD, benchmarking, dan user stories."
+                        "Analisis kebutuhan bisnis dan pemahaman pengguna."
                       )
                     )}
 
@@ -558,7 +557,7 @@ const Projects = () => {
                         "Project Management",
                         "📋",
                         selectedProject.images.pmo,
-                        "Manajemen proyek, sprint planning, risk register, dan dokumentasi agile."
+                        "Dokumentasi dan pelacakan proyek yang dikelola secara terstruktur."
                       )
                     )}
 
@@ -576,7 +575,7 @@ const Projects = () => {
                         "Technical Writing",
                         "📝",
                         selectedProject.images.techWriting,
-                        "Dokumentasi API, user manual, Postman collection, dan spesifikasi teknis."
+                        "Dokumentasi teknis seperti dokumentasi API, user manual, dan spesifikasi teknis."
                       )
                     )}
                   </div>

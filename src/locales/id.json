@@ -225,13 +225,13 @@
         "tags": ["Web-Based", "SA", "Tech Writing"],
         "images": {
           "web": [
-            {"src": "./image/LaC-TOEFL-Practice-Website/Web-based-Back-End-1-Dashboard-Peserta.png", "caption": "Dashboard Peserta"},
-            {"src": "./image/LaC-TOEFL-Practice-Website/Web-based-Back-End-2-Tinjau-Rencana-Belajar-Instruktur.png", "caption": "Halaman Tinjau Rencana Belajar di Instruktur"},
-            {"src": "./image/LaC-TOEFL-Practice-Website/Web-based-Back-End-3-Pengajuan-Rencana-Belajar-1.png", "caption": "Halaman Pengajuan Rencana Belajar di Peserta"},
-            {"src": "./image/LaC-TOEFL-Practice-Website/Web-based-Back-End-4-Kelola-Paket-Kursus.png", "caption": "Halaman Kelola Paket Kursus di Admin"},
-            {"src": "./image/LaC-TOEFL-Practice-Website/Web-based-Back-End-5-Pengajuan-Skor-Awal.png", "caption": "Halaman Pengajuan Skor Awal di Peserta"},
-            {"src": "./image/LaC-TOEFL-Practice-Website/Web-based-Back-End-6-Seleksi-Skor-Awal.png", "caption": "Halaman Seleksi Skor Awal di Admin"},
-            {"src": "./image/LaC-TOEFL-Practice-Website/Web-based-Back-End-7-Riwayat-Pembayaran.png", "caption": "Halaman Riwayat Pembayaran di Peserta"}
+            {"src": "./image/LaC-TOEFL-Practice-Website/Web-based-Back-End-1-Dashboard-Peserta.png", "caption": "Tampilan Halaman Dashboard Peserta"},
+            {"src": "./image/LaC-TOEFL-Practice-Website/Web-based-Back-End-2-Tinjau-Rencana-Belajar-Instruktur.png", "caption": "Tampilan Halaman Tinjau Rencana Belajar di Instruktur"},
+            {"src": "./image/LaC-TOEFL-Practice-Website/Web-based-Back-End-3-Pengajuan-Rencana-Belajar-1.png", "caption": "Tampilan Form Pengajuan Rencana Belajar di Peserta"},
+            {"src": "./image/LaC-TOEFL-Practice-Website/Web-based-Back-End-4-Kelola-Paket-Kursus.png", "caption": "Tampilan Halaman Kelola Paket Kursus di Admin"},
+            {"src": "./image/LaC-TOEFL-Practice-Website/Web-based-Back-End-5-Pengajuan-Skor-Awal.png", "caption": "Tampilan Form Pengajuan Skor Awal di Peserta"},
+            {"src": "./image/LaC-TOEFL-Practice-Website/Web-based-Back-End-6-Seleksi-Skor-Awal.png", "caption": "Tampilan Halaman Seleksi Skor Awal di Admin"},
+            {"src": "./image/LaC-TOEFL-Practice-Website/Web-based-Back-End-7-Riwayat-Pembayaran.png", "caption": "Tampilan Halaman Riwayat Pembayaran di Peserta"}
           ],
           "sa": [
             {"src": "./image/LaC-TOEFL-Practice-Website/Use-case-scenario-Seleksi-skor-awal-SA-1.png", "caption": "Use Case Scenario - Seleksi Skor Awal"},
@@ -275,11 +275,11 @@
           "data": [
             {"src": "./image/Tableau-Monitoring-Helpdesk/Star-Schema-Dashboard-LAA.drawio.png", "caption": "Star Schema untuk Data Warehouse"},
             {"src": "./image/Tableau-Monitoring-Helpdesk/ERD-chat_system-monitoring-helpdesk-star-schema.png", "caption": "ERD Star Schema - Database SQL"},
-            {"src": "./image/Tableau-Monitoring-Helpdesk/dashboard1-Data.png", "caption": "Dashboard Overview - Kinerja SLA"},
-            {"src": "./image/Tableau-Monitoring-Helpdesk/dashboard2-Data.png", "caption": "Tren Pertanyaan per Kategori"},
-            {"src": "./image/Tableau-Monitoring-Helpdesk/dashboard3-Data.png", "caption": "Status Pertanyaan & Waktu Respons"},
-            {"src": "./image/Tableau-Monitoring-Helpdesk/dashboard4-Data.png", "caption": "Detail Performa per Admin"},
-            {"src": "./image/Tableau-Monitoring-Helpdesk/dashboard5-Data.png", "caption": "Analisis Tren Time Series"}
+            {"src": "./image/Tableau-Monitoring-Helpdesk/dashboard1-Data.png", "caption": "Dashboard Overview - Metrik Kinerja SLA"},
+            {"src": "./image/Tableau-Monitoring-Helpdesk/dashboard2-Data.png", "caption": "Dashboard Overview - Metrik Kinerja SLA"},
+            {"src": "./image/Tableau-Monitoring-Helpdesk/dashboard3-Data.png", "caption": "Dashboard Overview - Metrik Kinerja SLA"},
+            {"src": "./image/Tableau-Monitoring-Helpdesk/dashboard4-Data.png", "caption": "Dashboard Detail Transaksi Helpdesk"},
+            {"src": "./image/Tableau-Monitoring-Helpdesk/dashboard5-Data.png", "caption": "Dashboard Detail Transaksi Helpdesk"}
           ]
         },
         "tags": ["BA", "Data"]
@@ -290,10 +290,8 @@
         "fullDescription": "Pelacak keuangan pribadi ini dikembangkan untuk membantu mengelola pemasukan dan pengeluaran harian, dengan pendekatan terstruktur dalam budgeting dan perencanaan keuangan. Pelacak ini dirancang untuk memberikan visibilitas yang jelas terhadap arus kas, memungkinkan pengguna memantau pola pengeluaran, melacak tabungan, dan membuat keputusan keuangan yang lebih baik.\n\nSaya merancang struktur pelacak berdasarkan kebutuhan keuangan pribadi, dengan kategori yang dapat dikonfigurasi untuk aliran pemasukan dan pengeluaran—membedakan sumber seperti rekening bank atau saluran pemasukan lainnya. Kerangka budgeting memungkinkan pengguna mengatur alokasi persentase kustom, dikelola dalam bagian manajemen kategori khusus. Pendekatan analitis ini mencerminkan perspektif analisis bisnis dalam memahami kebutuhan pengguna dan mendefinisikan kebutuhan fungsional.\n\nSuite dashboard terdiri dari dua tampilan utama. Financial Overview Dashboard memberikan snapshot tingkat tinggi dari aktivitas keuangan harian dan bulanan, menyoroti tren pemasukan vs pengeluaran dan alokasi anggaran. Financial Analysis & Forecasting Dashboard menawarkan wawasan lebih dalam, termasuk pelacakan anggaran target vs aktual, rincian kategori pengeluaran, dan peramalan prediktif berdasarkan pola historis. Terstruktur dalam Excel menggunakan tabel, formula, dan pivot table, pelacak ini memberikan solusi praktis untuk manajemen keuangan pribadi—menggabungkan desain data terstruktur dengan visualisasi intuitif untuk mendukung pengambilan keputusan yang lebih baik.",
         "tools": "Ms.Excel",
         "images": {
-          "ba": [
-            {"src": "./image/Financial-Tracker/Income&Expense-Cash-Flow.png", "caption": "Struktur Kategori & Alokasi Budgeting yang Dapat Dikustomisasi"}
-          ],
           "data": [
+            {"src": "./image/Financial-Tracker/Income&Expense-Cash-Flow.png", "caption": "Sheet Input Pendapatan & Pengeluaran Rinci"},
             {"src": "./image/Financial-Tracker/Financial-Overview-Dashboard.png", "caption": "Financial Overview Dashboard - Snapshot Keuangan Harian & Bulanan"},
             {"src": "./image/Financial-Tracker/Financial-Analysis&Forecasting-Dashboard.png", "caption": "Financial Analysis & Forecasting Dashboard - Analisis Detail & Prediksi"}
           ]
@@ -307,15 +305,15 @@
         "tools": "Laravel, MySQL, Google Docs, Gantt Chart, Spreadsheet, Miro",
         "images": {
           "web": [
-            {"src": "./image/Travel-Website-Project/Web-based-1-Landing-page-travel-web-1.png", "caption": "Landing Page - Ikhtisar Website Travel"},
-            {"src": "./image/Travel-Website-Project/Web-based-1-Landing-page-travel-web-2.png", "caption": "Paket Wisata - Layanan yang Tersedia"},
-            {"src": "./image/Travel-Website-Project/Web-based-1-Landing-page-travel-web-3.png", "caption": "Formulir Reservasi - Proses Pemesanan"},
-            {"src": "./image/Travel-Website-Project/Web-based-2-Admin-homepage.png", "caption": "Dashboard Admin - Manajemen Reservasi"},
-            {"src": "./image/Travel-Website-Project/Web-based-2-homepage-services.png", "caption": "Bagian Layanan - Detail Wisata"},
-            {"src": "./image/Travel-Website-Project/Web-based-3-hotel-reservation-form.png", "caption": "Formulir Reservasi Hotel"},
-            {"src": "./image/Travel-Website-Project/Web-based-4-Admin-page-confirm-user-payment.png", "caption": "Admin - Konfirmasi Pembayaran"},
-            {"src": "./image/Travel-Website-Project/Web-based-4-Admin-page-confirm-user-reservation.png", "caption": "Admin - Konfirmasi Reservasi"},
-            {"src": "./image/Travel-Website-Project/Web-based- 5-Onprocess-reservation.png", "caption": "Status Reservasi Sedang Diproses"}
+            {"src": "./image/Travel-Website-Project/Web-based-1-Landing-page-travel-web-1.png", "caption": "Tampilan Landing Page Website"},
+            {"src": "./image/Travel-Website-Project/Web-based-1-Landing-page-travel-web-2.png", "caption": "Tampilan Landing Page Website"},
+            {"src": "./image/Travel-Website-Project/Web-based-1-Landing-page-travel-web-3.png", "caption": "Tampilan Landing Page Website"},
+            {"src": "./image/Travel-Website-Project/Web-based-2-Admin-homepage.png", "caption": "Tampilan Homepage Admin Setelah Login"},
+            {"src": "./image/Travel-Website-Project/Web-based-2-homepage-services.png", "caption": "Tampilan Homepage Pada Bagian Layanan yang Tersedia"},
+            {"src": "./image/Travel-Website-Project/Web-based-3-hotel-reservation-form.png", "caption": "Tampilan Form Reservasi Hotel"},
+            {"src": "./image/Travel-Website-Project/Web-based-4-Admin-page-confirm-user-payment.png", "caption": "Tampilan Halaman Konfirmasi Pembayaran dengan Status Pending di Admin"},
+            {"src": "./image/Travel-Website-Project/Web-based-4-Admin-page-confirm-user-reservation.png", "caption": "Tampilan Halaman Konfirmasi Reservasi dengan Status On Process di Admin"},
+            {"src": "./image/Travel-Website-Project/Web-based- 5-Onprocess-reservation.png", "caption": "Tampilan Reservasi dengan Status On Process di Customer yang Memerlukan Konfirmasi Admin dan Pembayaran"}
           ],
           "pmo": [
             {"src": "./image/Travel-Website-Project/PMO-1-Risk-Management-Plan.png", "caption": "Rencana Manajemen Risiko"}
@@ -330,7 +328,7 @@
         "tools": "Power BI, Power Query",
         "images": {
           "data": [
-            {"src": "./image/Professional-Survey-Data-Analysis/Data-Professional-Survey-Dashboard.png", "caption": "Dashboard Survei Profesional Data - Kepuasan Kerja, Gaji & Preferensi Alat"}
+            {"src": "./image/Professional-Survey-Data-Analysis/Data-Professional-Survey-Dashboard.png", "caption": "Dashboard Data Survei Profesional - Kepuasan Kerja, Gaji & Preferensi Alat"}
           ]
         },
         "tags": ["Data"]
@@ -338,12 +336,12 @@
       "brainysProject": {
         "title": "Proyek Brainys",
         "description": "Dokumen Kebutuhan Produk dan manajemen proyek untuk platform pembuatan silabus bertenaga AI.",
-        "fullDescription": "Brainys Oasys adalah sistem pembuatan silabus bertenaga AI yang dirancang untuk membantu guru Indonesia membuat komponen silabus dengan cepat dan akurat. Platform ini menjawab kebutuhan akan pembuatan silabus yang efisien dan adaptif yang selaras dengan standar pendidikan terkini di Indonesia.\n\nSelama magang sebagai Associate Product Manager, saya berkolaborasi dengan tim lintas fungsi—termasuk desain, data, pengembang, dan Product Manager—untuk mendefinisikan dan mendokumentasikan kebutuhan produk. Saya membuat Product Requirement Document (PRD) yang menguraikan fitur utama sistem, termasuk pembuatan silabus bertenaga AI, adaptabilitas ke format silabus Indonesia, antarmuka yang ramah pengguna, dan output cepat. Saya juga mengembangkan user personas untuk memastikan produk dirancang dengan mempertimbangkan pengguna akhir.\n\nSaya memimpin rapat harian (daily standup) untuk melacak kemajuan proyek, mengidentifikasi hambatan, dan memastikan keselarasan antar tim. Selama sesi ini, saya mendokumentasikan Minutes of Meeting (MoM) untuk menangkap informasi kunci, termasuk apa yang telah diselesaikan setiap anggota tim, apa yang akan dikerjakan selanjutnya, dan hambatan yang dihadapi. Catatan ini membantu menjaga transparansi dan memberikan tindak lanjut yang jelas untuk pertemuan berikutnya.\n\nKemajuan dilacak menggunakan papan kanban, di mana tugas divisualisasikan dari backlog hingga selesai. Saya juga berkontribusi pada aktivitas analisis sistem, berkolaborasi dengan tim untuk merancang use case diagram, activity diagram, dan mendokumentasikan kebutuhan fungsional—memastikan bahwa kebutuhan bisnis diterjemahkan ke dalam spesifikasi teknis yang jelas.\n\nMelalui dokumentasi terstruktur dan pelacakan proyek yang konsisten, saya membantu memastikan bahwa pengembangan Brainys Oasys tetap sesuai jadwal, memberikan solusi yang memenuhi kebutuhan guru Indonesia sambil menjaga akuntabilitas selama siklus proyek.",
+        "fullDescription": "Brainys adalah sistem pembuatan silabus bertenaga AI yang dirancang untuk membantu guru Indonesia membuat komponen silabus dengan cepat dan akurat. Platform ini menjawab kebutuhan akan pembuatan silabus yang efisien dan adaptif yang selaras dengan standar pendidikan terkini di Indonesia.\n\nSelama magang sebagai Associate Product Manager, saya berkolaborasi dengan tim lintas fungsi—termasuk desain, data, pengembang, dan Product Manager—untuk mendefinisikan dan mendokumentasikan kebutuhan produk. Saya membuat Product Requirement Document (PRD) yang menguraikan fitur utama sistem, termasuk pembuatan silabus bertenaga AI, adaptabilitas ke format silabus Indonesia, antarmuka yang ramah pengguna, dan output cepat. Saya juga mengembangkan user personas untuk memastikan produk dirancang dengan mempertimbangkan pengguna akhir.\n\nSaya memimpin rapat harian (daily standup) untuk melacak kemajuan proyek, mengidentifikasi hambatan, dan memastikan keselarasan antar tim. Selama sesi ini, saya mendokumentasikan Minutes of Meeting (MoM) untuk menangkap informasi kunci, termasuk apa yang telah diselesaikan setiap anggota tim, apa yang akan dikerjakan selanjutnya, dan hambatan yang dihadapi. Catatan ini membantu menjaga transparansi dan memberikan tindak lanjut yang jelas untuk pertemuan berikutnya.\n\nKemajuan dilacak menggunakan papan kanban, di mana tugas divisualisasikan dari backlog hingga selesai. Saya juga berkontribusi pada aktivitas analisis sistem, berkolaborasi dengan tim untuk merancang use case diagram, activity diagram, dan mendokumentasikan kebutuhan fungsional—memastikan bahwa kebutuhan bisnis diterjemahkan ke dalam spesifikasi teknis yang jelas.\n\nMelalui dokumentasi terstruktur dan pelacakan proyek yang konsisten, saya membantu memastikan bahwa pengembangan Brainys Oasys tetap sesuai jadwal, memberikan solusi yang memenuhi kebutuhan guru Indonesia sambil menjaga akuntabilitas selama siklus proyek.",
         "tools": "Kanban Board, Miro, Visual Paradigm, Google Docs, Spreadsheet, Canva",
         "images": {
           "sa": [
             {"src": "./image/Brainys-Project/Func-Req-Brainys-Features-SA-1.png", "caption": "Functional Requirements - Spesifikasi Fitur"},
-            {"src": "./image/Brainys-Project/Business-Model-Brainys-Oasys-revise-SA-2.png", "caption": "Business Model Canvas"},
+            {"src": "./image/Brainys-Project/Business-Model-Brainys-Oasys-revise-SA-2.png", "caption": "Pemodelan Proses Bisnis"},
             {"src": "./image/Brainys-Project/Use-Case-Brainys-SA-3.png", "caption": "Use Case Diagram"},
             {"src": "./image/Brainys-Project/Activity-Diagram-Templat-Bahan-Ajar-SA-4.png", "caption": "Activity Diagram - Templat Bahan Ajar"},
             {"src": "./image/Brainys-Project/Activity-Diagram-Templat-Bahan-Materi-Gamifikasi-SA-5.png", "caption": "Activity Diagram - Materi Gamifikasi"},
@@ -354,7 +352,7 @@
           ],
           "pmo": [
             {"src": "./image/Brainys-Project/Board-kanban-PMO-1.jpg", "caption": "Papan Kanban - Pelacakan Progress Sprint"},
-            {"src": "./image/Brainys-Project/Board-kanban-PMO-2.jpeg", "caption": "Papan Kanban - Status Tugas"}
+            {"src": "./image/Brainys-Project/Board-kanban-PMO-2.jpeg", "caption": "Daftar Tasks dengan Status Tugas"}
           ],
           "techWriting": [
             {"src": "./image/Brainys-Project/Blur_MoM-DailyStandup-Brainys-PMO-TW-1.png", "caption": "Minutes of Meeting - Daily Standup (Progress, Rencana, Hambatan)"}
@@ -369,9 +367,9 @@
         "tools": "Python, Flask, Jinja2, Jupyter Notebook, Requests API",
         "images": {
           "web": [
-            {"src": "./image/Golf-Leaderboard-External-API-Website/Web-based-1-Homepage.png", "caption": "Beranda - Jadwal Turnamen & Fixture"},
+            {"src": "./image/Golf-Leaderboard-External-API-Website/Web-based-1-Homepage.png", "caption": "Beranda - Jadwal Turnamen & Leaderboard"},
             {"src": "./image/Golf-Leaderboard-External-API-Website/Web-based-2-Schedule-page.png", "caption": "Halaman Jadwal - Difilter berdasarkan Kata Kunci"},
-            {"src": "./image/Golf-Leaderboard-External-API-Website/Web-based-2-Search-Schedule.png", "caption": "Fitur Pencarian - Filter Kata Kunci"},
+            {"src": "./image/Golf-Leaderboard-External-API-Website/Web-based-2-Search-Schedule.png", "caption": "Fitur Pencarian pada Halaman Jadwal - Filter Kata Kunci"},
             {"src": "./image/Golf-Leaderboard-External-API-Website/Web-based-3-Leaderboard-page.png", "caption": "Halaman Leaderboard - Peringkat & Skor Pemain"}
           ]
         },
@@ -384,16 +382,16 @@
         "tools": "Laravel, MySQL, Jira, Slack, Google Docs",
         "images": {
           "web": [
-            {"src": "./image/Dedikasi-Website-Project/Profil-Student-Web-based-1.png", "caption": "Profil Siswa - Dashboard Pembelajaran Personal"},
-            {"src": "./image/Dedikasi-Website-Project/Profil-Mentor-Web-based-2.png", "caption": "Profil Mentor - Antarmuka Manajemen Kursus"},
-            {"src": "./image/Dedikasi-Website-Project/Dashboard-Admin-Web-based-3.png", "caption": "Dashboard Admin - Pengawasan Pengguna & Kursus"},
-            {"src": "./image/Dedikasi-Website-Project/Feedback-Web-based-4.png", "caption": "Sistem Umpan Balik - Ulasan Pengguna"},
-            {"src": "./image/Dedikasi-Website-Project/Feedback-Mentor-Web-based-5.png", "caption": "Umpan Balik Mentor - Evaluasi Kursus"}
+            {"src": "./image/Dedikasi-Website-Project/Profil-Student-Web-based-1.png", "caption": "Tampilan Halaman Profil Siswa"},
+            {"src": "./image/Dedikasi-Website-Project/Profil-Mentor-Web-based-2.png", "caption": "Tampilan Halaman Profil Mentor"},
+            {"src": "./image/Dedikasi-Website-Project/Dashboard-Admin-Web-based-3.png", "caption": "Tampilan Halaman Dashboard Admin"},
+            {"src": "./image/Dedikasi-Website-Project/Feedback-Web-based-4.png", "caption": "Tampilan Form Umpan Balik di Siswa"},
+            {"src": "./image/Dedikasi-Website-Project/Feedback-Mentor-Web-based-5.png", "caption": "Tampilan Halaman Umpan Balik di Mentor"}
           ],
           "pmo": [
             {"src": "./image/Dedikasi-Website-Project/Jira-Commit-1-PMO-1.png", "caption": "Jira Commit - Progress Tugas"},
-            {"src": "./image/Dedikasi-Website-Project/Blur_Jira-Task-1-PMO-2.jpg", "caption": "Papan Tugas Jira - Pelacakan Sprint"},
-            {"src": "./image/Dedikasi-Website-Project/Blur_Jira-Task-Stories-PMO-3.jpg", "caption": "Papan Tugas Jira - Manajemen Backlog"},
+            {"src": "./image/Dedikasi-Website-Project/Blur_Jira-Task-1-PMO-2.jpg", "caption": "Papan Daftar Tugas Jira - Sebagai Assignee"},
+            {"src": "./image/Dedikasi-Website-Project/Blur_Jira-Task-Stories-PMO-3.jpg", "caption": "Papan Daftar Tugas Jira - Sebagai Reporter"},
             {"src": "./image/Dedikasi-Website-Project/Renacana-Sprint-PMO-4.png", "caption": "Rencana Sprint - Tujuan & Timeline"},
             {"src": "./image/Dedikasi-Website-Project/Sprint-retro-PMO-5.png", "caption": "Retrospektif Sprint - Refleksi Tim"}
           ]
@@ -407,22 +405,21 @@
         "tools": "Kanban Board, Miro, Visual Paradigm, Google Docs, Canva",
         "images": {
           "sa": [
-            {"src": "./image/OASYS-School-Project/Oasys-School-(Desktop)-Business-Flow-SA-1.png", "caption": "Alur Bisnis - Versi Desktop"},
-            {"src": "./image/OASYS-School-Project/Oasys-School-(Mobile)-Business-Flow-SA-2.png", "caption": "Alur Bisnis - Versi Mobile"},
+            {"src": "./image/OASYS-School-Project/Oasys-School-(Desktop)-Business-Flow-SA-1.png", "caption": "Pemodelan Proses Bisnis - Versi Desktop"},
+            {"src": "./image/OASYS-School-Project/Oasys-School-(Mobile)-Business-Flow-SA-2.png", "caption": "Pemodelan Proses Bisnis - Versi Mobile"},
             {"src": "./image/OASYS-School-Project/Funct-Req-OASYS-School-Features-SA-3.png", "caption": "Functional Requirements - Spesifikasi Fitur"},
             {"src": "./image/OASYS-School-Project/Activity-Diagram-Membuat-Materi-Pembelajaran-SA-7.png", "caption": "Activity Diagram - Membuat Materi Pembelajaran"},
             {"src": "./image/OASYS-School-Project/Activity-Diagram-Mengatur-Absensi-Murid-SA-6.png", "caption": "Activity Diagram - Mengatur Absensi Murid"},
             {"src": "./image/OASYS-School-Project/Activity-Diagram-Mengelola-nilai-di-Raport-Digital-SA-5.png", "caption": "Activity Diagram - Mengelola Nilai di Raport Digital"}
           ],
           "ba": [
-            {"src": "./image/OASYS-School-Project/PRD-OASYS-School-Cover.png", "caption": "Sampul PRD - Product Requirement Document (hampir 100 halaman dokumentasi)"},
-            {"src": "./image/OASYS-School-Project/BA-1.png", "caption": "User Personas & Analisis Kebutuhan Pelanggan"}
+            {"src": "./image/OASYS-School-Project/BA-1.png", "caption": "Analisis Kebutuhan Pelanggan"}
           ],
           "pmo": [
-            {"src": "./image/OASYS-School-Project/Blur_MoM-DailyStandup-Oasys-School-PMO-TW-1.png", "caption": "Minutes of Meeting - Daily Standup"}
+            {"src": "./image/OASYS-School-Project/Blur_MoM-DailyStandup-Oasys-School-PMO-TW-1.png", "caption": "Minutes of Meeting - Daily Standup (Progress, Rencana, Hambatan)"}
           ],
           "techWriting": [
-            {"src": "./image/OASYS-School-Project/Manual-Book-Guideline-OASYS-School-Tech-Writing-1.png", "caption": "Buku Manual & Panduan"}
+            {"src": "./image/OASYS-School-Project/Manual-Book-Guideline-OASYS-School-Tech-Writing-1.png", "caption": "Buku Manual Panduan"}
           ]
         },
         "tags": ["SA", "BA", "PMO", "Tech Writing"]

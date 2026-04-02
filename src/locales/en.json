@@ -225,13 +225,13 @@
         "tags": ["Web-Based", "SA", "Tech Writing"],
         "images": {
           "web": [
-            {"src": "./image/LaC-TOEFL-Practice-Website/Web-based-Back-End-1-Dashboard-Peserta.png", "caption": "Homepage"},
-            {"src": "./image/LaC-TOEFL-Practice-Website/Web-based-Back-End-2-Tinjau-Rencana-Belajar-Instruktur.png", "caption": "Practice Module"},
-            {"src": "./image/LaC-TOEFL-Practice-Website/Web-based-Back-End-3-Pengajuan-Rencana-Belajar-1.png", "caption": "Question Interface"},
-            {"src": "./image/LaC-TOEFL-Practice-Website/Web-based-Back-End-4-Kelola-Paket-Kursus.png", "caption": "User Dashboard"},
-            {"src": "./image/LaC-TOEFL-Practice-Website/Web-based-Back-End-5-Pengajuan-Skor-Awal.png", "caption": "Initial Score Submission"},
-            {"src": "./image/LaC-TOEFL-Practice-Website/Web-based-Back-End-6-Seleksi-Skor-Awal.png", "caption": "Initial Score Selection"},
-            {"src": "./image/LaC-TOEFL-Practice-Website/Web-based-Back-End-7-Riwayat-Pembayaran.png", "caption": "Payment History"}
+            {"src": "./image/LaC-TOEFL-Practice-Website/Web-based-Back-End-1-Dashboard-Peserta.png", "caption": "Participant Dashboard View"},
+            {"src": "./image/LaC-TOEFL-Practice-Website/Web-based-Back-End-2-Tinjau-Rencana-Belajar-Instruktur.png", "caption": "Instructor Review Study Plan View"},
+            {"src": "./image/LaC-TOEFL-Practice-Website/Web-based-Back-End-3-Pengajuan-Rencana-Belajar-1.png", "caption": "Participant Study Plan Submission Form"},
+            {"src": "./image/LaC-TOEFL-Practice-Website/Web-based-Back-End-4-Kelola-Paket-Kursus.png", "caption": "Admin Course Package Management View"},
+            {"src": "./image/LaC-TOEFL-Practice-Website/Web-based-Back-End-5-Pengajuan-Skor-Awal.png", "caption": "Participant Initial Score Submission Form"},
+            {"src": "./image/LaC-TOEFL-Practice-Website/Web-based-Back-End-6-Seleksi-Skor-Awal.png", "caption": "Admin Initial Score Selection View"},
+            {"src": "./image/LaC-TOEFL-Practice-Website/Web-based-Back-End-7-Riwayat-Pembayaran.png", "caption": "Participant Payment History View"}
           ],
           "sa": [
             {"src": "./image/LaC-TOEFL-Practice-Website/Use-case-scenario-Seleksi-skor-awal-SA-1.png", "caption": "Use Case Scenario - Initial Score Selection"},
@@ -244,9 +244,9 @@
           ],
           "techWriting": [
             {"src": "./image/LaC-TOEFL-Practice-Website/Tech-Wrting-1.png", "caption": "API Specification"},
-            {"src": "./image/LaC-TOEFL-Practice-Website/Tech-Writing-2.png", "caption": "Postman Collection"},
-            {"src": "./image/LaC-TOEFL-Practice-Website/Tech-Writing-3.png", "caption": "API Documentation"},
-            {"src": "./image/LaC-TOEFL-Practice-Website/Riwayat-pengajuan-skor-awal-peserta -Tech-Writing.png", "caption": "Initial Score Submission History"}
+            {"src": "./image/LaC-TOEFL-Practice-Website/Tech-Writing-2.png", "caption": "API Specification"},
+            {"src": "./image/LaC-TOEFL-Practice-Website/Tech-Writing-3.png", "caption": "Glossary Documentation"},
+            {"src": "./image/LaC-TOEFL-Practice-Website/Riwayat-pengajuan-skor-awal-peserta -Tech-Writing.png", "caption": "API Collection - Initial Score Submission History API Response"}
           ]
         }
       },
@@ -269,17 +269,17 @@
         "tools": "Tableau, SQL, Python, Draw.io, Ms.Word, Google Docs",
         "images": {
           "ba": [
-            {"src": "./image/Tableau-Monitoring-Helpdesk/BA-1.png", "caption": "SLA Requirements & Helpdesk Problem Analysis"},
-            {"src": "./image/Tableau-Monitoring-Helpdesk/BA-2.png", "caption": "Identification of 3 Key Issues & Alternative Solutions"}
+            {"src": "./image/Tableau-Monitoring-Helpdesk/BA-1.png", "caption": "Requirements & Helpdesk Problem Analysis"},
+            {"src": "./image/Tableau-Monitoring-Helpdesk/BA-2.png", "caption": "Alternative Solution Identification"}
           ],
           "data": [
             {"src": "./image/Tableau-Monitoring-Helpdesk/Star-Schema-Dashboard-LAA.drawio.png", "caption": "Star Schema for Data Warehouse"},
             {"src": "./image/Tableau-Monitoring-Helpdesk/ERD-chat_system-monitoring-helpdesk-star-schema.png", "caption": "ERD Star Schema - SQL Database"},
-            {"src": "./image/Tableau-Monitoring-Helpdesk/dashboard1-Data.png", "caption": "Dashboard Overview - SLA Performance"},
-            {"src": "./image/Tableau-Monitoring-Helpdesk/dashboard2-Data.png", "caption": "Question Trends by Category"},
-            {"src": "./image/Tableau-Monitoring-Helpdesk/dashboard3-Data.png", "caption": "Question Status & Response Time"},
-            {"src": "./image/Tableau-Monitoring-Helpdesk/dashboard4-Data.png", "caption": "Performance Details by Admin"},
-            {"src": "./image/Tableau-Monitoring-Helpdesk/dashboard5-Data.png", "caption": "Time Series Trend Analysis"}
+            {"src": "./image/Tableau-Monitoring-Helpdesk/dashboard1-Data.png", "caption": "Dashboard Overview - SLA Performance Metrics"},
+            {"src": "./image/Tableau-Monitoring-Helpdesk/dashboard2-Data.png", "caption": "Dashboard Overview - SLA Performance Metrics"},
+            {"src": "./image/Tableau-Monitoring-Helpdesk/dashboard3-Data.png", "caption": "Dashboard Overview - SLA Performance Metrics"},
+            {"src": "./image/Tableau-Monitoring-Helpdesk/dashboard4-Data.png", "caption": "Helpdesk Transaction Details Dashboard"},
+            {"src": "./image/Tableau-Monitoring-Helpdesk/dashboard5-Data.png", "caption": "Helpdesk Transaction Details Dashboard"}
           ]
         },
         "tags": ["BA", "Data"]
@@ -290,10 +290,8 @@
         "fullDescription": "This personal finance tracker was developed to help manage daily income and expenses, with a structured approach to budgeting and financial planning. The tracker is designed to provide clear visibility into cash flow, enabling users to monitor spending patterns, track savings, and make informed financial decisions.\n\nI designed the tracker structure based on personal financial needs, with configurable categories for income and expense streams—distinguishing sources such as bank accounts or other income channels. The budgeting framework allows users to set custom percentage allocations, managed within a dedicated category management section. This analytical approach reflects a business analysis perspective in understanding user needs and defining functional requirements.\n\nThe dashboard suite consists of two main views. The Financial Overview Dashboard provides a high-level snapshot of daily and monthly financial activity, highlighting income vs expense trends and budget allocation. The Financial Analysis & Forecasting Dashboard offers deeper insights, including target vs actual budget tracking, expense category breakdowns, and predictive forecasting based on historical patterns. Structured within Excel using tables, formulas, and pivot tables, this tracker delivers a practical solution for personal financial management—combining structured data design with intuitive visualizations to support better decision-making.",
         "tools": "Ms.Excel",
         "images": {
-          "ba": [
-            {"src": "./image/Financial-Tracker/Income&Expense-Cash-Flow.png", "caption": "Category Structure & Customizable Budget Allocation"}
-          ],
           "data": [
+            {"src": "./image/Financial-Tracker/Income&Expense-Cash-Flow.png", "caption": "Detailed Income & Expense Input Sheet"},
             {"src": "./image/Financial-Tracker/Financial-Overview-Dashboard.png", "caption": "Financial Overview Dashboard - Daily & Monthly Financial Snapshot"},
             {"src": "./image/Financial-Tracker/Financial-Analysis&Forecasting-Dashboard.png", "caption": "Financial Analysis & Forecasting Dashboard - Detailed Analysis & Prediction"}
           ]
@@ -307,15 +305,15 @@
         "tools": "Laravel, MySQL, Google Docs, Gantt Chart, Spreadsheet, Miro",
         "images": {
           "web": [
-            {"src": "./image/Travel-Website-Project/Web-based-1-Landing-page-travel-web-1.png", "caption": "Landing Page - Travel Website Overview"},
-            {"src": "./image/Travel-Website-Project/Web-based-1-Landing-page-travel-web-2.png", "caption": "Tour Packages - Available Services"},
-            {"src": "./image/Travel-Website-Project/Web-based-1-Landing-page-travel-web-3.png", "caption": "Reservation Form - Booking Process"},
-            {"src": "./image/Travel-Website-Project/Web-based-2-Admin-homepage.png", "caption": "Admin Dashboard - Reservation Management"},
-            {"src": "./image/Travel-Website-Project/Web-based-2-homepage-services.png", "caption": "Services Section - Tour Details"},
+            {"src": "./image/Travel-Website-Project/Web-based-1-Landing-page-travel-web-1.png", "caption": "Landing Page View"},
+            {"src": "./image/Travel-Website-Project/Web-based-1-Landing-page-travel-web-2.png", "caption": "Landing Page View"},
+            {"src": "./image/Travel-Website-Project/Web-based-1-Landing-page-travel-web-3.png", "caption": "Landing Page View"},
+            {"src": "./image/Travel-Website-Project/Web-based-2-Admin-homepage.png", "caption": "Admin Homepage After Login"},
+            {"src": "./image/Travel-Website-Project/Web-based-2-homepage-services.png", "caption": "Homepage - Available Services Section"},
             {"src": "./image/Travel-Website-Project/Web-based-3-hotel-reservation-form.png", "caption": "Hotel Reservation Form"},
-            {"src": "./image/Travel-Website-Project/Web-based-4-Admin-page-confirm-user-payment.png", "caption": "Admin - Payment Confirmation"},
-            {"src": "./image/Travel-Website-Project/Web-based-4-Admin-page-confirm-user-reservation.png", "caption": "Admin - Reservation Confirmation"},
-            {"src": "./image/Travel-Website-Project/Web-based- 5-Onprocess-reservation.png", "caption": "On-Process Reservation Status"}
+            {"src": "./image/Travel-Website-Project/Web-based-4-Admin-page-confirm-user-payment.png", "caption": "Payment Confirmation Page with Pending Status (Admin View)"},
+            {"src": "./image/Travel-Website-Project/Web-based-4-Admin-page-confirm-user-reservation.png", "caption": "Reservation Confirmation Page with On Process Status (Admin View)"},
+            {"src": "./image/Travel-Website-Project/Web-based- 5-Onprocess-reservation.png", "caption": "Reservation with On Process Status - Awaiting Admin Confirmation & Payment (Customer View)"}
           ],
           "pmo": [
             {"src": "./image/Travel-Website-Project/PMO-1-Risk-Management-Plan.png", "caption": "Risk Management Plan"}
@@ -338,12 +336,12 @@
       "brainysProject": {
         "title": "Brainys Project",
         "description": "Product Requirement Document and project management for AI-powered syllabus generation platform.",
-        "fullDescription": "Brainys Oasys is an AI-powered syllabus generation system designed to help Indonesian teachers create syllabus components quickly and accurately. The platform addresses the need for efficient, adaptable syllabus creation that aligns with recent educational standards in Indonesia.\n\nDuring my internship as an Associate Product Manager, I collaborated with cross-functional teams—including design, data, developers, and the Product Manager—to define and document the product requirements. I created the Product Requirement Document (PRD) that outlined the system's key features, including AI-powered syllabus generation, adaptability to Indonesian syllabus formats, user-friendly interface, and quick output. I also developed user personas to ensure the product was designed with the end user in mind.\n\nI led daily standup meetings to track project progress, identify blockers, and ensure alignment across teams. During these sessions, I documented Minutes of Meeting (MoM) to capture key information, including what each team member had completed, what they planned to work on next, and any blockers they were facing. These records helped maintain transparency and provided clear follow-up for subsequent meetings.\n\nProgress was tracked using a kanban board, where tasks were visualized from backlog to completion. I also contributed to system analysis activities, collaborating with the team to design use case diagrams, activity diagrams, and document functional requirements—ensuring that business needs were translated into clear technical specifications.\n\nThrough structured documentation and consistent project tracking, I helped ensure that Brainys Oasys development remained on schedule, delivering a solution that meets the needs of Indonesian teachers while maintaining accountability throughout the project lifecycle.",
+        "fullDescription": "Brainys is an AI-powered syllabus generation system designed to help Indonesian teachers create syllabus components quickly and accurately. The platform addresses the need for efficient, adaptable syllabus creation that aligns with recent educational standards in Indonesia.\n\nDuring my internship as an Associate Product Manager, I collaborated with cross-functional teams—including design, data, developers, and the Product Manager—to define and document the product requirements. I created the Product Requirement Document (PRD) that outlined the system's key features, including AI-powered syllabus generation, adaptability to Indonesian syllabus formats, user-friendly interface, and quick output. I also developed user personas to ensure the product was designed with the end user in mind.\n\nI led daily standup meetings to track project progress, identify blockers, and ensure alignment across teams. During these sessions, I documented Minutes of Meeting (MoM) to capture key information, including what each team member had completed, what they planned to work on next, and any blockers they were facing. These records helped maintain transparency and provided clear follow-up for subsequent meetings.\n\nProgress was tracked using a kanban board, where tasks were visualized from backlog to completion. I also contributed to system analysis activities, collaborating with the team to design use case diagrams, activity diagrams, and document functional requirements—ensuring that business needs were translated into clear technical specifications.\n\nThrough structured documentation and consistent project tracking, I helped ensure that Brainys Oasys development remained on schedule, delivering a solution that meets the needs of Indonesian teachers while maintaining accountability throughout the project lifecycle.",
         "tools": "Kanban Board, Miro, Visual Paradigm, Google Docs, Spreadsheet, Canva",
         "images": {
           "sa": [
             {"src": "./image/Brainys-Project/Func-Req-Brainys-Features-SA-1.png", "caption": "Functional Requirements - Feature Specifications"},
-            {"src": "./image/Brainys-Project/Business-Model-Brainys-Oasys-revise-SA-2.png", "caption": "Business Model Canvas"},
+            {"src": "./image/Brainys-Project/Business-Model-Brainys-Oasys-revise-SA-2.png", "caption": "Business Process Modeling"},
             {"src": "./image/Brainys-Project/Use-Case-Brainys-SA-3.png", "caption": "Use Case Diagram"},
             {"src": "./image/Brainys-Project/Activity-Diagram-Templat-Bahan-Ajar-SA-4.png", "caption": "Activity Diagram - Teaching Material Template"},
             {"src": "./image/Brainys-Project/Activity-Diagram-Templat-Bahan-Materi-Gamifikasi-SA-5.png", "caption": "Activity Diagram - Gamification Material Template"},
@@ -354,7 +352,7 @@
           ],
           "pmo": [
             {"src": "./image/Brainys-Project/Board-kanban-PMO-1.jpg", "caption": "Kanban Board - Sprint Progress Tracking"},
-            {"src": "./image/Brainys-Project/Board-kanban-PMO-2.jpeg", "caption": "Kanban Board - Task Status"}
+            {"src": "./image/Brainys-Project/Board-kanban-PMO-2.jpeg", "caption": "Task List with Status"}
           ],
           "techWriting": [
             {"src": "./image/Brainys-Project/Blur_MoM-DailyStandup-Brainys-PMO-TW-1.png", "caption": "Minutes of Meeting - Daily Standup (Progress, Plans, Blockers)"}
@@ -369,9 +367,9 @@
         "tools": "Python, Flask, Jinja2, Jupyter Notebook, Requests API",
         "images": {
           "web": [
-            {"src": "./image/Golf-Leaderboard-External-API-Website/Web-based-1-Homepage.png", "caption": "Homepage - Tournament Schedule & Fixtures"},
+            {"src": "./image/Golf-Leaderboard-External-API-Website/Web-based-1-Homepage.png", "caption": "Homepage - Tournament Schedule & Leaderboard"},
             {"src": "./image/Golf-Leaderboard-External-API-Website/Web-based-2-Schedule-page.png", "caption": "Schedule Page - Filtered by Keyword"},
-            {"src": "./image/Golf-Leaderboard-External-API-Website/Web-based-2-Search-Schedule.png", "caption": "Search Feature - Keyword Filtering"},
+            {"src": "./image/Golf-Leaderboard-External-API-Website/Web-based-2-Search-Schedule.png", "caption": "Search Feature on Schedule Page - Keyword Filtering"},
             {"src": "./image/Golf-Leaderboard-External-API-Website/Web-based-3-Leaderboard-page.png", "caption": "Leaderboard Page - Player Rankings & Scores"}
           ]
         },
@@ -384,17 +382,17 @@
         "tools": "Laravel, MySQL, Jira, Slack, Google Docs",
         "images": {
           "web": [
-            {"src": "./image/Dedikasi-Website-Project/Profil-Student-Web-based-1.png", "caption": "Student Profile - Personalized Learning Dashboard"},
-            {"src": "./image/Dedikasi-Website-Project/Profil-Mentor-Web-based-2.png", "caption": "Mentor Profile - Course Management Interface"},
-            {"src": "./image/Dedikasi-Website-Project/Dashboard-Admin-Web-based-3.png", "caption": "Admin Dashboard - User & Course Oversight"},
-            {"src": "./image/Dedikasi-Website-Project/Feedback-Web-based-4.png", "caption": "Feedback System - User Reviews"},
-            {"src": "./image/Dedikasi-Website-Project/Feedback-Mentor-Web-based-5.png", "caption": "Mentor Feedback - Course Evaluation"}
+            {"src": "./image/Dedikasi-Website-Project/Profil-Student-Web-based-1.png", "caption": "Student Profile Page View"},
+            {"src": "./image/Dedikasi-Website-Project/Profil-Mentor-Web-based-2.png", "caption": "Mentor Profile Page View"},
+            {"src": "./image/Dedikasi-Website-Project/Dashboard-Admin-Web-based-3.png", "caption": "Admin Dashboard Page View"},
+            {"src": "./image/Dedikasi-Website-Project/Feedback-Web-based-4.png", "caption": "Student Feedback Form View"},
+            {"src": "./image/Dedikasi-Website-Project/Feedback-Mentor-Web-based-5.png", "caption": "Mentor Feedback Page View"}
           ],
           "pmo": [
             {"src": "./image/Dedikasi-Website-Project/Jira-Commit-1-PMO-1.png", "caption": "Jira Commit - Task Progress"},
-            {"src": "./image/Dedikasi-Website-Project/Blur_Jira-Task-1-PMO-2.jpg", "caption": "Jira Task Board - Sprint Tracking"},
-            {"src": "./image/Dedikasi-Website-Project/Blur_Jira-Task-Stories-PMO-3.jpg", "caption": "Jira Task Board - Backlog Management"},
-            {"src": "./image/Dedikasi-Website-Project/Renacana-Sprint-PMO-4.png", "caption": "Sprint Plan - Sprint Goals & Timeline"},
+            {"src": "./image/Dedikasi-Website-Project/Blur_Jira-Task-1-PMO-2.jpg", "caption": "Jira Task Board - Assignee View"},
+            {"src": "./image/Dedikasi-Website-Project/Blur_Jira-Task-Stories-PMO-3.jpg", "caption": "Jira Task Board - Reporter View"},
+            {"src": "./image/Dedikasi-Website-Project/Renacana-Sprint-PMO-4.png", "caption": "Sprint Plan - Objectives & Timeline"},
             {"src": "./image/Dedikasi-Website-Project/Sprint-retro-PMO-5.png", "caption": "Sprint Retrospective - Team Reflection"}
           ]
         },
@@ -406,23 +404,22 @@
         "fullDescription": "Oasys School is an integrated school management system designed to streamline academic and administrative tasks for educators, principals, staff, and parents. The platform addresses the need for efficiency in managing teaching materials, student data, attendance, digital report cards, and administrative approvals.\n\nDuring my internship as an Associate Product Manager, I led product definition and documentation for Oasys School. I created the Product Requirement Document (PRD) outlining key features—QR code-based attendance, digital report cards, teaching material management, and multi-platform accessibility—and developed user personas for four user roles: subject teachers, homeroom teachers, principals, and administrative staff. I also mapped the business model to align user needs with product features. The PRD and functional requirements spanned nearly 100 pages, reflecting the complexity of the system and the comprehensive planning required.\n\nI led daily standup meetings to track progress and document Minutes of Meeting (MoM), capturing completed tasks, next steps, and blockers. For system analysis, I designed multiple activity diagrams covering various workflows—including creating teaching materials, managing attendance, and digital report card grades, among others—to translate business needs into clear technical specifications. I also developed a comprehensive manual book and guideline for end users across all roles. Through structured documentation and consistent project tracking, I ensured Oasys School development remained on schedule, delivering a solution that enhances operational efficiency for schools.",
         "tools": "Kanban Board, Miro, Visual Paradigm, Google Docs, Canva",
         "images": {
-          "sa": [
-            {"src": "./image/OASYS-School-Project/Oasys-School-(Desktop)-Business-Flow-SA-1.png", "caption": "Business Flow - Desktop Version"},
-            {"src": "./image/OASYS-School-Project/Oasys-School-(Mobile)-Business-Flow-SA-2.png", "caption": "Business Flow - Mobile Version"},
+         "sa": [
+            {"src": "./image/OASYS-School-Project/Oasys-School-(Desktop)-Business-Flow-SA-1.png", "caption": "Business Process Modeling - Desktop Version"},
+            {"src": "./image/OASYS-School-Project/Oasys-School-(Mobile)-Business-Flow-SA-2.png", "caption": "Business Process Modeling - Mobile Version"},
             {"src": "./image/OASYS-School-Project/Funct-Req-OASYS-School-Features-SA-3.png", "caption": "Functional Requirements - Feature Specifications"},
             {"src": "./image/OASYS-School-Project/Activity-Diagram-Membuat-Materi-Pembelajaran-SA-7.png", "caption": "Activity Diagram - Creating Teaching Materials"},
             {"src": "./image/OASYS-School-Project/Activity-Diagram-Mengatur-Absensi-Murid-SA-6.png", "caption": "Activity Diagram - Managing Student Attendance"},
             {"src": "./image/OASYS-School-Project/Activity-Diagram-Mengelola-nilai-di-Raport-Digital-SA-5.png", "caption": "Activity Diagram - Managing Digital Report Card Grades"}
           ],
           "ba": [
-            {"src": "./image/OASYS-School-Project/PRD-OASYS-School-Cover.png", "caption": "PRD Cover - Product Requirement Document (nearly 100 pages of documentation)"},
-            {"src": "./image/OASYS-School-Project/BA-1.png", "caption": "User Personas & Customer Needs Analysis"}
+            {"src": "./image/OASYS-School-Project/BA-1.png", "caption": "Customer Needs Analysis"}
           ],
           "pmo": [
-            {"src": "./image/OASYS-School-Project/Blur_MoM-DailyStandup-Oasys-School-PMO-TW-1.png", "caption": "Minutes of Meeting - Daily Standup"}
+            {"src": "./image/OASYS-School-Project/Blur_MoM-DailyStandup-Oasys-School-PMO-TW-1.png", "caption": "Minutes of Meeting - Daily Standup (Progress, Plans, Blockers)"}
           ],
           "techWriting": [
-            {"src": "./image/OASYS-School-Project/Manual-Book-Guideline-OASYS-School-Tech-Writing-1.png", "caption": "Manual Book & Guideline"}
+            {"src": "./image/OASYS-School-Project/Manual-Book-Guideline-OASYS-School-Tech-Writing-1.png", "caption": "Manual Book Guideline"}
           ]
         },
         "tags": ["SA", "BA", "PMO", "Tech Writing"]
