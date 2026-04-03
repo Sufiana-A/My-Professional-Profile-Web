@@ -530,7 +530,7 @@ const Projects = () => {
                         "Web Development",
                         "🌐",
                         selectedProject.images.web,
-                        "Tampilan antarmuka website yang dikembangkan."
+                        t('projects.modal.sections.web')
                       )
                     )}
 
@@ -539,7 +539,7 @@ const Projects = () => {
                         "System Analysis",
                         "📊",
                         selectedProject.images.sa,
-                        "Perancangan sistem, diagram ERD, activity diagram, dan dokumentasi teknis."
+                        t('projects.modal.sections.sa')
                       )
                     )}
 
@@ -548,7 +548,7 @@ const Projects = () => {
                         "Business Analysis",
                         "📈",
                         selectedProject.images.ba,
-                        "Analisis kebutuhan bisnis dan pemahaman pengguna."
+                        t('projects.modal.sections.ba')
                       )
                     )}
 
@@ -557,7 +557,7 @@ const Projects = () => {
                         "Project Management",
                         "📋",
                         selectedProject.images.pmo,
-                        "Dokumentasi dan pelacakan proyek yang dikelola secara terstruktur."
+                        t('projects.modal.sections.pmo')
                       )
                     )}
 
@@ -566,7 +566,7 @@ const Projects = () => {
                         "Data Analysis",
                         "📉",
                         selectedProject.images.data,
-                        "Dashboard analisis data, visualisasi, dan forecasting."
+                        t('projects.modal.sections.data')
                       )
                     )}
 
@@ -575,7 +575,7 @@ const Projects = () => {
                         "Technical Writing",
                         "📝",
                         selectedProject.images.techWriting,
-                        "Dokumentasi teknis seperti dokumentasi API, user manual, dan spesifikasi teknis."
+                        t('projects.modal.sections.techWriting')
                       )
                     )}
                   </div>

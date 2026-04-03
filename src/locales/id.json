@@ -100,12 +100,12 @@
           {
             "label": "Pemodelan Proses Bisnis (BPMN)",
             "value": 90,
-            "tools": "Lucidchart, Bizagi, Microsoft Visio"
+            "tools": "Visual Paradigm, Lucidchart, Bizagi"
           },
           {
             "label": "Pemodelan Sistem (UML)",
             "value": 85,
-            "tools": "Visual Paradigm, Draw.io, Enterprise Architect"
+            "tools": "Visual Paradigm, Draw.io"
           },
           {
             "label": "Pengumpulan & Dokumentasi Kebutuhan",
@@ -116,6 +116,11 @@
             "label": "Prototyping & Wireframing",
             "value": 80,
             "tools": "Figma, Balsamiq"
+          },
+          {
+            "label": "Gap Analysis & Studi Kelayakan",
+            "value": 80,
+            "tools": "Excel, Notion"
           }
         ],
         "business": [
@@ -125,41 +130,41 @@
             "tools": "Excel, Power BI, Tableau"
           },
           {
-            "label": "Analisis Proses & Kebutuhan",
-            "value": 85,
-            "tools": "Lucidchart, Bizagi, Confluence"
-          },
-          {
-            "label": "SQL untuk Query Data",
+            "label": "Query Data & Manajemen Database",
             "value": 80,
             "tools": "MySQL, PostgreSQL"
           },
           {
             "label": "Riset Pasar & Stakeholder",
+            "value": 80,
+            "tools": "BPS, Google Forms, Miro"
+          },
+          {
+            "label": "Pembuatan Laporan & Presentasi Bisnis",
             "value": 85,
-            "tools": "Google Trends, SurveyMonkey"
+            "tools": "PowerPoint, Canva, Google Slides"
           }
         ],
         "pm": [
           {
             "label": "Framework Agile & Scrum",
             "value": 90,
-            "tools": "Jira, Trello, Asana"
+            "tools": "Jira, Trello"
           },
           {
-            "label": "Perencanaan & Penjadwalan Proyek",
+            "label": "Perencanaan dan Penjadwalan Proyek",
             "value": 85,
-            "tools": "Microsoft Project, Notion, Smartsheet"
+            "tools": "Excel, Notion, Google Spreadsheet"
           },
           {
-            "label": "Manajemen Risiko & Timeline",
+            "label": "Manajemen Risiko & Budgeting",
             "value": 80,
-            "tools": "Excel, Template Gantt Chart"
+            "tools": "Excel, GanttPRO, Google Spreadsheet"
           },
           {
-            "label": "Perencanaan Produk",
+            "label": "Product Roadmapping & Manajemen Backlog",
             "value": 85,
-            "tools": "Jira, Aha!, Productboard"
+            "tools": "Jira, Productboard"
           }
         ],
         "web": [
@@ -171,27 +176,27 @@
           {
             "label": "Pengembangan Back-End",
             "value": 80,
-            "tools": "Laravel, Express.js"
+            "tools": "Laravel, Python, Node.js"
           },
           {
-            "label": "Integrasi REST API",
-            "value": 85,
-            "tools": "Postman, Axios"
+            "label": "Pengujian & Integrasi API",
+            "value": 80,
+            "tools": "Postman, Thunder Client"
           },
           {
             "label": "Desain Database",
-            "value": 80,
+            "value": 85,
             "tools": "MySQL, PostgreSQL"
           }
         ]
       }
     },
     "soft": {
-      "Analytical Thinking": 90,
-      "Communication": 95,
-      "Team Collaboration": 90,
-      "Leadership": 85,
-      "Problem Solving": 90
+      "Pemikiran Analitis": 95,
+      "Komunikasi": 88,
+      "Kolaborasi Tim": 90,
+      "Kepemimpinan": 85,
+      "Pemecahan Masalah": 90
     },
     "common": {
       "tools": "Alat"
@@ -214,7 +219,15 @@
       "tools": "Alat & Teknologi",
       "gallery": "Galeri Proyek",
       "screenshot": "Tangkapan Layar",
-      "close": "Tutup"
+      "close": "Tutup",
+      "sections": {
+        "web": "Tampilan antarmuka website yang dikembangkan.",
+        "sa": "Perancangan sistem menggunakan diagram UML, ERD, dan dokumentasi teknis.",
+        "ba": "Analisis kebutuhan bisnis dan pemahaman kebutuhan pengguna.",
+        "pmo": "Dokumentasi dan pelacakan proyek yang dikelola secara terstruktur.",
+        "data": "Dashboard analisis data, visualisasi, dan forecasting.",
+        "techWriting": "Dokumentasi teknis seperti dokumentasi API, user manual, dan spesifikasi teknis."
+      }
     },
     "items": {
       "toeflPlatform": {

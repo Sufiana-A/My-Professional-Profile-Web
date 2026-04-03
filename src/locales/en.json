@@ -100,12 +100,12 @@
           {
             "label": "Business Process Modeling (BPMN)",
             "value": 90,
-            "tools": "Lucidchart, Bizagi, Microsoft Visio"
+            "tools": "Visual Paradigm, Lucidchart, Bizagi"
           },
           {
             "label": "System Modeling (UML)",
             "value": 85,
-            "tools": "Visual Paradigm, Draw.io, Enterprise Architect"
+            "tools": "Visual Paradigm, Draw.io"
           },
           {
             "label": "Requirement Gathering & Documentation",
@@ -116,6 +116,11 @@
             "label": "Prototyping & Wireframing",
             "value": 80,
             "tools": "Figma, Balsamiq"
+          },
+          {
+            "label": "Gap Analysis & Feasibility Study",
+            "value": 80,
+            "tools": "Excel, Notion"
           }
         ],
         "business": [
@@ -125,41 +130,41 @@
             "tools": "Excel, Power BI, Tableau"
           },
           {
-            "label": "Process & Requirement Analysis",
-            "value": 85,
-            "tools": "Lucidchart, Bizagi, Confluence"
-          },
-          {
-            "label": "SQL for Data Querying",
+            "label": "Data Querying & Database Management",
             "value": 80,
             "tools": "MySQL, PostgreSQL"
           },
           {
             "label": "Market & Stakeholder Research",
+            "value": 80,
+            "tools": "BPS, Google Forms, Miro"
+          },
+          {
+            "label": "Business Reporting & Presentation",
             "value": 85,
-            "tools": "Google Trends, SurveyMonkey"
+            "tools": "PowerPoint, Canva, Google Slides"
           }
         ],
         "pm": [
           {
             "label": "Agile & Scrum Framework",
             "value": 90,
-            "tools": "Jira, Trello, Asana"
+            "tools": "Jira, Trello"
           },
           {
             "label": "Project Planning & Scheduling",
             "value": 85,
-            "tools": "Microsoft Project, Notion, Smartsheet"
+            "tools": "Excel, Notion, Google Spreadsheet"
           },
           {
-            "label": "Risk & Timeline Management",
+            "label": "Risk Management & Budgeting",
             "value": 80,
-            "tools": "Excel, Gantt Chart Templates"
+            "tools": "Excel, GanttPRO, Google Spreadsheet"
           },
           {
-            "label": "Product Roadmapping",
+            "label": "Product Roadmapping & Backlog Management",
             "value": 85,
-            "tools": "Jira, Aha!, Productboard"
+            "tools": "Jira, Productboard"
           }
         ],
         "web": [
@@ -171,24 +176,24 @@
           {
             "label": "Back-End Development",
             "value": 80,
-            "tools": "Laravel, Express.js"
+            "tools": "Laravel, Python, Node.js"
           },
           {
-            "label": "REST API Integration",
-            "value": 85,
-            "tools": "Postman, Axios"
+            "label": "API Testing & Integration",
+            "value": 80,
+            "tools": "Postman, Thunder Client"
           },
           {
             "label": "Database Design",
-            "value": 80,
+            "value": 85,
             "tools": "MySQL, PostgreSQL"
           }
         ]
       }
     },
     "soft": {
-      "Analytical Thinking": 90,
-      "Communication": 95,
+      "Analytical Thinking": 95,
+      "Communication": 88,
       "Team Collaboration": 90,
       "Leadership": 85,
       "Problem Solving": 90
@@ -214,7 +219,15 @@
       "tools": "Tools & Technologies",
       "gallery": "Project Gallery",
       "screenshot": "Screenshot",
-      "close": "Close"
+      "close": "Close",
+      "sections": {
+        "web": "Website interface developed for the application.",
+        "sa": "System design using UML diagrams, ERD, and technical documentation.",
+        "ba": "Business needs analysis and user requirements understanding.",
+        "pmo": "Structured project documentation and progress tracking.",
+        "data": "Data analysis dashboard, visualization, and forecasting.",
+        "techWriting": "Technical documentation such as API documentation, user manuals, and technical specifications."
+      }
     },
     "items": {
       "toeflPlatform": {
@@ -360,21 +373,6 @@
         },
         "tags": ["SA", "BA", "PMO", "Tech Writing"]
       },
-      "blogWebsite": {
-        "title": "Golf Leaderboard & Schedule Website",
-        "description": "Flask-based web application displaying golf tournament schedules and leaderboards using external API integration.",
-        "fullDescription": "This project is a Flask web application that provides golf tournament schedules and leaderboard data fetched from an external API. The platform addresses the need for easily accessible and well-organized golf event information, presenting fixtures, player rankings, and scores in a clean, user-friendly interface.\n\nI developed the back-end using Python Flask, integrating with the Golf Leaderboard Data API via the Requests library to fetch tournament schedules, player standings, and match results. The application features tournament schedules with details such as event name, country, course, type, and dates, as well as leaderboards displaying player rankings with scores and rounds. I implemented search functionality to filter fixtures by keyword and sorting options for leaderboard data to enhance usability.\n\nThe front-end was built using Jinja2 templating with Bootstrap and custom CSS to ensure a responsive and visually appealing layout. This project demonstrates my ability to work with external APIs, handle dynamic data rendering, and build a functional web application with a clean user interface.",
-        "tools": "Python, Flask, Jinja2, Jupyter Notebook, Requests API",
-        "images": {
-          "web": [
-            {"src": "./image/Golf-Leaderboard-External-API-Website/Web-based-1-Homepage.png", "caption": "Homepage - Tournament Schedule & Leaderboard"},
-            {"src": "./image/Golf-Leaderboard-External-API-Website/Web-based-2-Schedule-page.png", "caption": "Schedule Page - Filtered by Keyword"},
-            {"src": "./image/Golf-Leaderboard-External-API-Website/Web-based-2-Search-Schedule.png", "caption": "Search Feature on Schedule Page - Keyword Filtering"},
-            {"src": "./image/Golf-Leaderboard-External-API-Website/Web-based-3-Leaderboard-page.png", "caption": "Leaderboard Page - Player Rankings & Scores"}
-          ]
-        },
-        "tags": ["Web-Based"]
-      },
       "dedikasiLMS": {
         "title": "DEDIKASI - Career Development Platform",
         "description": "Learning management system empowering fresh graduates with information systems skills through online courses.",
@@ -423,6 +421,21 @@
           ]
         },
         "tags": ["SA", "BA", "PMO", "Tech Writing"]
+      },
+      "blogWebsite": {
+        "title": "Golf Leaderboard & Schedule Website",
+        "description": "Flask-based web application displaying golf tournament schedules and leaderboards using external API integration.",
+        "fullDescription": "This project is a Flask web application that provides golf tournament schedules and leaderboard data fetched from an external API. The platform addresses the need for easily accessible and well-organized golf event information, presenting fixtures, player rankings, and scores in a clean, user-friendly interface.\n\nI developed the back-end using Python Flask, integrating with the Golf Leaderboard Data API via the Requests library to fetch tournament schedules, player standings, and match results. The application features tournament schedules with details such as event name, country, course, type, and dates, as well as leaderboards displaying player rankings with scores and rounds. I implemented search functionality to filter fixtures by keyword and sorting options for leaderboard data to enhance usability.\n\nThe front-end was built using Jinja2 templating with Bootstrap and custom CSS to ensure a responsive and visually appealing layout. This project demonstrates my ability to work with external APIs, handle dynamic data rendering, and build a functional web application with a clean user interface.",
+        "tools": "Python, Flask, Jinja2, Jupyter Notebook, Requests API",
+        "images": {
+          "web": [
+            {"src": "./image/Golf-Leaderboard-External-API-Website/Web-based-1-Homepage.png", "caption": "Homepage - Tournament Schedule & Leaderboard"},
+            {"src": "./image/Golf-Leaderboard-External-API-Website/Web-based-2-Schedule-page.png", "caption": "Schedule Page - Filtered by Keyword"},
+            {"src": "./image/Golf-Leaderboard-External-API-Website/Web-based-2-Search-Schedule.png", "caption": "Search Feature on Schedule Page - Keyword Filtering"},
+            {"src": "./image/Golf-Leaderboard-External-API-Website/Web-based-3-Leaderboard-page.png", "caption": "Leaderboard Page - Player Rankings & Scores"}
+          ]
+        },
+        "tags": ["Web-Based"]
       },
       "totalPayPrediction": {
         "title": "Transjakarta Total Pay Prediction with ARIMA",
