@@ -100,17 +100,17 @@
           {
             "label": "Business Process Modeling (BPMN)",
             "value": 90,
-            "tools": "Visual Paradigm, Lucidchart, Bizagi"
+            "tools": "Visual Paradigm, Bizagi"
           },
           {
             "label": "System Modeling (UML)",
-            "value": 85,
+            "value": 88,
             "tools": "Visual Paradigm, Draw.io"
           },
           {
             "label": "Requirement Gathering & Documentation",
             "value": 90,
-            "tools": "Jira, Confluence, Notion"
+            "tools": "Jira, Confluence, Miro, Google Docs"
           },
           {
             "label": "Prototyping & Wireframing",
@@ -120,18 +120,18 @@
           {
             "label": "Gap Analysis & Feasibility Study",
             "value": 80,
-            "tools": "Excel, Notion"
+            "tools": "Excel, Google Docs, Notion"
           }
         ],
         "business": [
           {
             "label": "Data Analysis & Visualization",
-            "value": 90,
+            "value": 88,
             "tools": "Excel, Power BI, Tableau"
           },
           {
             "label": "Data Querying & Database Management",
-            "value": 80,
+            "value": 85,
             "tools": "MySQL, PostgreSQL"
           },
           {
@@ -154,23 +154,23 @@
           {
             "label": "Project Planning & Scheduling",
             "value": 85,
-            "tools": "Excel, Notion, Google Spreadsheet"
+            "tools": "Excel, GanttPRO, Google Sheets, Google Docs"
           },
           {
             "label": "Risk Management & Budgeting",
             "value": 80,
-            "tools": "Excel, GanttPRO, Google Spreadsheet"
+            "tools": "Excel, Google Sheets, Google Docs"
           },
           {
             "label": "Product Roadmapping & Backlog Management",
             "value": 85,
-            "tools": "Jira, Productboard"
+            "tools": "Jira, Linear"
           }
         ],
         "web": [
           {
             "label": "Front-End Development",
-            "value": 85,
+            "value": 80,
             "tools": "React, TailwindCSS"
           },
           {
@@ -180,7 +180,7 @@
           },
           {
             "label": "API Testing & Integration",
-            "value": 80,
+            "value": 85,
             "tools": "Postman, Thunder Client"
           },
           {

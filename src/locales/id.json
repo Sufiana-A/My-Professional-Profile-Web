@@ -100,17 +100,17 @@
           {
             "label": "Pemodelan Proses Bisnis (BPMN)",
             "value": 90,
-            "tools": "Visual Paradigm, Lucidchart, Bizagi"
+            "tools": "Visual Paradigm, Bizagi"
           },
           {
             "label": "Pemodelan Sistem (UML)",
-            "value": 85,
+            "value": 88,
             "tools": "Visual Paradigm, Draw.io"
           },
           {
             "label": "Pengumpulan & Dokumentasi Kebutuhan",
             "value": 90,
-            "tools": "Jira, Confluence, Notion"
+            "tools": "Jira, Confluence, Miro, Google Docs"
           },
           {
             "label": "Prototyping & Wireframing",
@@ -120,18 +120,18 @@
           {
             "label": "Gap Analysis & Studi Kelayakan",
             "value": 80,
-            "tools": "Excel, Notion"
+            "tools": "Excel, Google Docs, Notion"
           }
         ],
         "business": [
           {
             "label": "Analisis & Visualisasi Data",
-            "value": 90,
+            "value": 88,
             "tools": "Excel, Power BI, Tableau"
           },
           {
             "label": "Query Data & Manajemen Database",
-            "value": 80,
+            "value": 85,
             "tools": "MySQL, PostgreSQL"
           },
           {
@@ -154,23 +154,23 @@
           {
             "label": "Perencanaan dan Penjadwalan Proyek",
             "value": 85,
-            "tools": "Excel, Notion, Google Spreadsheet"
-          },
+            "tools": "Excel, GanttPRO, Google Sheets, Google Docs"
+          },             
           {
             "label": "Manajemen Risiko & Budgeting",
             "value": 80,
-            "tools": "Excel, GanttPRO, Google Spreadsheet"
+            "tools": "Excel, Google Sheets, Google Docs"
           },
           {
             "label": "Product Roadmapping & Manajemen Backlog",
             "value": 85,
-            "tools": "Jira, Productboard"
+            "tools": "Jira, Linear"
           }
         ],
         "web": [
           {
             "label": "Pengembangan Front-End",
-            "value": 85,
+            "value": 80,
             "tools": "React, TailwindCSS"
           },
           {
@@ -180,7 +180,7 @@
           },
           {
             "label": "Pengujian & Integrasi API",
-            "value": 80,
+            "value": 85,
             "tools": "Postman, Thunder Client"
           },
           {
@@ -195,7 +195,7 @@
       "Pemikiran Analitis": 95,
       "Komunikasi": 88,
       "Kolaborasi Tim": 90,
-      "Kepemimpinan": 85,
+      "Kepemimpinan": 88,
       "Pemecahan Masalah": 90
     },
     "common": {
