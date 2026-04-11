@@ -226,7 +226,7 @@
         "ba": "Analisis kebutuhan bisnis dan pemahaman kebutuhan pengguna.",
         "pmo": "Dokumentasi dan pelacakan proyek yang dikelola secara terstruktur.",
         "data": "Dashboard analisis data, visualisasi, dan forecasting.",
-        "techWriting": "Dokumentasi teknis seperti dokumentasi API, user manual, dan spesifikasi teknis."
+        "techWriting": "Dokumentasi teknis seperti dokumentasi API, user manual, MoM, dan spesifikasi teknis."
       }
     },
     "items": {
@@ -389,7 +389,7 @@
         "tags": ["Web-Based"]
       },
       "dedikasiLMS": {
-        "title": "LMS DEDIKASI",
+        "title": "DEDIKASI - LMS Pengembangan Karir",
         "description": "Sistem manajemen pembelajaran memberdayakan lulusan baru dengan keterampilan sistem informasi melalui kursus online.",
         "fullDescription": "Indonesia menghadapi tantangan di mana penduduk usia kerja (69,3% dari total populasi) membutuhkan sumber daya manusia berkualitas untuk bersaing di pasar kerja yang dinamis. Namun, pengangguran di kalangan lulusan diploma dan universitas masih mencapai 5,10%, menunjukkan kesenjangan antara pengetahuan akademis dan kesiapan kerja. Selain itu, Indonesia berada di peringkat ke-45 dari 64 negara dalam daya saing digital, menyoroti perlunya peningkatan keterampilan digital.\n\nDEDIKASI dikembangkan sebagai platform pembelajaran gratis untuk mengatasi tantangan ini, memberdayakan lulusan baru—khususnya di bidang sistem informasi—dengan keterampilan digital yang relevan. Platform ini memungkinkan pengguna untuk menjelajahi kategori khusus dalam sistem informasi, membantu mereka meningkatkan kemampuan dan meningkatkan daya saing kerja.\n\nSebagai Manajer Proyek, saya memimpin tim pengembangan menggunakan metodologi Agile. Saya mengelola papan Jira, melacak tugas dan memastikan kemajuan sprint tetap sesuai jadwal. Saya membantu mengoordinasikan daily scrum, sprint planning, sprint reviews, dan retrospectives untuk menjaga keselarasan tim dan perbaikan berkelanjutan. Komunikasi dikoordinasikan melalui Slack, dengan dokumentasi dikelola di Google Docs. Saya juga berkontribusi dalam pengembangan dengan mengkode beberapa fitur, berkolaborasi dengan tim untuk memastikan implementasi yang konsisten di seluruh platform.\n\nPlatform yang dihasilkan memberikan lulusan baru kesempatan belajar yang mudah diakses dan terstruktur dalam sistem informasi, membantu menjembatani kesenjangan antara pengetahuan akademis dan tuntutan industri.",
         "tools": "Laravel, MySQL, Jira, Slack, Google Docs",

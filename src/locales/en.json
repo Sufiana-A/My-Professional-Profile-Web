@@ -226,7 +226,7 @@
         "ba": "Business needs analysis and user requirements understanding.",
         "pmo": "Structured project documentation and progress tracking.",
         "data": "Data analysis dashboard, visualization, and forecasting.",
-        "techWriting": "Technical documentation such as API documentation, user manuals, and technical specifications."
+        "techWriting": "Technical documentation such as API documentation, user manuals, MoM, and technical specifications."
       }
     },
     "items": {
@@ -374,7 +374,7 @@
         "tags": ["SA", "BA", "PMO", "Tech Writing"]
       },
       "dedikasiLMS": {
-        "title": "DEDIKASI - Career Development Platform",
+        "title": "DEDIKASI - Career Development LMS",
         "description": "Learning management system empowering fresh graduates with information systems skills through online courses.",
         "fullDescription": "Indonesia faces a challenge where the working-age population (69.3% of total population) requires quality human resources to compete in a dynamic job market. However, unemployment among diploma and university graduates remains at 5.10%, indicating a gap between academic knowledge and workplace readiness. Additionally, Indonesia ranks 45th out of 64 countries in digital competitiveness, highlighting the need for digital upskilling.\n\nDEDIKASI was developed as a free learning platform to address these challenges, empowering fresh graduates—particularly in the information systems field—with relevant digital skills. The platform allows users to explore specialized categories within information systems, helping them enhance their capabilities and improve their employability.\n\nAs the Project Manager, I led the development team using Agile methodologies. I managed the Jira board, tracking tasks and ensuring sprint progress remained on schedule. I helped coordinate daily scrums, sprint planning, sprint reviews, and retrospectives to maintain team alignment and continuous improvement. Communication was coordinated through Slack, with documentation managed in Google Docs. I also contributed to development by coding several features, collaborating with the team to ensure consistent implementation across the platform.\n\nThe resulting platform provides fresh graduates with accessible, structured learning opportunities in information systems, helping bridge the gap between academic knowledge and industry demands.",
         "tools": "Laravel, MySQL, Jira, Slack, Google Docs",
