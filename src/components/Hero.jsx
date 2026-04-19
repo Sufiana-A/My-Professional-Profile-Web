@@ -121,10 +121,6 @@ const Hero = () => {
             <span>{t("hero.statuses.openToCollaborate")}</span>
           </li>
 
-          <li className="flex items-center gap-3 text-green-400 font-medium">
-            <span className="bullet-glow shrink-0"></span>
-            <span>{t("hero.statuses.lookingFor")}</span>
-          </li>
         </ul>
 
         {/* Buttons */}
