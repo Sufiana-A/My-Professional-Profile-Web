@@ -16,7 +16,7 @@
     ],
     "description": "I also build web-based solutions and occasionally write about technology, project management, and structured thinking.",
     "statuses": {
-      "openToCollaborate": "Open to Collaborate",
+      "openToCollaborate": "Open to opportunities and collaborations",
       "lookingFor": "Looking for Opportunities: Jr System Analyst | Jr Business Analyst | PMO/Project Coordinator | Technical Writer"
     },
     "buttons": {
@@ -369,6 +369,34 @@
           ],
           "techWriting": [
             {"src": "./image/Brainys-Project/Blur_MoM-DailyStandup-Brainys-PMO-TW-1.png", "caption": "Minutes of Meeting - Daily Standup (Progress, Plans, Blockers)"}
+          ]
+        },
+        "tags": ["SA", "BA", "PMO", "Tech Writing"]
+      },
+      "draftypProject": {
+        "title": "DrafTyp — Document Generator Platform",
+        "description": "A web-based document generation platform that automates the creation of professional administrative documents through a structured, form-driven workflow.",
+        "fullDescription": "DrafTyp is a document generator platform built to eliminate the manual formatting burden associated with creating professional administrative documents. The platform automates document generation and delivers ready-to-download output in seconds — supporting both single and batch workflows.\n\nAs the sole developer and system analyst of this project, I designed the full system architecture, defined business and product requirements, and built the complete backend from scratch. The platform addresses a documented productivity challenge: inefficient document processes consume significant working time across organizations of all sizes, particularly those relying on general-purpose tools without standardized templates or batch capabilities.\n\nThe platform supports two primary document types. For formal correspondence, DrafTyp generates Indonesian-standard Surat Resmi as single documents or in batch via Excel upload — producing multiple personalized letters bundled as a single ZIP download. The system supports up to three signatories per document, A4 and F4 paper sizes, and structured body content with rich text formatting.\n\nFor professional documents, DrafTyp generates ATS-compliant Curriculum Vitae in PDF, DOCX, and ZIP formats. The CV engine enforces single-column layout and standard font rendering across up to eleven professional sections, with support for both English and Indonesian language output.\n\nThe platform operates on a fully stateless REST API architecture with no database and no persistent storage. All uploaded and generated files are removed immediately after each request completes, ensuring data privacy by design.\n\nDocumentation produced for this project includes a Business Requirements Document (BRD), Product Requirements Document (PRD), system architecture diagram, sequence diagrams, use case diagrams, BPMN process flows, and complete API documentation.",
+        "tools": "Node.js, React, Postman, Draw.io, Visual Paradigm, Bizagi, Confluence, Linear",
+        "images": {
+          "sa": [
+            {"src": "./image/DrafTyp-Project/DrafTyp-BPMN-Generate-Formal-Letter.png", "caption": "BPMN Diagram — Generate Formal Letter Process"},
+            {"src": "./image/DrafTyp-Project/DrafTyp-BPMN-Sub-Process-Add-Signatory-1.png", "caption": "BPMN Sub-Process — Add Signatory to Formal Letter"},
+            {"src": "./image/DrafTyp-Project/Use-Case-DrafTyp.png", "caption": "Use Case Diagram — DrafTyp System Actors & Flows"},
+            {"src": "./image/DrafTyp-Project/DrafTyp-System-Architecture-Diagram-v1.0.png", "caption": "System Architecture — Decoupled REST API Based"},
+            {"src": "./image/DrafTyp-Project/Sequence-Generate-Batch-Formal-Letter.png", "caption": "Sequence Diagram — Batch Formal Letter Generation Flow"}
+          ],
+          "ba": [
+            {"src": "./image/DrafTyp-Project/BRD-DrafTyp-Cover.png", "caption": "Business Requirements Document (BRD) — Cover Page"},
+            {"src": "./image/DrafTyp-Project/PRD-DrafTyp-Cover.png", "caption": "Product Requirements Document (PRD) — Cover Page"}
+          ],
+          "pmo": [
+            {"src": "./image/DrafTyp-Project/Linear-Overview-Project.png", "caption": "Project Management — Linear Project Overview"},
+            {"src": "./image/DrafTyp-Project/Linear-List-Issues.png", "caption": "Project Management — Linear Issues List"},
+            {"src": "./image/DrafTyp-Project/Linear-Detail-Issue.png", "caption": "Project Management — Linear Issue Detail"}
+          ],
+          "techWriting": [
+            {"src": "./image/DrafTyp-Project/API-Collection-1.png", "caption": "API Documentation — Endpoints & Response Specs"}
           ]
         },
         "tags": ["SA", "BA", "PMO", "Tech Writing"]

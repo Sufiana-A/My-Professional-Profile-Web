@@ -108,6 +108,20 @@ const Projects = () => {
       tags: ["SA", "BA", "PMO", "Tech Writing"]
     },
     {
+      title: t('projects.items.draftypProject.title'),
+      image: "./image/DrafTyp-Project/DrafTyp-thumbnail.png",
+      images: {
+        sa: t('projects.items.draftypProject.images.sa') || [],
+        ba: t('projects.items.draftypProject.images.ba') || [],
+        pmo: t('projects.items.draftypProject.images.pmo') || [],
+        techWriting: t('projects.items.draftypProject.images.techWriting') || []
+      },
+      description: t('projects.items.draftypProject.fullDescription'),
+      tools: t('projects.items.draftypProject.tools'),
+      fullDescription: t('projects.items.draftypProject.fullDescription'),
+      tags: ["SA", "BA", "PMO", "Tech Writing"]
+    },
+    {
       title: t('projects.items.blogWebsite.title'),
       image: "./image/Golf-Leaderboard-External-API-Website/Web-based-1-Homepage.png",
       images: {

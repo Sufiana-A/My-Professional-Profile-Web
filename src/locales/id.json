@@ -16,7 +16,7 @@
     ],
     "description": "Saya juga membangun solusi berbasis web dan sesekali menulis tentang teknologi, manajemen proyek, dan pemikiran terstruktur.",
     "statuses": {
-      "openToCollaborate": "Terbuka untuk Kolaborasi",
+      "openToCollaborate": "Terbuka untuk peluang dan kolaborasi",
       "lookingFor": "Mencari Peluang: Jr System Analyst | Jr Business Analyst | PMO/Project Coordinator | Technical Writer"
     },
     "buttons": {
@@ -369,6 +369,34 @@
           ],
           "techWriting": [
             {"src": "./image/Brainys-Project/Blur_MoM-DailyStandup-Brainys-PMO-TW-1.png", "caption": "Minutes of Meeting - Daily Standup (Progress, Rencana, Hambatan)"}
+          ]
+        },
+        "tags": ["SA", "BA", "PMO", "Tech Writing"]
+      },
+      "draftypProject": {
+        "title": "DrafTyp — Platform Generator Dokumen",
+        "description": "Platform berbasis web yang mengotomatisasi pembuatan dokumen administratif profesional melalui alur kerja berbasis formulir yang terstruktur.",
+        "fullDescription": "DrafTyp adalah platform generator dokumen yang dirancang untuk menghilangkan beban pemformatan manual dalam pembuatan dokumen administratif profesional. Platform ini mengotomatisasi proses pembuatan dokumen dan menghasilkan output yang siap diunduh dalam hitungan detik — mendukung alur kerja tunggal maupun massal.\n\nSebagai pengembang sekaligus system analyst tunggal dalam proyek ini, saya merancang arsitektur sistem secara menyeluruh, mendefinisikan kebutuhan bisnis dan produk, serta membangun keseluruhan backend dari nol. Platform ini menjawab tantangan produktivitas yang terdokumentasi: proses dokumen yang tidak efisien menyita waktu kerja yang signifikan di berbagai organisasi, terutama yang bergantung pada alat serba guna tanpa template terstandarisasi atau kemampuan pemrosesan massal.\n\nPlatform ini mendukung dua jenis dokumen utama. Untuk surat resmi, DrafTyp menghasilkan Surat Resmi berstandar Indonesia secara tunggal maupun massal melalui unggahan Excel — menghasilkan banyak surat yang dipersonalisasi dalam satu unduhan ZIP. Sistem mendukung hingga tiga tanda tangan per dokumen, ukuran kertas A4 dan F4, serta isi surat berformat teks kaya yang terstruktur.\n\nUntuk dokumen profesional, DrafTyp menghasilkan Curriculum Vitae yang sesuai standar ATS dalam format PDF, DOCX, dan ZIP. Mesin CV menerapkan tata letak satu kolom dan rendering font standar di hingga sebelas seksi profesional, dengan dukungan output dalam Bahasa Inggris maupun Bahasa Indonesia.\n\nPlatform ini beroperasi di atas arsitektur REST API yang sepenuhnya stateless tanpa database dan tanpa penyimpanan persisten. Semua file yang diunggah dan dihasilkan dihapus segera setelah setiap permintaan selesai, memastikan privasi data secara by design.\n\nDokumentasi yang dihasilkan untuk proyek ini mencakup Business Requirements Document (BRD), Product Requirements Document (PRD), diagram arsitektur sistem, diagram sequence, diagram use case, alur proses BPMN, dan dokumentasi API lengkap.",
+        "tools": "Node.js, React, Postman, Draw.io, Visual Paradigm, Bizagi, Confluence, Linear",
+        "images": {
+          "sa": [
+            {"src": "./image/DrafTyp-Project/DrafTyp-BPMN-Generate-Formal-Letter.png", "caption": "Diagram BPMN — Proses Generate Surat Resmi"},
+            {"src": "./image/DrafTyp-Project/DrafTyp-BPMN-Sub-Process-Add-Signatory-1.png", "caption": "Sub-Proses BPMN — Tambah Penandatangan pada Surat Resmi"},
+            {"src": "./image/DrafTyp-Project/Use-Case-DrafTyp.png", "caption": "Diagram Use Case — Aktor & Alur Sistem DrafTyp"},
+            {"src": "./image/DrafTyp-Project/DrafTyp-System-Architecture-Diagram-v1.0.png", "caption": "Arsitektur Sistem — Berbasis REST API Terdecouple"},
+            {"src": "./image/DrafTyp-Project/Sequence-Generate-Batch-Formal-Letter.png", "caption": "Diagram Sequence — Alur Generate Surat Resmi Batch"}
+          ],
+          "ba": [
+            {"src": "./image/DrafTyp-Project/BRD-DrafTyp-Cover.png", "caption": "Dokumen Kebutuhan Bisnis (BRD) — Halaman Sampul"},
+            {"src": "./image/DrafTyp-Project/PRD-DrafTyp-Cover.png", "caption": "Dokumen Kebutuhan Produk (PRD) — Halaman Sampul"}
+          ],
+          "pmo": [
+            {"src": "./image/DrafTyp-Project/Linear-Overview-Project.png", "caption": "Manajemen Proyek — Tampilan Umum di Linear App"},
+            {"src": "./image/DrafTyp-Project/Linear-List-Issues.png", "caption": "Manajemen Proyek — Daftar Issues di Linear"},
+            {"src": "./image/DrafTyp-Project/Linear-Detail-Issue.png", "caption": "Manajemen Proyek — Detail Issue di Linear"}
+          ],
+          "techWriting": [
+            {"src": "./image/DrafTyp-Project/API-Collection-1.png", "caption": "Dokumentasi API — Endpoint & Spesifikasi Respons"}
           ]
         },
         "tags": ["SA", "BA", "PMO", "Tech Writing"]
