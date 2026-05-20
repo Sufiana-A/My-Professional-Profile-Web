@@ -151,7 +151,7 @@ const Hero = () => {
             <FiGithub size={26} />
           </a>
 
-          <a href="https://linkedin.com/in/sufiana-arumdita-7a3310307/" target="_blank" rel="noreferrer" className="social-icon" title={t('hero.social.linkedin')}>
+          <a href="https://www.linkedin.com/in/sufiana-arumdita/" target="_blank" rel="noreferrer" className="social-icon" title={t('hero.social.linkedin')}>
             <FiLinkedin size={26} />
           </a>
 

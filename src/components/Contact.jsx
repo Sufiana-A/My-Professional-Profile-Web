@@ -127,7 +127,7 @@ const Contact = () => {
             <FiGithub size={26} />
           </a>
           <a 
-            href="https://linkedin.com/in/sufiana-arumdita-7a3310307/" 
+            href="https://www.linkedin.com/in/sufiana-arumdita/" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="social-icon"
