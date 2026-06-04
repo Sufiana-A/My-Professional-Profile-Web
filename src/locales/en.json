@@ -498,7 +498,7 @@
       "message": "Message",
       "send": "Send Message",
       "sending": "Sending...",
-      "success": "Message sent successfully!",
+      "success": "Got it! I'll get back to you soon :)",
       "error": "Failed to send message. Please try again."
     },
     "validation": {

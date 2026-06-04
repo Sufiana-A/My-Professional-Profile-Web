@@ -498,7 +498,7 @@
       "message": "Pesan",
       "send": "Kirim Pesan",
       "sending": "Mengirim...",
-      "success": "Pesan berhasil dikirim!",
+      "success": "Pesan terkirim! Saya akan segera membalas :)",
       "error": "Gagal mengirim pesan. Silakan coba lagi."
     },
     "validation": {
