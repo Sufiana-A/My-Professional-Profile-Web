@@ -149,7 +149,7 @@
           {
             "label": "Agile & Scrum Framework",
             "value": 90,
-            "tools": "Jira, Trello"
+            "tools": "Jira, ClickUp, Trello"
           },
           {
             "label": "Project Planning & Scheduling",
@@ -164,7 +164,7 @@
           {
             "label": "Product Roadmapping & Backlog Management",
             "value": 85,
-            "tools": "Jira, Linear"
+            "tools": "Jira, ClickUp, Linear"
           }
         ],
         "web": [
@@ -464,6 +464,30 @@
           ]
         },
         "tags": ["Web-Based"]
+      },
+      "itProjectMonitoring": {
+        "title": "IT Project Performance & Monitoring Dashboard",
+        "description": "-",
+        "fullDescription": "Monitoring an IT project involves multiple aspects, including task completion, work distribution across project phases, schedule adherence, and working-hour estimates. When these details are viewed separately, it can be difficult to obtain an overall picture of project progress. This project addresses that need by presenting project task performance and progress in an interactive dashboard. \n\nThe dashboard was developed using a project management dataset consisting of 45 tasks across five phases: Planning, Design, Development, Testing, and Deployment. The data was organized in Google Sheets and connected to Looker Studio to create visualizations that address key monitoring questions: how many tasks have been completed, how tasks are distributed across phases and statuses, how many tasks are overdue or blocked, and how estimated working hours compare with actual hours. \n\nThe dashboard presents these indicators through KPI scorecards, task distribution charts by phase and status, an estimated-versus-actual-hours comparison, and an overdue task chart by assignee. A detailed task table and interactive controls are also included to explore information by status, priority, assignee, and date range. \n\nThe dashboard provides a structured overview of project activities, helping identify tasks that require attention and supporting project progress monitoring and execution evaluation.",
+        "tools": "Google Sheets, Looker Studio",
+        "images": {
+          "data": [
+            {"src": "./image/IT-Project-Monitoring/IT-Project-Monitoring-Dashboard.png", "caption": "IT Project Performance & Monitoring Dashboard"}
+          ]
+        },
+        "tags": ["Data"]
+      },
+      "websiteAnalytics": {
+        "title": "Website Analytics & Performance Dashboard",
+        "description": "-",
+        "fullDescription": "A portfolio website serves as a platform for presenting professional information and showcasing completed work. However, having a website does not automatically provide insight into how visitors access it or interact with its content. This project was developed to monitor activity on a personal portfolio website and understand the visitor data recorded through Google Analytics. \n\nGoogle Analytics data was connected to Looker Studio to present key information, including active users, sessions, page views, engagement rate, and event activity. The dashboard aims to answer several questions: how website traffic changes over time, where visitors come from, which devices they use, and what activities are captured through event tracking. \n\nThe information is visualized through KPI scorecards, a traffic trend chart, acquisition source distribution, visitor device categories, and recorded events such as page views, session starts, user engagement, scrolls, and clicks. A date range control and filters for traffic source and device category are also provided to explore website activity across different periods and visitor segments. \n\nThis dashboard provides a more structured view of website activity. The available information can support the evaluation of traffic sources, understanding of recorded visitor interactions, and identification of further website tracking requirements.",
+        "tools": "Google Analytics, Looker Studio",
+        "images": {
+          "data": [
+            { "src": "./image/Website-Analytics/Website-Analytics-Performance-Dashboard.png","caption": "Website Analytics & Performance Dashboard"}
+          ]
+        },
+        "tags": ["Data"]
       },
       "totalPayPrediction": {
         "title": "Transjakarta Total Pay Prediction with ARIMA",

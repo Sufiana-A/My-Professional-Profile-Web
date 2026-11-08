@@ -149,7 +149,7 @@
           {
             "label": "Framework Agile & Scrum",
             "value": 90,
-            "tools": "Jira, Trello"
+            "tools": "Jira, ClickUp, Trello"
           },
           {
             "label": "Perencanaan dan Penjadwalan Proyek",
@@ -164,7 +164,7 @@
           {
             "label": "Product Roadmapping & Manajemen Backlog",
             "value": 85,
-            "tools": "Jira, Linear"
+            "tools": "Jira, ClickUp, Linear"
           }
         ],
         "web": [
@@ -464,6 +464,26 @@
           ]
         },
         "tags": ["SA", "BA", "PMO", "Tech Writing"]
+      },
+      "itProjectMonitoring": {
+        "title": "IT Project Performance & Monitoring Dashboard",
+        "description": "-",
+        "fullDescription": "Pemantauan proyek IT melibatkan berbagai informasi, mulai dari progres penyelesaian tugas, pembagian pekerjaan berdasarkan fase, hingga ketepatan waktu dan penggunaan jam kerja. Tanpa penyajian yang terpusat, informasi tersebut dapat menjadi kurang praktis untuk ditinjau secara menyeluruh. Proyek ini dibuat untuk menyajikan gambaran kinerja dan perkembangan tugas proyek IT melalui sebuah dashboard interaktif. \n\nDashboard dikembangkan menggunakan dataset manajemen proyek yang terdiri dari 45 tugas dalam lima fase, yaitu Planning, Design, Development, Testing, dan Deployment. Data disusun di Google Sheets dan dihubungkan ke Looker Studio untuk menghasilkan visualisasi yang membantu menjawab beberapa pertanyaan utama: berapa banyak tugas yang telah diselesaikan, bagaimana distribusi status pekerjaan di setiap fase, berapa banyak tugas yang terlambat atau terhambat, serta bagaimana perbandingan estimasi dan realisasi jam kerja. \n\nHasilnya disajikan melalui KPI scorecard, grafik distribusi tugas berdasarkan fase dan status, perbandingan estimated dan actual hours, serta grafik overdue tasks berdasarkan penanggung jawab. Tabel detail tugas dan kontrol interaktif juga disediakan agar informasi dapat ditinjau berdasarkan status, prioritas, penanggung jawab, dan rentang tanggal. \n\nDashboard ini dapat digunakan sebagai alat bantu untuk melihat kondisi proyek secara lebih terstruktur, mengidentifikasi pekerjaan yang membutuhkan perhatian, serta mendukung pemantauan progres dan evaluasi pelaksanaan proyek.",
+        "tools": "Google Sheets, Looker Studio",
+        "images": {
+          "data": [{ "src": "./image/IT-Project-Monitoring/IT-Project-Monitoring-Dashboard.png", "caption": "Dashboard Kinerja & Pemantauan Proyek IT"}]
+        },
+        "tags": ["Data"]
+      },
+      "websiteAnalytics": {
+        "title": "Website Analytics & Performance Dashboard",
+        "description": "-",
+        "fullDescription": "Website portfolio berfungsi sebagai media untuk memperkenalkan profil profesional dan hasil pekerjaan. Namun, keberadaan website saja belum memberikan gambaran mengenai bagaimana website tersebut dikunjungi dan bagaimana pengunjung berinteraksi dengan kontennya. Karena itu, proyek ini dibuat untuk memantau aktivitas website portfolio pribadi dan memahami data kunjungan yang tercatat melalui Google Analytics 4 (GA4). \n\nData Google Analytics dihubungkan ke Looker Studio untuk menyajikan informasi mengenai jumlah pengguna aktif, sesi, tampilan halaman, engagement rate, dan aktivitas event. Dashboard ini digunakan untuk menjawab beberapa pertanyaan, seperti bagaimana perkembangan traffic website dari waktu ke waktu, dari mana pengunjung menemukan website, perangkat apa yang digunakan, serta aktivitas apa saja yang berhasil direkam melalui event tracking. \n\nInformasi tersebut divisualisasikan melalui KPI scorecard, grafik tren traffic, distribusi sumber kunjungan, kategori perangkat pengunjung, dan aktivitas event seperti page view, session start, user engagement, scroll, serta click. Kontrol rentang tanggal dan filter sumber traffic serta kategori perangkat turut disediakan untuk membantu peninjauan data berdasarkan periode dan karakteristik kunjungan. \n\nMelalui dashboard ini, aktivitas website dapat dipantau secara lebih terstruktur. Informasi yang tersedia juga dapat menjadi dasar untuk mengevaluasi sumber kunjungan, memahami interaksi pengunjung yang berhasil tercatat, dan mengidentifikasi kebutuhan pengembangan tracking website selanjutnya.",
+        "tools": "Google Analytics, Looker Studio",
+        "images": {
+          "data": [{"src": "./image/Website-Analytics/Website-Analytics-Performance-Dashboard.png", "caption": "Dashboard Analitik & Performa Website"}]
+        },
+        "tags": ["Data"]
       },
       "totalPayPrediction": {
         "title": "Prediksi Total Pembayaran Transjakarta dengan ARIMA",

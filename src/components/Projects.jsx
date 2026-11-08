@@ -159,6 +159,28 @@ const Projects = () => {
       tags: ["SA", "BA", "PMO", "Tech Writing"]
     },
     {
+      title: t('projects.items.itProjectMonitoring.title'),
+      image: "./image/IT-Project-Monitoring/IT-Project-Monitoring-Dashboard.png",
+      images: {
+        data: t('projects.items.itProjectMonitoring.images.data') || []
+      },
+      description: t('projects.items.itProjectMonitoring.fullDescription'),
+      tools: t('projects.items.itProjectMonitoring.tools'),
+      fullDescription: t('projects.items.itProjectMonitoring.fullDescription'),
+      tags: ["Data"]
+    },
+    {
+      title: t('projects.items.websiteAnalytics.title'),
+      image: "./image/Website-Analytics/Website-Analytics-Performance-Dashboard.png",
+      images: {
+        data: t('projects.items.websiteAnalytics.images.data') || []
+      },
+      description: t('projects.items.websiteAnalytics.fullDescription'),
+      tools: t('projects.items.websiteAnalytics.tools'),
+      fullDescription: t('projects.items.websiteAnalytics.fullDescription'),
+      tags: ["Data"]
+    },
+    {
       title: t('projects.items.totalPayPrediction.title'),
       image: "./image/TotalPayAmount-Prediction-Transjakarta-ARIMA/Fourteen-Day-Revenue-Forecast.png",
       images: {
